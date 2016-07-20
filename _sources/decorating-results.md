@@ -33,3 +33,15 @@ fn test() {
 ```
 
 Yes, it's basically a trick to hide `map` and friends from the user.
+
+[lazers](/lazers) currently uses this to chain database lookup and creation where both operations can fail due to network/database/concurrency issues.
+
+```rust
+
+let client = HyperClient::default();
+let res = client.find_database("to_be_created".to_string())
+                .or_create();
+assert!(res.is_ok());
+assert!(res.unwrap().existing())
+
+```
