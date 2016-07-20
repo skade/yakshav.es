@@ -8,4 +8,4 @@ Documents that need a sense of time will bear their initial writing date in the 
 
 yakshav.es was created out of the frustration that most static site generators are rather heavyweight and not built for personal publishing. Most blogs (even tumblr) have a time component I rarely feel comfortable with.
 
-It was also created as an attempt to document my work more, as I more and more feel the need to write things down, without ever having the feeling that some of it is done. I tend to use Twitter for that, but it is to short-form and short-lived.
+It was also created as an attempt to document my work more, as I more and more feel the need to write things down, without ever having the feeling that some of it is done. I tend to use Twitter for that, but it is too short-form and short-lived.
