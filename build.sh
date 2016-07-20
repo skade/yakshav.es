@@ -1,6 +1,11 @@
-for f in _sources/*.md; do
-  filename=$(basename "$f")
-  filename="${filename%.*}"
+#!/bin/bash
+
+set -e
+
+extension=".md"
+
+for f in _sources/*$extension; do
+  filename=$(basename "$f" $extension)
   mkdir -p $filename
 
   pandoc "$f" --template _templates/page.template -s -o "${filename}/index.html";
