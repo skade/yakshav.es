@@ -4,4 +4,4 @@ yakshav.es is [my](http://skade.me) personal snippet space. It's for content tha
 
 Also, while I intend to add a changes feed later, consider all content fundamentally unordered and unfinished. I appreciate friendly discourse about it, as long as these things are kept in mind.
 
-See the [toc](toc) for current content.
+Feel free to interact with me via [github issues](http://github.com/skade/yakshav.es/issues).

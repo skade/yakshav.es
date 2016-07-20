@@ -1,3 +1,3 @@
 ## Current Articles
 
-* [decorating-results](http://yakshav.es/decorating-results">)
+* [decorating-results](http://yakshav.es/decorating-results)
