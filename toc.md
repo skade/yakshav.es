@@ -8,4 +8,4 @@
 
 * [plan](http://yakshav.es/plan)
 
-* [yakshave.es](http://yakshav.es/yakshave.es)
+* [yakshav.es](http://yakshav.es/yakshav.es)
