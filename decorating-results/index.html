@@ -11,9 +11,9 @@
   </head>
   <body class="hack">
     <div class="container">
-      <h1 id="special-results">Special Results</h1>
-      <p>Rust has many ways to make <code>Result</code>s ergonomic, from <code>try!</code> to <code>From</code> and friends. Here's another one that is useful when chaining is appropriate and all errors can be passed through while you want to work on &quot;OK&quot; values: just implement a special trait for your specific <code>Result</code> type. This allows the user to do all general operations on the <code>Result</code> and just deconstruct it at the end.</p>
-      <p>This can make convenient APIs, but obviously means that users need to import that trait everywhere. Also, it might be hard to find a good error type you can fully pass through that chain.</p>
+      <h1 id="decorating-results">Decorating Results</h1>
+      <p>Rust has many ways to make <code>Result</code>s ergonomic, from <code>try!</code> to <code>From</code> and friends. Here's another one that is useful when chaining is appropriate and all errors can be passed through while you want to work on <code>Ok</code> values: just implement a special trait for your specific <code>Result</code> type to decorate it. This allows the user to do all general operations on the <code>Result</code> and just deconstruct it at the end.</p>
+      <p>This can make convenient APIs, but obviously means that users need to import that trait everywhere. Also, it needs work to find a good error type you can fully pass through that chain.</p>
       <pre class="sourceCode rust"><code class="sourceCode rust">
       <span class="kw">pub</span> <span class="kw">trait</span> MyResult {
           <span class="kw">fn</span> double(<span class="kw">self</span>) -&gt; <span class="kw">Self</span>;
@@ -38,7 +38,7 @@
           <span class="ot">assert_eq!</span>(okay().double().unwrap(), <span class="dv">4</span>);
           <span class="ot">assert_eq!</span>(failing().double(), <span class="kw">Err</span>(<span class="st">&quot;everything broke&quot;</span>.into()));
       }</code></pre>
-      <p>Yes, it's basically a trick to hide <code>map</code> from the user.</p>
+      <p>Yes, it's basically a trick to hide <code>map</code> and friends from the user.</p>
     </div>
   </body>
   <script src="./prism.js"></script>
