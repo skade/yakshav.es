@@ -8,7 +8,7 @@
 
 * [Near-future plans](http://yakshav.es/plan)
 
-* [shave(1)](http://yakshav.es/shave-1)
+* [yaks(1)](http://yakshav.es/yaks-1)
 
 * [yakshav.es](http://yakshav.es/yakshav.es)
 
