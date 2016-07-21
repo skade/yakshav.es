@@ -1,4 +1,6 @@
-# [laze.rs](http://laze.rs)
+# laze.rs
+
+Website: [laze.rs](laze.rs)
 
 I've been playing with a Rust-Client for CouchDB since I started playing with the language. This time, I'd like to follow through completely, if possible.
 
