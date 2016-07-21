@@ -24,4 +24,4 @@ These are my personal near-future plans.
 
 * [ ] At least get basic couchdb interaction working, reading and writing and handling docs
 * [ ] Implement the replicator on top of that
-
+* [ ] Implement an extern "C" lib that also works on iOS and Android
