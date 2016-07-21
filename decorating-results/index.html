@@ -12,40 +12,40 @@
   <body class="hack">
     <div class="container">
       <h1 id="decorating-results">Decorating Results</h1>
-      <p>Rust has many ways to make <code>Result</code>s ergonomic, from <code>try!</code> to <code>From</code> and friends. Here's another one that is useful when chaining is appropriate and all errors can be passed through while you want to work on <code>Ok</code> values: just implement a special trait for your specific <code>Result</code> type to decorate it. This allows the user to do all general operations on the <code>Result</code> and just deconstruct it at the end.</p>
+      <p>Rust has many ways to make <code>Result</code>s ergonomic, from <code>try!</code> to <code>From</code> and friends. Here’s another one that is useful when chaining is appropriate and all errors can be passed through while you want to work on <code>Ok</code> values: just implement a special trait for your specific <code>Result</code> type to decorate it. This allows the user to do all general operations on the <code>Result</code> and just deconstruct it at the end.</p>
       <p>This can make convenient APIs, but obviously means that users need to import that trait everywhere. Also, it needs work to find a good error type you can fully pass through that chain.</p>
-      <pre class="sourceCode rust"><code class="sourceCode rust">
+      <div class="sourceCode"><pre class="sourceCode rust"><code class="sourceCode rust">
       <span class="kw">pub</span> <span class="kw">trait</span> MyResult {
           <span class="kw">fn</span> double(<span class="kw">self</span>) -&gt; <span class="kw">Self</span>;
       }
       
-      <span class="kw">impl</span> MyResult <span class="kw">for</span> <span class="kw">Result</span>&lt;<span class="kw">i32</span>, String&gt; {
-          <span class="kw">fn</span> double(<span class="kw">self</span>) -&gt; <span class="kw">Result</span>&lt;<span class="kw">i32</span>, String&gt; {
+      <span class="kw">impl</span> MyResult <span class="kw">for</span> <span class="dt">Result</span>&lt;<span class="dt">i32</span>, <span class="dt">String</span>&gt; {
+          <span class="kw">fn</span> double(<span class="kw">self</span>) -&gt; <span class="dt">Result</span>&lt;<span class="dt">i32</span>, <span class="dt">String</span>&gt; {
               <span class="kw">self</span>.map(|i| i*<span class="dv">2</span>)
           }
       }
       
-      <span class="kw">fn</span> okay() -&gt; <span class="kw">Result</span>&lt;<span class="kw">i32</span>, String&gt; {
-          <span class="kw">Ok</span>(<span class="dv">2</span>)
+      <span class="kw">fn</span> okay() -&gt; <span class="dt">Result</span>&lt;<span class="dt">i32</span>, <span class="dt">String</span>&gt; {
+          <span class="cn">Ok</span>(<span class="dv">2</span>)
       }
       
-      <span class="kw">fn</span> failing() -&gt; <span class="kw">Result</span>&lt;<span class="kw">i32</span>, String&gt; {
-          <span class="kw">Err</span>(<span class="st">&quot;everything broke&quot;</span>.into())
+      <span class="kw">fn</span> failing() -&gt; <span class="dt">Result</span>&lt;<span class="dt">i32</span>, <span class="dt">String</span>&gt; {
+          <span class="cn">Err</span>(<span class="st">&quot;everything broke&quot;</span>.into())
       }
       
-      <span class="ot">#[</span>test<span class="ot">]</span>
+      <span class="at">#[</span>test<span class="at">]</span>
       <span class="kw">fn</span> test() {
-          <span class="ot">assert_eq!</span>(okay().double().unwrap(), <span class="dv">4</span>);
-          <span class="ot">assert_eq!</span>(failing().double(), <span class="kw">Err</span>(<span class="st">&quot;everything broke&quot;</span>.into()));
-      }</code></pre>
-      <p>Yes, it's basically a trick to hide <code>map</code> and friends from the user.</p>
+          <span class="pp">assert_eq!</span>(okay().double().unwrap(), <span class="dv">4</span>);
+          <span class="pp">assert_eq!</span>(failing().double(), <span class="cn">Err</span>(<span class="st">&quot;everything broke&quot;</span>.into()));
+      }</code></pre></div>
+      <p>Yes, it’s basically a trick to hide <code>map</code> and friends from the user.</p>
       <p><a href="/lazers">lazers</a> currently uses this to chain database lookup and creation where both operations can fail due to network/database/concurrency issues.</p>
-      <pre class="sourceCode rust"><code class="sourceCode rust">
+      <div class="sourceCode"><pre class="sourceCode rust"><code class="sourceCode rust">
       <span class="kw">let</span> client = HyperClient::default();
       <span class="kw">let</span> res = client.find_database(<span class="st">&quot;to_be_created&quot;</span>.to_string())
                       .or_create();
-      <span class="ot">assert!</span>(res.is_ok());
-      <span class="ot">assert!</span>(res.unwrap().existing())</code></pre>
+      <span class="pp">assert!</span>(res.is_ok());
+      <span class="pp">assert!</span>(res.unwrap().existing())</code></pre></div>
 
       <a href="/">top<a/>
     </div>
