@@ -18,3 +18,4 @@ yaks publish # publishes everything
 
 `yaks` accepts an environment variable `YAKS_DIR` where it finds the basic `yakshav.es` file structure.
 
+`yaks` can be found on [Github](https://github.com/skade/yaks)
