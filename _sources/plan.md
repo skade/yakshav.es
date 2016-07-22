@@ -4,7 +4,8 @@ These are my personal near-future plans.
 
 ## yakshav.es-related (Tech)
 
-* [ ] Write a small command-line tool for editing shaves - I'd like the edit them whereever I am (on the console)
+* [x] Write a small command-line tool for editing shaves - I'd like the edit them whereever I am (on the console)
+  - see [yaks(1)](/yaks-1)
 * [ ] Maybe set up travis building for the whole thing, but that usually makes things more tedious
 * [ ] Figure out a nice way to publish pictures
 * [ ] Figure out a way to create a feed for the content
