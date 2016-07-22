@@ -10,6 +10,8 @@
 
 * [Near-future plans](http://yakshav.es/plan)
 
+* [Spoilers](http://yakshav.es/spoilers)
+
 * [Video Games](http://yakshav.es/video-games)
 
 * [yaks(1)](http://yakshav.es/yaks-1)
