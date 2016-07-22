@@ -6,6 +6,8 @@
 
 * [laze.rs](http://yakshav.es/lazers)
 
+* [Music](http://yakshav.es/music)
+
 * [Near-future plans](http://yakshav.es/plan)
 
 * [yaks(1)](http://yakshav.es/yaks-1)
