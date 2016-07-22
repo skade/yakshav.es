@@ -14,6 +14,8 @@
 
 * [Video Games](http://yakshav.es/video-games)
 
+* [Wordsmithing](http://yakshav.es/wordsmithing)
+
 * [yaks(1)](http://yakshav.es/yaks-1)
 
 * [yakshav.es](http://yakshav.es/yakshav.es)
