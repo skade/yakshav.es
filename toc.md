@@ -1,5 +1,7 @@
 ## Current Shaves
 
+* [Conference Communication](http://yakshav.es/conference-communication)
+
 * [Decorating Results](http://yakshav.es/decorating-results)
 
 * [Kyudo](http://yakshav.es/kyudo)
