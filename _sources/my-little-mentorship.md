@@ -58,7 +58,7 @@ Thank you again for taking part in our Mentorship Program.
 
 Your assigned speaker is: $speaker
 
-<A description of the talk from the program commitees point of view and where they see points that can be problematic>
+_A description of the talk from the program commitees point of view and where they see points that can be problematic or things that are hard to cover_
 
 To make sure everything works well, here are a few pointers:
 
