@@ -10,6 +10,8 @@
 
 * [Music](http://yakshav.es/music)
 
+* [My little mentorship](http://yakshav.es/my-little-mentorship)
+
 * [Near-future plans](http://yakshav.es/plan)
 
 * [Spoilers](http://yakshav.es/spoilers)
