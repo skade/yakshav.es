@@ -23,7 +23,7 @@ $yourself
 
 Hi $speaker,
 
-Thank you again for speaking at this years eurucamp! As per this years unconditional mentorship program[1], you will have a mentor assigned.
+Thank you again for speaking at this years eurucamp! As per this years unconditional mentorship program, you will have a mentor assigned.
 
 We are lucky to have a 1 on 1 match for mentors and speakers. Your assigned mentor is: $mentor $mentor_email
 
@@ -47,8 +47,6 @@ We are looking forward to your talk!
 
 Best,
 Florian and the eurucamp team
-
-[1]: http://cfp.eurucamp.org/mentorship
 
 ### The email a mentor receives
 
