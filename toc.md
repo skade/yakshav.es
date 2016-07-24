@@ -4,7 +4,7 @@
 
 * [Decorating Results](http://yakshav.es/decorating-results)
 
-* [Kyudo](http://yakshav.es/kyudo)
+* [Kyūdō](http://yakshav.es/kyudo)
 
 * [laze.rs](http://yakshav.es/lazers)
 
