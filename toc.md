@@ -14,6 +14,8 @@
 
 * [Near-future plans](http://yakshav.es/plan)
 
+* [Positivity in Coding](http://yakshav.es/positivity-in-coding)
+
 * [Spoilers](http://yakshav.es/spoilers)
 
 * [Video Games](http://yakshav.es/video-games)
