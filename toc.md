@@ -18,6 +18,8 @@
 
 * [Spoilers](http://yakshav.es/spoilers)
 
+* [Things you don't need on a conference](http://yakshav.es/things-you-don-t-need-on-a-conference)
+
 * [Video Games](http://yakshav.es/video-games)
 
 * [Wordsmithing](http://yakshav.es/wordsmithing)
