@@ -2,7 +2,7 @@
 
 General notes on my sport of choice.
 
-## Summer Geshukku
+## Summer Gasshuku
 
 I went to my first Geshukku (basically a three-day training camp) and had a few
 interesting observations.
