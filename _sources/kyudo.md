@@ -2,7 +2,34 @@
 
 General notes on my sport of choice.
 
-## Summer Gasshuku
+## Kyū-Wat?
+
+Kyūdō is a form of archery that developed in Japan. The bows in use are
+longbows, around 2m30 in height. Interestingly, the bows are _asymmetric_,
+meaning that you hold them in the lower third.
+
+Shooting them requires a rather elaborate technique, as the asymmetric forces
+working on the arrow need to managed. It is as much about controlling your
+whole body and concentration as it is about the actual act.
+
+It's generally practiced in traditional clothing.
+
+## Particularities
+
+One of the interesting aspects of Kyūdō is that it is literally "the way of the
+bow" and not necessarily "archery". That means that you should bring some time.
+
+Depending on the Dojo you are in, it can take around 20-30 training sessions
+until they hand you a bow - without arrows. Some Dojos accellerate that by
+having intensive training at the beginning.
+
+This isn't out of spite, hurting yourself with strong bowstrings is something
+that can happen. It's also a good preparation. Kyūdō is about slow and steady
+improvement, not only of the shooting aspects. There are many aspects
+that go beyond shooting an arrow down a lane, especially traditional ceremonies
+that must be trained (and as simple as they look, can be quite exhaustive).
+
+## Notes on the Summer Gasshuku 2016
 
 I went to my first Geshukku (basically a three-day training camp) and had a few
 interesting observations.
