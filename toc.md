@@ -12,6 +12,8 @@
 
 * [My little mentorship](http://yakshav.es/my-little-mentorship)
 
+* [Notes on licensing Rust code](http://yakshav.es/notes-on-licensing-rust-code)
+
 * [Near-future plans](http://yakshav.es/plan)
 
 * [Positivity in Coding](http://yakshav.es/positivity-in-coding)

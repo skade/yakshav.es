@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>yakshav.es</title>
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/hack.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+  </head>
+  <body class="hack">
+    <div class="container">
+      <h1 id="notes-on-licensing-rust-code">Notes on licensing Rust code</h1>
+      <p>Licensing Rust code has particular issues, mostly that it isn’t C.</p>
+      <p>This makes recommending licenses particular.</p>
+      <h2 id="i-want-copyleft-but-only-for-my-library">I want copyleft, but only for my library</h2>
+      <p>The GPL with linking exception is a better pick here then the LGPL. The problem lies hidden inside the LGPL: it requires that the library must be replacable and the assembled program can be re-linked with a self-written version of it. This requires dynamic linking. Rust usually links statically.</p>
+      <p>This means, that the LGPL effectively requires you to ship the whole Rust code of the resulting program.</p>
+      <p>libgit2 solves this by giving you the express permission to link the results to a program in any way you like.</p>
+      <p>Consider the MPL-2.0 in that case.</p>
+
+      <a href="/">top<a/>
+    </div>
+  </body>
+  <script src="./prism.js"></script>
+</html>
