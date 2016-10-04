@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>yakshav.es</title>
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/hack.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+  </head>
+  <body class="hack">
+    <div class="container">
+<h1 id="imapfilter">imapfilter</h1>
+<p>I use <code>imapfilter</code> to sort my email.</p>
+<p><code>imapfilter</code> is configured using lua, which both gives you infinite possibilities, but also no premade solutions.</p>
+<p>Here’s a couple I came up with.</p>
+<h2 id="sort-github-projects-into-folders">Sort GitHub projects into folders</h2>
+<p>GitHub sends all notifications from <code>notifications@github.com</code>, but encodes the project name in the <code>TO</code> header.</p>
+<p>So we fetch the <code>TO</code> field of every email, parse out the project name.</p>
+<p>For some reason, I have at least one project where the project name is quoted, so we remove the quotes.</p>
+<p>For perfomance reason, we then collect all emails by project and move them to a <code>organisation/projectname</code> folder struture.</p>
+<div class="sourceCode"><pre class="sourceCode lua"><code class="sourceCode lua"><span class="kw">function</span> filter_github_email<span class="ot">(</span>box<span class="ot">,</span> target_account<span class="ot">)</span>
+  messages <span class="ot">=</span> box:contain_from<span class="ot">(</span><span class="st">&quot;notifications@github.com&quot;</span><span class="ot">)</span>
+
+  actions <span class="ot">=</span> <span class="ot">{}</span>
+  <span class="kw">for</span> _<span class="ot">,</span> message <span class="kw">in</span> <span class="fu">ipairs</span><span class="ot">(</span>messages<span class="ot">)</span> <span class="kw">do</span>
+    mailbox<span class="ot">,</span> uid <span class="ot">=</span> table<span class="ot">.</span>unpack<span class="ot">(</span>message<span class="ot">)</span>
+    to <span class="ot">=</span> box<span class="ot">[</span>uid<span class="ot">]</span>:fetch_field<span class="ot">(</span><span class="st">&quot;TO&quot;</span><span class="ot">)</span>
+    project <span class="ot">=</span> string<span class="ot">.</span>match<span class="ot">(</span>to<span class="ot">,</span> <span class="st">&#39;To: ([%S]+)&#39;</span><span class="ot">)</span>
+    project_scrubbed <span class="ot">=</span> project:<span class="fu">gsub</span><span class="ot">(</span><span class="st">&#39;&quot;&#39;</span><span class="ot">,</span> <span class="st">&#39;&#39;</span><span class="ot">)</span>
+    target_mailbox <span class="ot">=</span> <span class="st">&quot;GitHub/&quot;</span> <span class="ot">..</span> project_scrubbed
+
+    <span class="kw">if</span> <span class="kw">not</span> actions<span class="ot">[</span>target_mailbox<span class="ot">]</span> <span class="kw">then</span>
+      actions<span class="ot">[</span>target_mailbox<span class="ot">]</span> <span class="ot">=</span> Set <span class="ot">{}</span>
+    <span class="kw">end</span>
+    <span class="fu">table.insert</span><span class="ot">(</span>actions<span class="ot">[</span>target_mailbox<span class="ot">],</span> message<span class="ot">)</span>
+  <span class="kw">end</span>
+
+  <span class="kw">for</span> mailbox<span class="ot">,</span> msgs <span class="kw">in</span> <span class="fu">pairs</span><span class="ot">(</span>actions<span class="ot">)</span> <span class="kw">do</span>
+    msgs:move_messages<span class="ot">(</span>target_account<span class="ot">[</span>mailbox<span class="ot">])</span>
+  <span class="kw">end</span>
+<span class="kw">end</span>
+
+filter_github_email<span class="ot">(</span>account<span class="ot">.</span>INBOX<span class="ot">,</span> account<span class="ot">)</span></code></pre></div>
+
+      <a href="/">top<a/>
+    </div>
+  </body>
+  <script src="./prism.js"></script>
+</html>

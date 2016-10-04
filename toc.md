@@ -1,8 +1,14 @@
 ## Current Shaves
 
+* [Community Conferences](http://yakshav.es/community-confernces)
+
 * [Conference Communication](http://yakshav.es/conference-communication)
 
 * [Decorating Results](http://yakshav.es/decorating-results)
+
+* [eurucamp 2011](http://yakshav.es/eurucamp-2011)
+
+* [imapfilter](http://yakshav.es/imapfilter)
 
 * [Kyūdō](http://yakshav.es/kyudo)
 
