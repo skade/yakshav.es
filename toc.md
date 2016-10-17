@@ -8,6 +8,8 @@
 
 * [eurucamp 2011](http://yakshav.es/eurucamp-2011)
 
+* [imapfilter](http://yakshav.es/imapfilter)
+
 * [Kyūdō](http://yakshav.es/kyudo)
 
 * [laze.rs](http://yakshav.es/lazers)
