@@ -1,8 +1,12 @@
 ## Current Shaves
 
+* [Community Conferences](http://yakshav.es/community-confernces)
+
 * [Conference Communication](http://yakshav.es/conference-communication)
 
 * [Decorating Results](http://yakshav.es/decorating-results)
+
+* [eurucamp 2011](http://yakshav.es/eurucamp-2011)
 
 * [Kyūdō](http://yakshav.es/kyudo)
 
@@ -13,6 +17,8 @@
 * [My little mentorship](http://yakshav.es/my-little-mentorship)
 
 * [Notes on licensing Rust code](http://yakshav.es/notes-on-licensing-rust-code)
+
+* [OSCON](http://yakshav.es/OSCON)
 
 * [Near-future plans](http://yakshav.es/plan)
 
