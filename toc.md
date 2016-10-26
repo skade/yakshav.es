@@ -26,6 +26,8 @@
 
 * [Positivity in Coding](http://yakshav.es/positivity-in-coding)
 
+* [Replacing violent IT vocabulary for fun and profit](http://yakshav.es/replacements-for-violent-it-vocabulary)
+
 * [Spoilers](http://yakshav.es/spoilers)
 
 * [Things you don't need on a conference](http://yakshav.es/things-you-don-t-need-on-a-conference)
