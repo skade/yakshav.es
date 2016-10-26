@@ -24,7 +24,7 @@ Very often, "abuse" is used for advanced usage of a system that is out of the ma
 
 ### Replacements
 
-When speaking about positive achievements, or your decisions, say it! It's your achievement! In these cases, save 2 characters, and use "use". If you feel like there's suddenly a something missing, answer the question "what for?".
+When speaking about positive achievements, or your decisions, say it! It's your achievement! In these cases, save 2 characters, and use "use". If you feel like there's suddenly a something missing, answer the question "what exactly?" or "what for?".
 
 * "We're using Redis to store b-tree indices"
 * "We used Elasticsearch's advanced clustering functionality" 
