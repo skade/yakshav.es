@@ -41,3 +41,10 @@ footer.footer {
   background-color: transparent;
   font-weight: normal;
 }
+
+.hack {
+    font-family: system, -apple-system, BlinkMacSystemFont,
+        "Helvetica Neue", "Lucida Grande";
+    font-size: 1.4em;
+    line-height: 1.5em;
+}
