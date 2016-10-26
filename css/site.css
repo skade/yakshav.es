@@ -42,7 +42,7 @@ footer.footer {
   font-weight: normal;
 }
 
-.hack {
+.hack, .hack blockquote, .hack em, .hack h1, .hack h2, .hack h3, .hack h4, .hack h5, .hack h6, .hack strong {
     font-family: system, -apple-system, BlinkMacSystemFont,
         "Helvetica Neue", "Lucida Grande";
     font-size: 1.4em;
