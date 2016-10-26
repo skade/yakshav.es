@@ -16,7 +16,7 @@ It helps to train yourself to avoid such language alltogether. The replacements 
 
 ### Common usage
 
-Very often, "abuse" is used for advanced usage of a system that is out of the mainline. It is also commonly used as a 
+Very often, "abuse" is used for advanced usage of a system that is out of the mainstream. It is also commonly used as a way to describe disagreement with a certain use pattern.
 
 * "We're abusing Redis to store b-tree indices"
 * "We abused a helpless Elasticsearch for that"
@@ -24,7 +24,7 @@ Very often, "abuse" is used for advanced usage of a system that is out of the ma
 
 ### Replacements
 
-When speaking about positive achievements, or your decisions, say it! It's your achievement! In these cases, save 2 characters, and use "use". If you feel like there's suddenly a something missing, answer the question "what exactly?" or "what for?".
+When speaking about positive achievements, or your decisions, say it! It's your achievement! In these cases, save 2 characters, and use "use". If you feel like there's suddenly something missing, answer the question "what exactly?" or "what for?".
 
 * "We're using Redis to store b-tree indices"
 * "We used Elasticsearch's advanced clustering functionality" 
