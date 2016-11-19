@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>yakshav.es</title>
+    <link rel="stylesheet" href="/css/hack.css">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+  </head>
+  <body class="hack">
+    <div class="container">
+<h1 id="spacemacs">spacemacs</h1>
+<p>I’m currently trying out <a href="http://spacemacs.org">spacemacs</a>.</p>
+<p>Here are a some short notes for setting in up on OS X and ironing out some problems.</p>
+<h2 id="fonts-busted">Fonts busted</h2>
+<p>If you have something like this in Emacs.app:</p>
+<div class="figure">
+<embed src="https://pbs.twimg.com/media/CxUCOUYWgAA9PB3.jpg:large" /><p class="caption">Broken fonts in Emacs</p>
+</div>
+<p>First of all, make sure you have <a href="https://github.com/powerline/fonts">powerline fonts</a> installed.</p>
+<p>Navigate to the font configuration in your .spacemacs file and change it to something like this:</p>
+<pre class="lisp"><code>dotspacemacs-default-font &#39;(&quot;Fira Mono for Powerline&quot;
+                            :size 14
+                            :weight normal
+                            :width normal
+                            :powerline-scale 1.1)</code></pre>
+<p>(or choose any of the fonts you like).</p>
+<p>Also, navigate to <code>dotspacemacs/user-config</code> and add:</p>
+<pre class="lisp"><code>(setq powerline-default-separator &#39;arrow)
+(setq ns-use-srgb-colorspace nil)</code></pre>
+<h2 id="tls-not-working">TLS not working</h2>
+<p>When using restclient.el, I ran into TLS issues due to missing CA certificaties.</p>
+<p>This can be fixed by downloading <code>cacert.pem</code> from <a href="https://curl.haxx.se/docs/caextract.html">curl</a> and putting it somewhere. Then put the following in <code>dotspacemacs/user-config</code>:</p>
+<pre class="lisp"><code>(require &#39;tls)
+(require &#39;gnutls)
+(add-to-list &#39;gnutls-trustfiles (expand-file-name &quot;~/.emacs.d/etc/cacert.pem&quot;))</code></pre>
+<p>Regularly update the cert file.</p>
+
+      <a href="/">top<a/>
+    </div>
+  </body>
+  <script src="./prism.js"></script>
+</html>

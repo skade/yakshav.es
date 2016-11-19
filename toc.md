@@ -28,6 +28,8 @@
 
 * [Replacing violent IT vocabulary for fun and profit](http://yakshav.es/replacements-for-violent-it-vocabulary)
 
+* [spacemacs](http://yakshav.es/spacemacs)
+
 * [Spoilers](http://yakshav.es/spoilers)
 
 * [Things you don't need on a conference](http://yakshav.es/things-you-don-t-need-on-a-conference)
