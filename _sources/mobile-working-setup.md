@@ -59,3 +59,45 @@ As a heavy user on the iPhone, I also love iOctocat on the iPad. It provides a g
 Browser: Firefox & Klar
 
 Firefox for iOS is a great browser that replaced Safari for me very quickly. I can additionally recommend Firefox Klar, which has a great, focused exerience for looking stuff up: no history, just one tab, always in private mode. Does not clutter your history.
+
+Game for in between: FTL
+
+FTL (Faster than Light) is still one of the best tablet games ever build. Complex, well tuned for touch input and in that case, touch controls have that certain Star Trek feel to them.
+
+Problematic App: Chat Secure
+
+Chat Secure is nice and great, but has weird layout issues on an iPad mini, especially in split screen mode.
+
+Te
+x
+t
+
+j
+u
+st
+
+re
+a
+d
+s
+
+ba
+d
+
+la
+y
+e
+d
+
+o
+ut
+
+li
+k
+e
+
+t
+h
+i
+s
+
