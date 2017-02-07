@@ -42,9 +42,9 @@ Battery life is good.
 
 ## Software
 
-Text editor: Textual
+Text editor: Textastic
 
-Textual has been with iOS for quite a while and it shows. It is easy to use, and it is definitely set up for serious use. It comes with an additional keyboard row for easy access to special character (should you forget your hardware keyboard), has a nice enough file browser and has a project manager. On top of that, it can run a webserver to provide preview of rather complex pages in Safari. I currently use it for a rather complex presentation using reveal.js, and it can provide a full preview setup of that.
+Textastic has been with iOS for quite a while and it shows. It is easy to use, and it is definitely set up for serious use. It comes with an additional keyboard row for easy access to special character (should you forget your hardware keyboard), has a nice enough file browser and has a project manager. On top of that, it can run a webserver to provide preview of rather complex pages in Safari. I currently use it for a rather complex presentation using reveal.js, and it can provide a full preview setup of that.
 
 On top of that, it has quick preview of popular markup languages, like markdown, built-in.
 
