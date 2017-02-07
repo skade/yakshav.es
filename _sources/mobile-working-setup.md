@@ -14,7 +14,7 @@ I don't want to code using the setup, but get a reasonable preview of my writing
 
 ## The keyboard
 
-After quite some research, I opted for a [Microsoft Universal Mobile Keyboard](). The keyboard itself is suprisingly hard to get on short notice.
+After quite some research, I opted for a [Microsoft Universal Mobile Keyboard](https://www.microsoft.com/accessories/en-us/products/keyboards/universal-mobile-keyboard/p2z-00001). The keyboard itself is suprisingly hard to get on short notice.
 
 The keyboard has settings for working as a Windows, Android or iOS keyboard. It is a standard keyboard with some additional keys for locking, volume/audio control, and searching. The build quality is great.
 
