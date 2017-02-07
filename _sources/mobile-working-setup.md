@@ -67,37 +67,3 @@ FTL (Faster than Light) is still one of the best tablet games ever build. Comple
 Problematic App: Chat Secure
 
 Chat Secure is nice and great, but has weird layout issues on an iPad mini, especially in split screen mode.
-
-Te 
-x 
-t 
-
-j 
-u 
-st 
-
-re 
-a 
-d 
-s 
-
-ba 
-d 
-
-la 
-y 
-e 
-d 
-
-o 
-ut 
-
-li 
-k 
-e 
-
-t 
-h 
-i 
-s 
-
