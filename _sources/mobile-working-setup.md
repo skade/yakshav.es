@@ -22,11 +22,13 @@ It comes with a rubbery cover that can hold the device you are using while worki
 
 Microsoft advertises 90 days off standby off one charge and I haven't managed to run out of battery.
 
+If you are reading this just for inspiration for a similar setup: make this piece your cornerstone.
+
 ## Device: iPad Mini 4
 
 I had bad experiences with the very first iPad and never used a tablet since then. After some back and forth, I still decided to get one instead of using my phone, mostly because of the larger size and seperate battery from my phone.
 
-I opted for not considering an Android device because I already did my applications research and doing it again would have cost me additional effort.
+I opted for not considering an Android device because I already did my applications research and doing it again would have cost me additional effort. If you are currently used to Android, possibly getting an Android tablet of similar proportions is a good way to go.
 
 The split screen mode took some getting used to, but I really love it! Most applications I use support it well, making editing a text and working with a git client alongside a matter of sliding to the left. The constrained model of having one main app and exactly _one_ secondary fits my mental model of working really well. If Linux had a tiling window manager like that, I'd be with you in a second.
 
