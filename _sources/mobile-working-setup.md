@@ -68,36 +68,36 @@ Problematic App: Chat Secure
 
 Chat Secure is nice and great, but has weird layout issues on an iPad mini, especially in split screen mode.
 
-Te
-x
-t
+Te 
+x 
+t 
 
-j
-u
-st
+j 
+u 
+st 
 
-re
-a
-d
-s
+re 
+a 
+d 
+s 
 
-ba
-d
+ba 
+d 
 
-la
-y
-e
-d
+la 
+y 
+e 
+d 
 
-o
-ut
+o 
+ut 
 
-li
-k
-e
+li 
+k 
+e 
 
-t
-h
-i
-s
+t 
+h 
+i 
+s 
 
