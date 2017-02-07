@@ -14,6 +14,8 @@
 
 * [laze.rs](http://yakshav.es/lazers)
 
+* [My mobile working setup](http://yakshav.es/mobile-working-setup)
+
 * [Music](http://yakshav.es/music)
 
 * [My little mentorship](http://yakshav.es/my-little-mentorship)
