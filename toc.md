@@ -8,6 +8,8 @@
 
 * [eurucamp 2011](http://yakshav.es/eurucamp-2011)
 
+* [Giving a Rust workshop](http://yakshav.es/giving-a-rust-workshop)
+
 * [imapfilter](http://yakshav.es/imapfilter)
 
 * [Kyūdō](http://yakshav.es/kyudo)
