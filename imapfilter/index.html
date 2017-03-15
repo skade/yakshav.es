@@ -20,7 +20,7 @@
 <p>So we fetch the <code>TO</code> field of every email, parse out the project name.</p>
 <p>For some reason, I have at least one project where the project name is quoted, so we remove the quotes.</p>
 <p>For perfomance reason, we then collect all emails by project and move them to a <code>organisation/projectname</code> folder struture.</p>
-<pre class="sourceCode lua"><code class="sourceCode lua"><span class="kw">function</span> filter_github_email<span class="ot">(</span>box<span class="ot">,</span> target_account<span class="ot">)</span>
+<div class="sourceCode"><pre class="sourceCode lua"><code class="sourceCode lua"><span class="kw">function</span> filter_github_email<span class="ot">(</span>box<span class="ot">,</span> target_account<span class="ot">)</span>
   messages <span class="ot">=</span> box:contain_from<span class="ot">(</span><span class="st">&quot;notifications@github.com&quot;</span><span class="ot">)</span>
 
   actions <span class="ot">=</span> <span class="ot">{}</span>
@@ -42,7 +42,7 @@
   <span class="kw">end</span>
 <span class="kw">end</span>
 
-filter_github_email<span class="ot">(</span>account<span class="ot">.</span>INBOX<span class="ot">,</span> account<span class="ot">)</span></code></pre>
+filter_github_email<span class="ot">(</span>account<span class="ot">.</span>INBOX<span class="ot">,</span> account<span class="ot">)</span></code></pre></div>
 
       <a href="/">top<a/>
     </div>

@@ -44,3 +44,55 @@ This can be fixed by downloading `cacert.pem` from [curl](https://curl.haxx.se/d
 ```
 
 Regularly update the cert file.
+
+## Use the emacs server
+
+Emacs can start a small server, making it possible to send it commands from the command line. Mostly, I use that to open files from the command line.
+
+Start the server by putting this in your `dotspacemacs/user-config`:
+
+```lisp
+  (server-start)
+```
+
+Then use `emacsclient` from the command line:
+
+```sh
+/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -c -n $argv;
+```
+
+Obviously: create an alias for that.
+
+`-c` tells emacs to create a new frame for the file, `-n` the client not to wait until the frame closes.
+
+## Don't close Emacs.app on last window close
+
+I prefer the standard OS X behaviour of not closing the app when the last document closes. This also means that you don't have to pay the hefty startup fine that spacemacs has every time. Luckily, Emacs behaviours are mostly written in elips, so you can just monkey-patch that behaviour.
+
+Just put this in your `dotspacemacs/user-config`:
+
+```lisp
+  (defun handle-delete-frame-without-kill-emacs (event)
+    "Handle delete-frame events from the X server."
+    (interactive "e")
+    (let ((frame (posn-window (event-start event)))
+          (i 0)
+          (tail (frame-list)))
+      (while tail
+        (and (frame-visible-p (car tail))
+             (not (eq (car tail) frame))
+             (setq i (1+ i)))
+        (setq tail (cdr tail)))
+      (if (> i 0)
+          (delete-frame frame t)
+        ;; Not (save-buffers-kill-emacs) but instead:
+        (ns-do-hide-emacs))))
+
+  (when (eq system-type 'darwin)
+    (advice-add 'handle-delete-frame :override
+                #'handle-delete-frame-without-kill-emacs))
+```
+
+This probably better belongs into a layer.
+
+Found [here](https://lists.gnu.org/archive/html/help-gnu-emacs/2016-01/msg00236.html).

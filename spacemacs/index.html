@@ -17,26 +17,59 @@
 <h2 id="fonts-busted">Fonts busted</h2>
 <p>If you have something like this in Emacs.app:</p>
 <div class="figure">
-<embed src="https://pbs.twimg.com/media/CxUCOUYWgAA9PB3.jpg:large" /><p class="caption">Broken fonts in Emacs</p>
+<embed src="https://pbs.twimg.com/media/CxUCOUYWgAA9PB3.jpg:large" />
+<p class="caption">Broken fonts in Emacs</p>
 </div>
 <p>First of all, make sure you have <a href="https://github.com/powerline/fonts">powerline fonts</a> installed.</p>
 <p>Navigate to the font configuration in your .spacemacs file and change it to something like this:</p>
-<pre class="lisp"><code>dotspacemacs-default-font &#39;(&quot;Fira Mono for Powerline&quot;
-                            :size 14
+<div class="sourceCode"><pre class="sourceCode lisp"><code class="sourceCode commonlisp">dotspacemacs-default-font &#39;(<span class="st">&quot;Fira Mono for Powerline&quot;</span>
+                            :size <span class="dv">14</span>
                             :weight normal
                             :width normal
-                            :powerline-scale 1.1)</code></pre>
+                            :powerline-scale <span class="fl">1.1</span>)</code></pre></div>
 <p>(or choose any of the fonts you like).</p>
 <p>Also, navigate to <code>dotspacemacs/user-config</code> and add:</p>
-<pre class="lisp"><code>(setq powerline-default-separator &#39;arrow)
-(setq ns-use-srgb-colorspace nil)</code></pre>
+<div class="sourceCode"><pre class="sourceCode lisp"><code class="sourceCode commonlisp">(<span class="kw">setq</span> powerline-default-separator &#39;arrow)
+(<span class="kw">setq</span> ns-use-srgb-colorspace <span class="kw">nil</span>)</code></pre></div>
 <h2 id="tls-not-working">TLS not working</h2>
 <p>When using restclient.el, I ran into TLS issues due to missing CA certificaties.</p>
 <p>This can be fixed by downloading <code>cacert.pem</code> from <a href="https://curl.haxx.se/docs/caextract.html">curl</a> and putting it somewhere. Then put the following in <code>dotspacemacs/user-config</code>:</p>
-<pre class="lisp"><code>(require &#39;tls)
-(require &#39;gnutls)
-(add-to-list &#39;gnutls-trustfiles (expand-file-name &quot;~/.emacs.d/etc/cacert.pem&quot;))</code></pre>
+<div class="sourceCode"><pre class="sourceCode lisp"><code class="sourceCode commonlisp">(<span class="kw">require</span> &#39;tls)
+(<span class="kw">require</span> &#39;gnutls)
+(add-to-list &#39;gnutls-trustfiles (expand-file-name <span class="st">&quot;~/.emacs.d/etc/cacert.pem&quot;</span>))</code></pre></div>
 <p>Regularly update the cert file.</p>
+<h2 id="use-the-emacs-server">Use the emacs server</h2>
+<p>Emacs can start a small server, making it possible to send it commands from the command line. Mostly, I use that to open files from the command line.</p>
+<p>Start the server by putting this in your <code>dotspacemacs/user-config</code>:</p>
+<div class="sourceCode"><pre class="sourceCode lisp"><code class="sourceCode commonlisp">  (server-start)</code></pre></div>
+<p>Then use <code>emacsclient</code> from the command line:</p>
+<div class="sourceCode"><pre class="sourceCode sh"><code class="sourceCode bash"><span class="ex">/Applications/Emacs.app/Contents/MacOS/bin/emacsclient</span> -c -n <span class="va">$argv</span><span class="kw">;</span></code></pre></div>
+<p>Obviously: create an alias for that.</p>
+<p><code>-c</code> tells emacs to create a new frame for the file, <code>-n</code> the client not to wait until the frame closes.</p>
+<h2 id="dont-close-emacs.app-on-last-window-close">Don’t close Emacs.app on last window close</h2>
+<p>I prefer the standard OS X behaviour of not closing the app when the last document closes. This also means that you don’t have to pay the hefty startup fine that spacemacs has every time. Luckily, Emacs behaviours are mostly written in elips, so you can just monkey-patch that behaviour.</p>
+<p>Just put this in your <code>dotspacemacs/user-config</code>:</p>
+<div class="sourceCode"><pre class="sourceCode lisp"><code class="sourceCode commonlisp">  (<span class="kw">defun</span><span class="fu"> handle-delete-frame-without-kill-emacs </span>(event)
+    <span class="st">&quot;Handle delete-frame events from the X server.&quot;</span>
+    (interactive <span class="st">&quot;e&quot;</span>)
+    (<span class="kw">let</span> ((frame (posn-window (event-start event)))
+          (i <span class="dv">0</span>)
+          (tail (frame-list)))
+      (while tail
+        (<span class="kw">and</span> (frame-visible-p (<span class="kw">car</span> tail))
+             (<span class="kw">not</span> (<span class="kw">eq</span> (<span class="kw">car</span> tail) frame))
+             (<span class="kw">setq</span> i (<span class="op">1+</span> i)))
+        (<span class="kw">setq</span> tail (<span class="kw">cdr</span> tail)))
+      (<span class="kw">if</span> (<span class="op">&gt;</span> i <span class="dv">0</span>)
+          (delete-frame frame <span class="kw">t</span>)
+        <span class="co">;; Not (save-buffers-kill-emacs) but instead:</span>
+        (ns-do-hide-emacs))))
+
+  (<span class="kw">when</span> (<span class="kw">eq</span> system-type &#39;darwin)
+    (advice-add &#39;handle-delete-frame :override
+                #&#39;handle-delete-frame-without-kill-emacs))</code></pre></div>
+<p>This probably better belongs into a layer.</p>
+<p>Found <a href="https://lists.gnu.org/archive/html/help-gnu-emacs/2016-01/msg00236.html">here</a>.</p>
 
       <a href="/">top<a/>
     </div>

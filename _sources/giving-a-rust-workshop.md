@@ -1,3 +1,0 @@
-# Giving a Rust workshop
-
-
