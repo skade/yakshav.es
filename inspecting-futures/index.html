@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>yakshav.es</title>
+    <link rel="stylesheet" href="/css/hack.css">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+  </head>
+  <body class="hack">
+    <div class="container">
+<h1 id="inspecting-futures">Inspecting Futures</h1>
+<p>Ever wanted to know when your futures are polled and what they return? Here’s a decorator for Futures that prints whenever that is the case.</p>
+<p>(Obviously, inner types must be <code>Debug</code>).</p>
+<div class="sourceCode"><pre class="sourceCode rust"><code class="sourceCode rust"><span class="kw">extern</span> <span class="kw">crate</span> futures;
+
+<span class="kw">use</span> std::fmt::<span class="bu">Debug</span>;
+<span class="kw">use</span> futures::<span class="op">{</span>Future, Poll<span class="op">}</span>;
+
+<span class="at">#[</span>derive<span class="at">(</span><span class="bu">Debug</span><span class="at">)]</span>
+<span class="kw">pub</span> <span class="kw">struct</span> InspectFuture&lt;T, E, F: Future&lt;Item=T, Error=E&gt;&gt;
+    <span class="kw">where</span> T: <span class="bu">Debug</span>,
+          E: <span class="bu">Debug</span> <span class="op">{</span>
+    future: F,
+    label: <span class="dt">String</span>
+<span class="op">}</span>
+
+<span class="kw">impl</span>&lt;T, E, F&gt; Future <span class="kw">for</span> InspectFuture&lt;T, E, F&gt;
+    <span class="kw">where</span> T: <span class="bu">Debug</span>,
+          E: <span class="bu">Debug</span>,
+          F: Future&lt;Item=T, Error=E&gt; <span class="op">{</span>
+    <span class="kw">type</span> Item = F::Item;
+    <span class="kw">type</span> Error = F::Error;
+
+    <span class="kw">fn</span> poll(&amp;<span class="kw">mut</span> <span class="kw">self</span>) -&gt; Poll&lt;<span class="kw">Self</span>::Item, <span class="kw">Self</span>::Error&gt; <span class="op">{</span>
+        <span class="kw">let</span> poll = <span class="kw">self</span>.future.poll();
+        <span class="pp">println!</span>(<span class="st">&quot;Future {} polled: {:?}&quot;</span>, <span class="kw">self</span>.label, poll);
+        poll
+    <span class="op">}</span>
+<span class="op">}</span>
+
+<span class="kw">pub</span> <span class="kw">trait</span> InspectExt&lt;T, E&gt;
+    <span class="kw">where</span> T: <span class="bu">Debug</span>,
+          E: <span class="bu">Debug</span>,
+          <span class="kw">Self</span>: Future&lt;Item=T, Error=E&gt; + <span class="bu">Sized</span> <span class="op">{</span>
+    <span class="kw">fn</span> inspect(<span class="kw">self</span>, label: &amp;<span class="dt">str</span>) -&gt; InspectFuture&lt;T, E, <span class="kw">Self</span>&gt;;
+<span class="op">}</span>
+
+<span class="kw">impl</span>&lt;T, E, F&gt; InspectExt&lt;T, E&gt; <span class="kw">for</span> F
+    <span class="kw">where</span> T: <span class="bu">Debug</span>,
+          E: <span class="bu">Debug</span>,
+          F: Future&lt;Item=T, Error=E&gt; <span class="op">{</span>
+    <span class="kw">fn</span> inspect(<span class="kw">self</span>, label: &amp;<span class="dt">str</span>) -&gt; InspectFuture&lt;T, E, <span class="kw">Self</span>&gt; <span class="op">{</span>
+        InspectFuture <span class="op">{</span> future: <span class="kw">self</span>, label: label.to_owned() <span class="op">}</span>
+    <span class="op">}</span>
+<span class="op">}</span></code></pre></div>
+
+      <a href="/">top<a/>
+    </div>
+  </body>
+  <script src="./prism.js"></script>
+</html>
