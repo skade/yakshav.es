@@ -2,7 +2,7 @@
 
 If you write a generic library in Rust, you will at some point
 run into the issue that you have to assert properties of your
-exported types that are _implicitly derived_ by the compiler.
+exported types that are implicitly derived by the compiler.
 
 Implicit derivation makes a trade-off: it removes a lot of
 boilerplate in exchange for the possibility to break things
