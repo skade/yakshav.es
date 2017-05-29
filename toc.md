@@ -1,5 +1,7 @@
 ## Current Shaves
 
+* [Asserting static properties in Rust](http://yakshav.es/asserting-static-properties)
+
 * [Decorating Results](http://yakshav.es/decorating-results)
 
 * [imapfilter](http://yakshav.es/imapfilter)

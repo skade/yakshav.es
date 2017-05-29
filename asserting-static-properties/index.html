@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>yakshav.es</title>
+    <link rel="stylesheet" href="/css/hack.css">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+  </head>
+  <body class="hack">
+    <div class="container">
+<h1 id="asserting-static-properties-in-rust">Asserting static properties in Rust</h1>
+<p>If you write a generic library in Rust, you will at some point run into the issue that you have to assert properties of your exported types that are <em>implicitly derived</em> by the compiler.</p>
+<p>Implicit derivation makes a trade-off: it removes a lot of boilerplate in exchange for the possibility to break things silently by accident.</p>
+<p>The three most common things falling in that category are:</p>
+<ul>
+<li>Send</li>
+<li>Sync</li>
+<li>Object safety</li>
+</ul>
+<p>But we can test these statically, by using them in our test suite. If one of the conditions we have breaks, compilation will fail.</p>
+<p>For Send and Sync, we can use the following functions:</p>
+<div class="sourceCode"><pre class="sourceCode rust"><code class="sourceCode rust"><span class="kw">struct</span> MyType <span class="op">{</span>
+  inner: <span class="dt">i32</span>
+<span class="op">}</span>
+
+<span class="kw">fn</span> _assert_send&lt;T: <span class="bu">Send</span>&gt;() <span class="op">{}</span>
+<span class="kw">fn</span> _assert_sync&lt;T: <span class="bu">Sync</span>&gt;() <span class="op">{}</span>
+
+<span class="kw">fn</span> _assertions() <span class="op">{</span>
+    _assert_send::&lt;MyType&gt;();
+    _assert_sync::&lt;MyType&gt;();
+<span class="op">}</span></code></pre></div>
+<p>Object-safety is a little harder, as we need to get hold of a place where we need it, without actually having to pass a value.</p>
+<p>This is provided by a struct and type aliases:</p>
+<div class="sourceCode"><pre class="sourceCode rust"><code class="sourceCode rust"><span class="kw">trait</span> Foo&lt;X&gt; <span class="op">{</span>
+    <span class="kw">type</span> Y;
+
+    <span class="kw">fn</span> new() -&gt; <span class="kw">Self</span> <span class="kw">where</span> <span class="kw">Self</span>: <span class="bu">Sized</span>;
+
+    <span class="kw">fn</span> call();
+<span class="op">}</span>
+
+<span class="kw">struct</span> _assert_object_safety&lt;T: ?<span class="bu">Sized</span>&gt; <span class="op">{</span>
+    inner: <span class="dt">Box</span>&lt;T&gt;
+<span class="op">}</span>
+
+<span class="kw">type</span> checker&lt;T, U&gt; = _assert_object_safety&lt;Foo&lt;T, Y=U&gt;&gt;;</code></pre></div>
+<p>Granted, the last could also be achieved by just making <code>checker</code> an alias to <code>Box&lt;Foo&lt;T, Y=U&gt;&gt;</code>, but that wouldn’t communicate intent well.</p>
+<p>Finally, check out the <code>compile-fail</code> crate for proper integration of this into your test suite.</p>
+<p>Notable mentions: The pattern for <code>_assert_send/sync</code> is lifted from Alex Crichtons <a href="https://github.com/alexcrichton/futures-rs/blob/master/futures-cpupool/src/lib.rs#L92-L97"><code>futures-cpupool</code></a> crate.</p>
+
+      <a href="/">top<a/>
+    </div>
+  </body>
+  <script src="./prism.js"></script>
+</html>
