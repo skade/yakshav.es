@@ -34,30 +34,8 @@ fn _assertions() {
 }
 ```
 
-Object-safety is a little harder, as we need to get hold of
-a place where we need it, without actually having to pass a value.
-
-This is provided by a struct and type aliases:
-
-```rust
-trait Foo<X> {
-    type Y;
-
-    fn new() -> Self where Self: Sized;
-
-    fn call();
-}
-
-struct _assert_object_safety<T: ?Sized> {
-    inner: Box<T>
-}
-
-type checker<T, U> = _assert_object_safety<Foo<T, Y=U>>;
-```
-
-Granted, the last could also be achieved by just making `checker`
-an alias to `Box<Foo<T, Y=U>>`, but that wouldn't communicate intent
-well.
+This article used to have an approach to test object safety here
+that didn't work.
 
 Finally, check out the `compile-fail` crate for proper integration of this
 into your test suite.

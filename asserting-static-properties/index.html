@@ -33,22 +33,7 @@
     _assert_send::&lt;MyType&gt;();
     _assert_sync::&lt;MyType&gt;();
 <span class="op">}</span></code></pre></div>
-<p>Object-safety is a little harder, as we need to get hold of a place where we need it, without actually having to pass a value.</p>
-<p>This is provided by a struct and type aliases:</p>
-<div class="sourceCode"><pre class="sourceCode rust"><code class="sourceCode rust"><span class="kw">trait</span> Foo&lt;X&gt; <span class="op">{</span>
-    <span class="kw">type</span> Y;
-
-    <span class="kw">fn</span> new() -&gt; <span class="kw">Self</span> <span class="kw">where</span> <span class="kw">Self</span>: <span class="bu">Sized</span>;
-
-    <span class="kw">fn</span> call();
-<span class="op">}</span>
-
-<span class="kw">struct</span> _assert_object_safety&lt;T: ?<span class="bu">Sized</span>&gt; <span class="op">{</span>
-    inner: <span class="dt">Box</span>&lt;T&gt;
-<span class="op">}</span>
-
-<span class="kw">type</span> checker&lt;T, U&gt; = _assert_object_safety&lt;Foo&lt;T, Y=U&gt;&gt;;</code></pre></div>
-<p>Granted, the last could also be achieved by just making <code>checker</code> an alias to <code>Box&lt;Foo&lt;T, Y=U&gt;&gt;</code>, but that wouldn’t communicate intent well.</p>
+<p>This article used to have an approach to test object safety here that didn’t work.</p>
 <p>Finally, check out the <code>compile-fail</code> crate for proper integration of this into your test suite.</p>
 <p>Notable mentions: The pattern for <code>_assert_send/sync</code> is lifted from Alex Crichtons <a href="https://github.com/alexcrichton/futures-rs/blob/master/futures-cpupool/src/lib.rs#L92-L97"><code>futures-cpupool</code></a> crate.</p>
 
