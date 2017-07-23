@@ -20,6 +20,8 @@
 
 * [Spoilers](http://yakshav.es/spoilers)
 
+* [A Couple of Tests](http://yakshav.es/test-page)
+
 * [yaks(1)](http://yakshav.es/yaks-1)
 
 * [yakshav.es](http://yakshav.es/yakshav.es)
