@@ -31,6 +31,7 @@ $ <span class="kw">CREATE</span> <span class="kw">SCHEMA</span> my_app;</code></
 <p>Then do the Diesel dance:</p>
 <div class="sourceCode"><pre class="sourceCode sh"><code class="sourceCode bash">$ <span class="ex">diesel</span> migration up</code></pre></div>
 <p>And start your app as you usually do.</p>
+<p>Also, notice that I passed in <code>application_name</code> to the connection, which makes PG insert that name into all log statements concerning the requests of your app.</p>
 <h2 id="leftovers">Leftovers</h2>
 <p>For some reason <code>diesel print-schema</code> doesn’t work with that setup. As it’s usually a production setup, that doesn’t matter much to me.</p>
 

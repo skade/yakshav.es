@@ -44,6 +44,8 @@ $ diesel migration up
 
 And start your app as you usually do.
 
+Also, notice that I passed in `application_name` to the connection, which makes PG insert that name into all log statements concerning the requests of your app.
+
 ## Leftovers
 
 For some reason `diesel print-schema` doesn't work with that setup. As it's usually a production setup, that doesn't matter much to me.
