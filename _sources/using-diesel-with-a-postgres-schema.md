@@ -1,12 +1,10 @@
-# Using Diesel with a PostgreSQL schema
+# Using Diesel with a PostgreSQL schema (non-invasively)
 
 ## Warning first
 
 This seems to work for me, please make sure you test your app throughly with it.
 
 ## How it works
-
-Diesel in itself has no explicit support for PostgreSQL schemas. But that doesn't mean it's not possible to use them.
 
 When using a shared PostgreSQL database, it can make sense to rely on [PostgreSQL schemas](https://www.postgresql.org/docs/9.6/static/ddl-schemas.html). Sharing a database can be useful if you want to keep things in database, but also hook multiple isolated applications to it.
 
@@ -48,5 +46,5 @@ Also, notice that I passed in `application_name` to the connection, which makes 
 
 ## Leftovers
 
-For some reason `diesel print-schema` doesn't work with that setup. As it's usually a production setup, that doesn't matter much to me.
+To print your schema with `diesel print-schema`, use the `--schema` command line argument.
 
