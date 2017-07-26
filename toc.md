@@ -22,6 +22,8 @@
 
 * [A Couple of Tests](http://yakshav.es/test-page)
 
+* [Using Diesel with a PostgreSQL schema](http://yakshav.es/using-diesel-with-a-postgres-schema)
+
 * [yaks(1)](http://yakshav.es/yaks-1)
 
 * [yakshav.es](http://yakshav.es/yakshav.es)
