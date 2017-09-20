@@ -1,0 +1,41 @@
+body{
+  font: 18px/1.4 system-ui, sans-serif;
+  margin: auto;
+  max-width: 40em;
+  padding: 1em;
+}
+
+h1, h2, h3, h4, h5, h6{
+  line-height: normal;
+}
+
+img, video{
+  max-width: 100%;
+}
+
+code{
+  font: 0.8em Monaco, monospace;
+}
+
+pre{
+  background-color: ghostwhite;
+  overflow-x: auto;
+  padding: 1em;
+}
+
+blockquote{
+  color: dimgray;
+  font-style: italic;
+}
+
+@media (max-width: 375px) {
+  body {
+    font-size: 0.9em;
+  }
+}
+@media (max-width: 320px) {
+  body {
+    font-size: 0.8em;
+  }
+}
+
