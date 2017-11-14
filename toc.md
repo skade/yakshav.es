@@ -16,11 +16,15 @@
 
 * [Replacing violent IT vocabulary for fun and profit](http://yakshav.es/replacements-for-violent-it-vocabulary)
 
+* [So much space](http://yakshav.es/so-much-space)
+
 * [spacemacs](http://yakshav.es/spacemacs)
 
 * [Spoilers](http://yakshav.es/spoilers)
 
 * [A Couple of Tests](http://yakshav.es/test-page)
+
+* [Donald Knuth - The Patron Saint of Yak Shaves](http://yakshav.es/the-patron-saint-of-yakshaves)
 
 * [Using Diesel with a PostgreSQL schema (non-invasively)](http://yakshav.es/using-diesel-with-a-postgres-schema)
 
