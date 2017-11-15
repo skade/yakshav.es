@@ -48,7 +48,7 @@ I'm trying to make this whole thing a bit more thrilling, so I will let you gues
 
 Yak shave 4: Design a font
 
-Fonts need to be authored. Usually, they are described in some vector description, often Bézier curves. This is fairly standard and not an innovation of Knuth. _But_, he wrote a description language for that, along with an interpreter to turn this descriptions into proper font files. This is [METAFONT](https://en.wikipedia.org/wiki/Metafont). It's not strictly part of TeX, it's just that the Yak that happened to stand close.
+Fonts need to be authored. Usually, they are described in some vector description, often Bézier curves. This is fairly standard and not an innovation of Knuth. _But_, he wrote a description language for that, along with an interpreter to turn this descriptions into proper font files. This is [METAFONT](https://en.wikipedia.org/wiki/Metafont). It's not strictly part of TeX, it's just that the Yak happened to stand close.
 
 Yak shave 5: Write an authoring tool for fonts
 
@@ -59,7 +59,7 @@ Another side-note: both TeX and METAFONT still see releases, at a slow pace. TeX
 Yak shave 6: Come up with your own versioning scheme  
 Yak shave 7: Avoid adoption of it for greater good
 
-We're not done yet. We can layout text (and other things), but where do we convert it to? Now, everyone knows the horror printers invoke, so no one wants to deal with those directly. Classic TeX instead converts things to [DVI](https://en.wikipedia.org/wiki/Device_independent_file_format), the "device independent" format. I don't know many details about it, except what's on the wiki page, which feels the need to specifically point out that "DVI is not a document encryption format". It is again a stack-based language (in contrast to PostScript not turing complete), which can than be interpreted through a driver, which would then send that to whatever target (a printer, PDF or such). It was designed by...
+We're not done yet. We can layout text (and other things), but where do we convert it to? Now, everyone knows the horror printers invoke, so no one wants to deal with those directly. Classic TeX instead converts things to [DVI](https://en.wikipedia.org/wiki/Device_independent_file_format), the "device independent" format. I don't know many details about it, except what's on the wiki page, which feels the need to specifically point out that "DVI is not a document encryption format". It is again a stack-based language (in contrast to PostScript not turing complete), which can then be interpreted through a driver, which would then send that to whatever target (a printer, PDF or such). It was designed by...
 
 David R. Fuchs, Knuth just wrote the implementation.
 
@@ -83,7 +83,7 @@ Being active in a language that has lingo built around "Rust", "Cargo" and "mani
 
 Now, the community also wants to evolve TeX: a lot has changed over the years in technology, so, for example, you'd like to use modern font formats, directly write to modern output formats or use this new UTF-8 thingy. For that, there are specialised TeX interpreters, such as `pdf(la)tex`, `lua(la)tex` and `xe(la)tex`. There's a problem here: you are not allowed to change TeX and distribute [it under that name](https://en.wikipedia.org/wiki/TeX#License). The thinking here is that if you have a `tex` binary, you can compile any valid TeX from the past and from the future.
 
-The first issue on that road is that WEB isn't really a popular programming language, PASCAL either and running it on modern systems is a bit of a pain. Which means...
+The first issue on that road is that WEB isn't really a popular programming language, neither is PASCAL and running it on modern systems is a bit of a pain. Which means...
 
 Community yak shave 2: Transpile WEB to C and work from there
 
