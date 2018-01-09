@@ -16,6 +16,8 @@
 
 * [Replacing violent IT vocabulary for fun and profit](http://yakshav.es/replacements-for-violent-it-vocabulary)
 
+* [My Rust 2018 wishlist](http://yakshav.es/rust-2018)
+
 * [So much space](http://yakshav.es/so-much-space)
 
 * [spacemacs](http://yakshav.es/spacemacs)
