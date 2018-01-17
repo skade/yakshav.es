@@ -16,6 +16,8 @@
 
 * [Replacing violent IT vocabulary for fun and profit](http://yakshav.es/replacements-for-violent-it-vocabulary)
 
+* [My personal Rust 2017 retrospective](http://yakshav.es/rust-2017-retrospective)
+
 * [2018: The year we learn Rust 1.0](http://yakshav.es/rust-2018)
 
 * [So much space](http://yakshav.es/so-much-space)
