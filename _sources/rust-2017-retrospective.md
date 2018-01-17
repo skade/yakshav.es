@@ -45,6 +45,21 @@ I've given a couple of talks this year, some of which don't have a video :).
 * Open Source Business Alliance: Rust (5 min)
 * Rust Oslo: Why is Rust successful? (50 min)
 
+## The YouTube channel
+
+I tried to make [our YouTube Channel](https://www.youtube.com/c/rustvideos) _the_ one-stop resource
+to find all videos about Rust on YouTube. That has worked.
+
+With more then 5000 subscribers and constant growth, it hosts all videos of all Rust conferences.
+
+More about that later.
+
+## The Rust Herald
+
+I started the [Rust Herald](https://herald.community.rs) as a kind of a community-owned channel
+last year. It didn't really catch on, so either I have to continue promoting it or shut it down.
+It's probably going to be shut down unless someone wants to take it over.
+
 ## Code
 
 Most of my code ended up being experiments on my [GitHub](https://github.com/skade). I'm currently
@@ -56,6 +71,12 @@ Two projects I started and want to end over the year are
 small book about futures, implementing a simple executor and ["the memory is 
 hot lava"](https://github.com/skade/the-memory-is-hot-lava),
 a zero-knowledge introduction into memory using Rust and drawings.
+
+## Community team
+
+Community team was a bit of a sideshow this year, to admit, with two conferences to
+work on and all. Obviously, I still answered email and contact people, but I couldn't
+get a checkmark on something huge. But lots of tiny bits also make an impact :).
 
 ## Professionally
 
@@ -70,6 +91,9 @@ Material can be found [here](https://github.com/skade/rust-three-days-course).
 I've been really happy to work with all the individuals in the Rust team over the last year.
 
 The project from the outside might sometimes feel like a rather homegenous group, but it really
-isn't. This might sound weird, but I want to explicitely point out how disagreement and complaints
-are handled: open and assertive.
+isn't. That means there is disagreement and conflict, but I feel like we have all found good
+was to handle them. This makes it pleasurable to work within the team: even if problems aren't
+fixed right away, it is always okay to voice them and people are taken seriously.
 
+Also, all the community workers around the globe, running meetups, doing translations and so
+on: you're doing a great work! You are the backbone of Rusts success.
