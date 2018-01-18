@@ -12,7 +12,7 @@ visited and managed the Rust Hack & Learn Berlin as much as I wanted.
 
 I'll try to do that more this year ;).
 
-## RustFest Kyiv & Zurich
+## RustFest [Kyiv](http://2017.rustfest.eu/) & [Zurich](http://zurich.rustfest.eu/)
 
 RustFest is growing nicely and I've been involved. Even though I can claim
 to have started RustFest, speaking about them in those terms is always hard:
@@ -22,7 +22,7 @@ own ways of doing things and are so great at organising stuff.
 I was very happy that we could also serve more (geographically) eastern
 community with the Kyiv one, travel for large crowds is still an issue.
 
-RustFest teams, you rock!
+[RustFest teams](http://2017.rustfest.eu/about/), you rock!
 
 Off to [Paris](http://paris.rustfest.eu), next!
 
