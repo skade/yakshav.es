@@ -91,8 +91,9 @@ Material can be found [here](https://github.com/skade/rust-three-days-course).
 I've been really happy to work with all the individuals in the Rust team over the last year.
 
 The project from the outside might sometimes feel like a rather homogenous 
-group, but it really isn't. This sometimes introduces friction, but it also helps us to constantly 
-adapt, especially with the current growth of the community.
+group, but it really isn't. This is great, it helps us to constantly 
+adapt and improve, especially with the current growth of the community. Issues are raised
+and cleared regularly, making it a joy to work with.
 
 Also, all the community workers around the globe, running meetups, doing translations and so
 on: you're doing a great work! You are the backbone of Rust's success.
