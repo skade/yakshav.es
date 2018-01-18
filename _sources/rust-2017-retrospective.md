@@ -2,8 +2,8 @@
 
 I noticed recently that 2017 was such an active year in Rust for me that
 I feel like I want to note stuff down. Especially my community work
-rarely leaves lasting artifacts, so noting them down makes is an attempt
-to make it.
+rarely leaves lasting artifacts, so noting them down is an attempt
+to keep them around.
 
 ## Rust Hack & Learn Berlin
 
