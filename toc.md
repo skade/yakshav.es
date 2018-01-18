@@ -18,6 +18,8 @@
 
 * [My personal Rust 2017 retrospective](http://yakshav.es/rust-2017-retrospective)
 
+* [Log of my Rust 2018 work](http://yakshav.es/rust-2018-log)
+
 * [2018: The year we learn Rust 1.0](http://yakshav.es/rust-2018)
 
 * [So much space](http://yakshav.es/so-much-space)
