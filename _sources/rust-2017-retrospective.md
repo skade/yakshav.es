@@ -93,7 +93,7 @@ I've been really happy to work with all the individuals in the Rust team over th
 The project from the outside might sometimes feel like a rather homogenous 
 group, but it really isn't. This is great, it helps us to constantly 
 adapt and improve, especially with the current growth of the community. Issues are raised
-and cleared regularly, making it a joy to work with.
+and cleared regularly, making the project a joy to work with.
 
 Also, all the community workers around the globe, running meetups, doing translations and so
 on: you're doing a great work! You are the backbone of Rust's success.
