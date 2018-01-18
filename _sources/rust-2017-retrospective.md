@@ -78,6 +78,9 @@ Community team was a bit of a sideshow this year, to admit, with two conferences
 work on and all. Obviously, I still answered email and contact people, but I couldn't
 get a checkmark on something huge. But lots of tiny bits also make an impact :).
 
+That has changed during the end of the year, with new leadership and a lot of changes
+coming up! Stay tuned!
+
 ## Professionally
 
 I've grown a small Rust business, giving training. I gave a total of 6 
