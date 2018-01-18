@@ -89,6 +89,9 @@ over the last year. One of the trainings was an advanced engineer training at
 Mozilla.
 Material can be found [here](https://github.com/skade/rust-three-days-course).
 
+If you want to hire me or my colleagues for training or work, please contact us at
+[asquera](mailto:info@asquera.de).
+
 ## A personal thanks
 
 I've been really happy to work with all the individuals in the Rust team over the last year.
