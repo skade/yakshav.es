@@ -90,10 +90,9 @@ Material can be found [here](https://github.com/skade/rust-three-days-course).
 
 I've been really happy to work with all the individuals in the Rust team over the last year.
 
-The project from the outside might sometimes feel like a rather homegenous group, but it really
-isn't. That means there is disagreement and conflict, but I feel like we have all found good
-was to handle them. This makes it pleasurable to work within the team: even if problems aren't
-fixed right away, it is always okay to voice them and people are taken seriously.
+The project from the outside might sometimes feel like a rather homogenous 
+group, but it really isn't. This sometimes introduces friction, but it also helps us to constantly 
+adapt, especially with the current growth of the community.
 
 Also, all the community workers around the globe, running meetups, doing translations and so
-on: you're doing a great work! You are the backbone of Rusts success.
+on: you're doing a great work! You are the backbone of Rust's success.
