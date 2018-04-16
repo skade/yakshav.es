@@ -2,6 +2,8 @@
 
 For reasons of transparency, I started writing a public list of my FOSS work.
 
+It's also a bit of a tracker for myself, as I tend to forget things.
+
 ## Talks and Lectures
 
 * HTWG Konstanz: Was steckt hinter "Concurrency without Fear?" (90 min)
@@ -19,6 +21,17 @@ For reasons of transparency, I started writing a public list of my FOSS work.
 * RustFest Paris/Rome
 * Accounting and moral support RubyOnIce
 * Accounting and moral support IsleOfRuby
+
+## Conference attendance in project capacity
+
+* Embedded World 2018 (3 days)
+* ACCU 2018 (3 days)
+* Isle of Ruby (3 days)
+* Ruby on Ice (3 days)
+
+## Additional work
+
+* Member of the board of Ruby Berlin e.V.
 
 ## Counters
 

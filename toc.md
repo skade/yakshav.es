@@ -4,6 +4,8 @@
 
 * [Decorating Results](http://yakshav.es/decorating-results)
 
+* [Log of my 2018 private FOSS community work](http://yakshav.es/foss-2018-log)
+
 * [imapfilter](http://yakshav.es/imapfilter)
 
 * [Inspecting Futures](http://yakshav.es/inspecting-futures)
@@ -17,8 +19,6 @@
 * [Replacing violent IT vocabulary for fun and profit](http://yakshav.es/replacements-for-violent-it-vocabulary)
 
 * [My personal Rust 2017 retrospective](http://yakshav.es/rust-2017-retrospective)
-
-* [Log of my 2018 private FOSS community work](http://yakshav.es/rust-2018-log)
 
 * [2018: The year we learn Rust 1.0](http://yakshav.es/rust-2018)
 
