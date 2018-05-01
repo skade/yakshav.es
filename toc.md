@@ -1,40 +1,40 @@
 ## Current Shaves
 
-* [Asserting static properties in Rust](http://yakshav.es/asserting-static-properties)
+* [My personal Rust 2017 retrospective](//yakshav.es/rust-2017-retrospective)
 
-* [Decorating Results](http://yakshav.es/decorating-results)
+* [laze.rs](//yakshav.es/lazers)
 
-* [Log of my 2018 private FOSS community work](http://yakshav.es/foss-2018-log)
+* [Inspecting Futures](//yakshav.es/inspecting-futures)
 
-* [imapfilter](http://yakshav.es/imapfilter)
+* [yakshav.es](//yakshav.es/yakshav.es)
 
-* [Inspecting Futures](http://yakshav.es/inspecting-futures)
+* [Spoilers](//yakshav.es/spoilers)
 
-* [laze.rs](http://yakshav.es/lazers)
+* [Replacing violent IT vocabulary for fun and profit](//yakshav.es/replacements-for-violent-it-vocabulary)
 
-* [My mobile working setup](http://yakshav.es/mobile-working-setup)
+* [So much space](//yakshav.es/so-much-space)
 
-* [Positivity in Coding](http://yakshav.es/positivity-in-coding)
+* [yaks(1)](//yakshav.es/yaks-1)
 
-* [Replacing violent IT vocabulary for fun and profit](http://yakshav.es/replacements-for-violent-it-vocabulary)
+* [My mobile working setup](//yakshav.es/mobile-working-setup)
 
-* [My personal Rust 2017 retrospective](http://yakshav.es/rust-2017-retrospective)
+* [Decorating Results](//yakshav.es/decorating-results)
 
-* [2018: The year we learn Rust 1.0](http://yakshav.es/rust-2018)
+* [Positivity in Coding](//yakshav.es/positivity-in-coding)
 
-* [So much space](http://yakshav.es/so-much-space)
+* [2018: The year we learn Rust 1.0](//yakshav.es/rust-2018)
 
-* [spacemacs](http://yakshav.es/spacemacs)
+* [Using Diesel with a PostgreSQL schema (non-invasively)](//yakshav.es/using-diesel-with-a-postgres-schema)
 
-* [Spoilers](http://yakshav.es/spoilers)
+* [A Couple of Tests](//yakshav.es/test-page)
 
-* [A Couple of Tests](http://yakshav.es/test-page)
+* [Asserting static properties in Rust](//yakshav.es/asserting-static-properties)
 
-* [Donald Knuth - The Patron Saint of Yak Shaves](http://yakshav.es/the-patron-saint-of-yakshaves)
+* [imapfilter](//yakshav.es/imapfilter)
 
-* [Using Diesel with a PostgreSQL schema (non-invasively)](http://yakshav.es/using-diesel-with-a-postgres-schema)
+* [spacemacs](//yakshav.es/spacemacs)
 
-* [yaks(1)](http://yakshav.es/yaks-1)
+* [Donald Knuth - The Patron Saint of Yak Shaves](//yakshav.es/the-patron-saint-of-yakshaves)
 
-* [yakshav.es](http://yakshav.es/yakshav.es)
+* [Log of my 2018 private FOSS community work](//yakshav.es/foss-2018-log)
 
