@@ -3,5 +3,5 @@
    name = File.basename(f, ".md") 
    title = File.open(f).each_line.first.gsub("# ", '').strip
 %>
-* [<%= title %>](//yakshav.es/<%= name %>)
+* [<%= title %>](https://yakshav.es/<%= name %>)
 <% end %>
