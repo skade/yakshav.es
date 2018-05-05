@@ -36,5 +36,7 @@
 
 * [Donald Knuth - The Patron Saint of Yak Shaves](https://yakshav.es/the-patron-saint-of-yakshaves)
 
+* [How I came to Rust](https://yakshav.es/how-I-came-to-rust)
+
 * [Log of my 2018 private FOSS community work](https://yakshav.es/foss-2018-log)
 
