@@ -1,3 +1,7 @@
+---
+title: Replacing violent IT vocabulary for fun and profit
+---
+
 # Replacing violent IT vocabulary for fun and profit
 
 IT has a lot of unnecessary, violent, vocabulary. This is bad for multiple reasons:

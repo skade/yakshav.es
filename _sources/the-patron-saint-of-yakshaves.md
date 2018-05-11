@@ -1,3 +1,7 @@
+---
+title: Donald Knuth - The Patron Saint of Yak Shaves
+---
+
 # Donald Knuth - The Patron Saint of Yak Shaves
 
 In 2015, I gave a talk in which I called [Donald Knuth the Patron Saint of Yak Shaves](https://speakerdeck.com/skade/tex-the-ultimate-yakshave). The reason is that Donald Knuth achieved the most perfect and long-running yak shave: TeX.

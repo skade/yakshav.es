@@ -1,3 +1,7 @@
+---
+title: spacemacs
+---
+
 # spacemacs
 
 I'm currently trying out [spacemacs](http://spacemacs.org).

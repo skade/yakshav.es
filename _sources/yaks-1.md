@@ -1,3 +1,7 @@
+---
+title: yaks(1)
+---
+
 # yaks(1)
 
 `yaks` is a simple command to start editing and publishing files from yakshav.es from any point in the shell.

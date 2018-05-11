@@ -1,3 +1,7 @@
+---
+title: Using Diesel with a PostgreSQL schema (non-invasively)
+---
+
 # Using Diesel with a PostgreSQL schema (non-invasively)
 
 ## Warning first

@@ -1,3 +1,7 @@
+---
+title: laze.rs
+---
+
 # laze.rs
 
 Website: [laze.rs](http://laze.rs/)

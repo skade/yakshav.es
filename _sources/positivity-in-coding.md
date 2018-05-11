@@ -1,3 +1,7 @@
+---
+title: Positivity in Coding
+---
+
 # Positivity in Coding
 
 Far too much time is spent complaining about how everything is broken and computers suck.

@@ -1,3 +1,7 @@
+---
+title: Decorating Results
+---
+
 # Decorating Results
 
 Rust has many ways to make `Result`s ergonomic, from `try!` to `From` and friends. Here's another one that is useful when chaining is appropriate and all errors can be passed through while you want to work on `Ok` values: just implement a special trait for your specific `Result` type to decorate it. This allows the user to do all general operations on the `Result` and just deconstruct it at the end.

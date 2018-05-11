@@ -1,3 +1,7 @@
+---
+title: My mobile working setup
+---
+
 # My mobile working setup
 
 I recently changed my working setup for work. I'd like to document it here.

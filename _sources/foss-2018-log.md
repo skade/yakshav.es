@@ -1,3 +1,7 @@
+---
+title: Log of my 2018 private FOSS community work
+---
+
 # Log of my 2018 private FOSS community work
 
 For reasons of transparency, I started writing a public list of my FOSS work.
@@ -13,6 +17,8 @@ It's also a bit of a tracker for myself, as I tend to forget things.
 * ACCU 2018: Lightning talk: sl(1) and verbal error messages in Rust (5 min)
 * IsleOfRuby: Lightning talk: sl(1), verbal error messages in Rust and the dark side of Matz (5 min)
 * IsleOfRuby: Fishbowl (30 min)
+* HTWG Konstanz: Sicherheitsaspekte von Rust (90 min)
+* Uni Linz: Security aspects of Rust (90 min)
 
 ## Orga-Work
 

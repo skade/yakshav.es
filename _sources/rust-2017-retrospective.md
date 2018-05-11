@@ -1,3 +1,7 @@
+---
+title: My personal Rust 2017 retrospective
+---
+
 # My personal Rust 2017 retrospective
 
 I noticed recently that 2017 was such an active year in Rust for me that

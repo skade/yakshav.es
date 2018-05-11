@@ -1,3 +1,7 @@
+---
+title: Spoilers
+---
+
 # Spoilers
 
 I don't care about spoilers, be it for video games or movies. I'm quite happy

@@ -1,3 +1,7 @@
+---
+title: Inspecting Futures
+---
+
 # Inspecting Futures
 
 Ever wanted to know when your futures are polled and what they return? Here's a decorator for Futures that prints whenever that is the case.

@@ -1,42 +1,42 @@
 ## Current Shaves
 
-* [My personal Rust 2017 retrospective](https://yakshav.es/rust-2017-retrospective)
+* [---](https://yakshav.es/asserting-static-properties)
 
-* [laze.rs](https://yakshav.es/lazers)
+* [---](https://yakshav.es/rust-2018)
 
-* [Inspecting Futures](https://yakshav.es/inspecting-futures)
+* [---](https://yakshav.es/yaks-1)
 
-* [yakshav.es](https://yakshav.es/yakshav.es)
+* [---](https://yakshav.es/spacemacs)
 
-* [Spoilers](https://yakshav.es/spoilers)
+* [---](https://yakshav.es/spoilers)
 
-* [Replacing violent IT vocabulary for fun and profit](https://yakshav.es/replacements-for-violent-it-vocabulary)
+* [---](https://yakshav.es/rust-2017-retrospective)
 
-* [So much space](https://yakshav.es/so-much-space)
+* [---](https://yakshav.es/positivity-in-coding)
 
-* [yaks(1)](https://yakshav.es/yaks-1)
+* [---](https://yakshav.es/so-much-space)
 
-* [My mobile working setup](https://yakshav.es/mobile-working-setup)
+* [---](https://yakshav.es/yakshav.es)
 
-* [Decorating Results](https://yakshav.es/decorating-results)
+* [---](https://yakshav.es/mobile-working-setup)
 
-* [Positivity in Coding](https://yakshav.es/positivity-in-coding)
+* [---](https://yakshav.es/using-diesel-with-a-postgres-schema)
 
-* [2018: The year we learn Rust 1.0](https://yakshav.es/rust-2018)
+* [---](https://yakshav.es/decorating-results)
 
-* [Using Diesel with a PostgreSQL schema (non-invasively)](https://yakshav.es/using-diesel-with-a-postgres-schema)
+* [---](https://yakshav.es/test-page)
 
-* [A Couple of Tests](https://yakshav.es/test-page)
+* [---](https://yakshav.es/replacements-for-violent-it-vocabulary)
 
-* [Asserting static properties in Rust](https://yakshav.es/asserting-static-properties)
+* [---](https://yakshav.es/how-I-came-to-rust)
 
-* [imapfilter](https://yakshav.es/imapfilter)
+* [---](https://yakshav.es/foss-2018-log)
 
-* [spacemacs](https://yakshav.es/spacemacs)
+* [---](https://yakshav.es/imapfilter)
 
-* [Donald Knuth - The Patron Saint of Yak Shaves](https://yakshav.es/the-patron-saint-of-yakshaves)
+* [---](https://yakshav.es/lazers)
 
-* [How I came to Rust](https://yakshav.es/how-I-came-to-rust)
+* [---](https://yakshav.es/the-patron-saint-of-yakshaves)
 
-* [Log of my 2018 private FOSS community work](https://yakshav.es/foss-2018-log)
+* [---](https://yakshav.es/inspecting-futures)
 

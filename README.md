@@ -1,3 +1,7 @@
+---
+title: yakshav.es
+---
+
 # yakshav.es
 
 yakshav.es is [my](http://skade.me/profile.html) personal snippet space. It's for content that doesn't really merit a longform blog post and stuff that's longer than a tweet.

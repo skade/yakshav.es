@@ -1,3 +1,7 @@
+---
+title: How I came to Rust
+---
+
 # How I came to Rust
 
 The #rustreach program asked people to write down how they came to Rust and I'm happy to do that. Entering a community or a space is always a moment of orientation process and I hope I can give some insight into that.

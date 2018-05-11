@@ -1,3 +1,7 @@
+---
+title: imapfilter
+---
+
 # imapfilter
 
 I use `imapfilter` to sort my email.

@@ -1,3 +1,7 @@
+---
+title: yakshav.es
+---
+
 # yakshav.es
 
 yakshav.es is my personal space to scribble, extend and note down. It is intended to do this in a very simple way: there is no metadata, just a bunch of files in a directory. Every file is compiled so that it can be served from a standard webserver where it is reachable under its name.

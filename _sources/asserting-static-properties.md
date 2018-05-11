@@ -1,3 +1,7 @@
+---
+title: Asserting static properties in Rust
+---
+
 # Asserting static properties in Rust
 
 If you write a generic library in Rust, you will at some point
