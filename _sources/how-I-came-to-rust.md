@@ -55,4 +55,4 @@ When you start #rustreach, you'll be taken into a project that is written in Rus
 
 I would still like to encourage you to check us out a little. While there's no "formal" way to join most of the teams, it's mostly easy: show up and be willing to work on tasks. Or, even better, if you have a subject that is not covered by any of the groups, form one! It isn't even _as_ huge of an amount of work as you may think.
 
-The barriers are much lower then you might think and tasks are a plenty!
+The barriers are much lower then you might think and tasks are aplenty!
