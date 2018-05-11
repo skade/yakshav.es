@@ -1,7 +1,7 @@
 ## Current Shaves
 <% Dir["_sources/*.md"].each do |f|
    name = File.basename(f, ".md") 
-   title = File.open(f).each_line.first.gsub("# ", '').strip
+   title = File.open(f).each_line.drop(4).first.gsub("# ", '').strip
 %>
 * [<%= title %>](https://yakshav.es/<%= name %>)
 <% end %>

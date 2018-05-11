@@ -1,42 +1,42 @@
 ## Current Shaves
 
-* [---](https://yakshav.es/asserting-static-properties)
+* [Asserting static properties in Rust](https://yakshav.es/asserting-static-properties)
 
-* [---](https://yakshav.es/rust-2018)
+* [2018: The year we learn Rust 1.0](https://yakshav.es/rust-2018)
 
-* [---](https://yakshav.es/yaks-1)
+* [yaks(1)](https://yakshav.es/yaks-1)
 
-* [---](https://yakshav.es/spacemacs)
+* [spacemacs](https://yakshav.es/spacemacs)
 
-* [---](https://yakshav.es/spoilers)
+* [Spoilers](https://yakshav.es/spoilers)
 
-* [---](https://yakshav.es/rust-2017-retrospective)
+* [My personal Rust 2017 retrospective](https://yakshav.es/rust-2017-retrospective)
 
-* [---](https://yakshav.es/positivity-in-coding)
+* [Positivity in Coding](https://yakshav.es/positivity-in-coding)
 
-* [---](https://yakshav.es/so-much-space)
+* [So much space](https://yakshav.es/so-much-space)
 
-* [---](https://yakshav.es/yakshav.es)
+* [yakshav.es](https://yakshav.es/yakshav.es)
 
-* [---](https://yakshav.es/mobile-working-setup)
+* [My mobile working setup](https://yakshav.es/mobile-working-setup)
 
-* [---](https://yakshav.es/using-diesel-with-a-postgres-schema)
+* [Using Diesel with a PostgreSQL schema (non-invasively)](https://yakshav.es/using-diesel-with-a-postgres-schema)
 
-* [---](https://yakshav.es/decorating-results)
+* [Decorating Results](https://yakshav.es/decorating-results)
 
-* [---](https://yakshav.es/test-page)
+* [A Couple of Tests](https://yakshav.es/test-page)
 
-* [---](https://yakshav.es/replacements-for-violent-it-vocabulary)
+* [Replacing violent IT vocabulary for fun and profit](https://yakshav.es/replacements-for-violent-it-vocabulary)
 
-* [---](https://yakshav.es/how-I-came-to-rust)
+* [How I came to Rust](https://yakshav.es/how-I-came-to-rust)
 
-* [---](https://yakshav.es/foss-2018-log)
+* [Log of my 2018 private FOSS community work](https://yakshav.es/foss-2018-log)
 
-* [---](https://yakshav.es/imapfilter)
+* [imapfilter](https://yakshav.es/imapfilter)
 
-* [---](https://yakshav.es/lazers)
+* [laze.rs](https://yakshav.es/lazers)
 
-* [---](https://yakshav.es/the-patron-saint-of-yakshaves)
+* [Donald Knuth - The Patron Saint of Yak Shaves](https://yakshav.es/the-patron-saint-of-yakshaves)
 
-* [---](https://yakshav.es/inspecting-futures)
+* [Inspecting Futures](https://yakshav.es/inspecting-futures)
 
