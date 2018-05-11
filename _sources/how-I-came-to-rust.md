@@ -13,6 +13,7 @@ My path is highly individual, but yours will be, too. Own that. It's great.
 I am certainly an early adopter of Rust. I picked it up as a hobby in the early versions, Rust 0.4 was the first version I tried out and around version 0.6, I started writing notable pieces of software in it. That was in 2013. Rust - for me - was the chance to see a language being built. I had no interested in writing a programming language, but I was curious how the process works. I'm still amazsed on how agressively languages can change when compatibilty is no issue. Back then, _all Rust code in existence_ would break _regularly_.
 
 But there were two things I found very notable:
+
 * The openness of the discussion and the ease of participation
 * The air around the community to build something to _use_
 
