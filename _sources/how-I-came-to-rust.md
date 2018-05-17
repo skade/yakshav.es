@@ -17,25 +17,27 @@ I am certainly an early adopter of Rust. I picked it up as a hobby in the early 
 But there were two things I found very notable:
 
 * The openness of the discussion and the ease of participation
-* The air around the community to build something to _use_
+* The air around the community to build something for wide usage
 
-Rust was always focused on application ofs known techniques instead of being a pure research language first (obviously, the process means that you need to come up with your own things). It was interesting to watch the process and be able to code along.
+Rust was always focused on building a practical programming language more then a research language (obviously, the process means of integrating techniques means that you need to come up with your own things). It was interesting to watch the process and be able to code along.
 
 ## Rust Berlin
 
-In 2014, I got in touch with @johannh about running a meetup. We were both curious about Rust, but wanted to get in touch with other people who were interested. So we formed Rust Berlin and quickly thereafter the [Rust Hack & Learn within OpenTechSchool](https://www.meetup.com/opentechschool-berlin/), where - instead of coming and listening to a talk - you could pass by and hack on your own project. The Hack & Learn is still running every other week.
+In 2014, I got in touch with @johannh about running a meetup. We were both curious about Rust, but wanted to get in touch with other people who were interested. We both had previous experiences with community events. So we formed Rust Berlin and quickly thereafter the [Rust Hack & Learn within OpenTechSchool](https://www.meetup.com/opentechschool-berlin/), where - instead of coming and listening to a talk - you could pass by and hack on your own project. The Hack & Learn is still running every other week!
 
-We later went on to co-found [RustFest](https://blog.rustfest.eu/past_events/) with others. The RustFests are running every half year, moving from town to town.
+We later went on to co-found [RustFest](https://blog.rustfest.eu/past_events/) [with others](http://2016.rustfest.eu/about/). The RustFests are now running every half year, moving from town to town, with now more then 300 attendees.
+ 
+![RustFest 2016 in Berlin, by https://fionacastineira.com/](/images/1-2016-berlin.png)
 
 ## Joining the Rust project
 
 There's a difference between programming Rust and being involved in the Rust project. For me, the difference is that project work somewhat goes above the sphere of your personal projects. Rust Berlin, I wouldn't consider a part of my project work. Helping other people out with my experiences, I do. Shortly after the 1.0 release, Steve contacted me whether I want to take part in the newly formed community team.
 
-I was very impressed by this. Most projects don't have an explicit community team. Sure, there's community workers, but they are rarely integrated into the project on an offical basis. Being recognised for my previous experience in that area and my opinions on a project scale had never happened to me, though. Also, the ability to think about FOSS community issues in a far wider scale than I had before was just too teasing to be true. I accepted :).
+I was very impressed by this. Most projects don't have an explicit community team. Sure, there's community workers, but they are rarely integrated into the project on an offical basis. Being recognised for [my previous experience in that area](https://skade.me/profile.html#community-person) and by a project had never happened to me, though. Looking back, this is also a strength of the Rust project: actively reaching out to people to participate. Beyond that, the ability to think about FOSS community issues in a far wider scale than I had before was just too teasing to be true. I accepted :).
 
 ## Why I'm staying
 
-Your path into Rust might be different to mine! So next, I'd like to tell you why I am still around. And that's because I think the Rust project gets a lot of things _right_. Some of these things weren't always right and there's always things that need to be fixed. A previous draft of this text had included some of the things that were broken. I decided to remove them, because they are _fixed_. For me, Rust - the project - is based on a couple of things:
+Your path into Rust will definitely be different to mine! So next, I'd like to tell you why I am still around. And that's because I think the Rust project gets a lot of things _right_. Some of these things weren't always right and there's always things that need to be fixed. A previous draft of this text had included some of the things that were broken. I decided to remove them, because they are _fixed_. For me, Rust - the project - is based on a couple of things:
 
 * Work-focus. Steves invitation mail to me contained the sentence "we need to productively move forward". That hit the right note. Working on the Rust project is not a merit badge for me, it's a place where I _want_ to spend my effort for a while.
 * Structure, and structural change, is seen as a solution. The organisation structure of the project frequently changes, on need.
@@ -46,6 +48,7 @@ Your path into Rust might be different to mine! So next, I'd like to tell you wh
 * Rust has working complaint structures. If I have a problem with how things are going, I know where to send them. I know someone will reply with appropriate urgency. (A week or so, we are hobbyists)
 * Issues, especially social ones, will be dealt with. At some point, obviously, but we work on things. I like the way the project is improving at a steady pace and not rushing things.
 * Actively working for a good tone and balance. Rust has people of many cultures and communication issues arise from that. I don't want to make that sound like I'm the master of this, I have been called out multiple times for ways of arguing or tone. This is great, it starts a conversation and allows to check behaviour.
+* Meeting culture! Most people have and aversion to meetings (and probably for good reasons), but I believe we get many things right: meetings are short, punctual, productive, pre-planned and on point. People's time is precious, especially hobbyist time!
 * No "you must be this tall to be a project member". If you want to start working on something on the project, in any capacity, let us know!
 * We appreciate that people have lives outside of the project. You can only spend 4 hours a month? Cool, let's make sure they count!
 
