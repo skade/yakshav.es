@@ -19,6 +19,7 @@ It's also a bit of a tracker for myself, as I tend to forget things.
 * IsleOfRuby: Fishbowl (30 min)
 * HTWG Konstanz: Sicherheitsaspekte von Rust (90 min)
 * Uni Linz: Security aspects of Rust (90 min)
+* Rust impl days: conf planning workshop (8 hours)
 
 ## Orga-Work
 
@@ -34,6 +35,12 @@ It's also a bit of a tracker for myself, as I tend to forget things.
 * ACCU 2018 (3 days)
 * Isle of Ruby (3 days)
 * Ruby on Ice (3 days)
+* RustFest Paris/impl days (5 days)
+  - preparation/errands (1 day)
+  - talk day: misc tasks, @rustfest twitter account (1 day)
+  - workshop day: assistance RustBridge (1 day)
+  - impl days Monday: errands, conference planning workshop (1 day)
+  - impl days Tuesday: writup, office hours (1 day)
 
 ## Additional work
 
@@ -41,4 +48,4 @@ It's also a bit of a tracker for myself, as I tend to forget things.
 
 ## Counters
 
-* Rust Hack & Learn: 4 (roughly 2,5 hours each)
+* Rust Hack & Learn: 5 (roughly 2,5 hours each)
