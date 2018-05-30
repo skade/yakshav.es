@@ -18,7 +18,7 @@ But I'm at a fork again: my project responsibilites have grown so much that they
 
 I'm frequently asked why I don't go professional with my work. While this is certainly possible ([and you can even hire me]()), this is a different thing. Doing community organisation for clients or fully for a company means that you are in some way bound to them: you have to represent them, their values and their products.
 
-Also, I don't want to quit my main job: building software and working on my software company. It's enjoyable and teasing, I like [Asquera and its colleagues](). There's no intention to leave it. Indeed, a current problem is that my involvement in community often ends up to be at Asqueras cost, with no clear return. Many people believe that community contacts monetise well, but this is not necessarily the case, except when you practise _community sales_, which I don't.
+Also, I don't want to quit my main job: building software and working on my software company. It's enjoyable and teasing, I like [asquera and its colleagues](). There's no intention to leave it. Indeed, a current problem is that my involvement in community often ends up to be at Asqueras cost, with no clear return. Many people believe that community contacts monetise well, but this is not necessarily the case, except when you practise _community sales_, which I don't. Also asquera is a regular sponsor of community spaces like [co-up]().
 
 My style of projects (I prefer affortability over everything) also doesn't fit many commercial endeavours.
 
