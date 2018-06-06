@@ -6,7 +6,9 @@ title: Sustainability
 
 tl;dr: I'm seeking personal sponsorship. See the [Sponsor Skade](//sponsor-skade) page for details.
 
-If you have been following me in some form, you might have noticed that I do have a profession and a passion. My profession is programming, my passion is programming communities. I build community structures. As a hobby.
+If you have been following me in some form, you might have noticed that I do have a profession and a passion. My profession is programming, my passion is programming communities. I build community structures. As a hobby. That looks like this:
+
+![RustFest 2016 in Berlin, by https://fionacastineira.com/](/images/1-2016-berlin.png)
 
 I'm doing this - in some form or the other - almost since I have internet access. In 1999, I started being involved in a music community as a moderator. A couple of years later, during studies, I got involved in the Ruby community in a similar capacity. From there, I moved on to running small events, multiple full conferences and a non-profit. I jumped on the chance to shape a community on an international level with Rust, joining the _global_ community team and starting the (accidentally) biggest Rust conference, [RustFest](https://rustfest.eu). I have run the on-site component of a project all-hands. I have never moved on from the Ruby community though, I'm still around and supporting where I can. If you want a current overview of my efforts, see [this years](//foss-2018-log/) and [last years](//rust-2017-retrospective) logs.
 
@@ -38,7 +40,7 @@ For the reasons layed out above, I'm seeking personal sponsorship. My work is va
 
 I'm seeking this sponsorship from companies (or business individuals) who benefit from my work. I don't want money from individual donors.
 
-Please see the [Sponsor Skade](//sponsor-skade) page for details.
+Please see the [Sponsor Skade](sponsor-skade) page for details.
 
 ## Couldn't Mozilla pay all that?
 
