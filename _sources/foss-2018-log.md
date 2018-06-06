@@ -19,15 +19,15 @@ It's also a bit of a tracker for myself, as I tend to forget things.
 * IsleOfRuby: Fishbowl (30 min)
 * HTWG Konstanz: Sicherheitsaspekte von Rust (90 min)
 * Uni Linz: Security aspects of Rust (90 min)
-* Rust impl days: conf planning workshop (8 hours)
+* RustFest Paris impl days: conf planning workshop (8 hours)
 
 ## Orga-Work
 
 * Setup events team within the community team for Rust
 * Co-organisation and on-site orga a the Rust all-hands (~50 hours)
 * RustFest Paris/Rome
-* Accounting and moral support RubyOnIce
-* Accounting and moral support IsleOfRuby
+* Budgeting and moral support RubyOnIce
+* Budgeting and moral support IsleOfRuby
 
 ## Conference attendance in project capacity
 
@@ -41,6 +41,9 @@ It's also a bit of a tracker for myself, as I tend to forget things.
   - workshop day: assistance RustBridge (1 day)
   - impl days Monday: errands, conference planning workshop (1 day)
   - impl days Tuesday: writup, office hours (1 day)
+* CSSConf.EU/JSConf.EU (3 days), Mozilla Arch project
+  - Help out with software
+  - Help people out with an interactive art installation
 
 ## Additional work
 
