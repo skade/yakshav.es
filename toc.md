@@ -14,9 +14,13 @@
 
 * [Positivity in Coding](https://yakshav.es/positivity-in-coding)
 
+* [Sustainability](https://yakshav.es/sustainability)
+
 * [So much space](https://yakshav.es/so-much-space)
 
 * [yakshav.es](https://yakshav.es/yakshav.es)
+
+* [Sponsor Skade](https://yakshav.es/sponsor_skade)
 
 * [My mobile working setup](https://yakshav.es/mobile-working-setup)
 
