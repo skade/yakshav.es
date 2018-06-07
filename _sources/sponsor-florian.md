@@ -4,7 +4,7 @@ title: Sponsor Florian
 
 # Sponsor Florian
 
-I've been doing community work for almost 20 years and am seeking personal sponsorship. For detailed reasoning, see [Sustainabilty](sustainability).
+I've been doing free community work for almost 20 years and am seeking personal sponsorship. For detailed reasoning, see [Sustainabilty](sustainability).
 
 To help out, [get in touch](mailto:info@asquera.de).
 
