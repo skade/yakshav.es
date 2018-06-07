@@ -1,7 +1,5 @@
 ## Current Shaves
 
-* [Sponsor Skade](https://yakshav.es/sponsor-skade)
-
 * [My personal Rust 2017 retrospective](https://yakshav.es/rust-2017-retrospective)
 
 * [laze.rs](https://yakshav.es/lazers)
@@ -13,6 +11,8 @@
 * [Spoilers](https://yakshav.es/spoilers)
 
 * [Replacing violent IT vocabulary for fun and profit](https://yakshav.es/replacements-for-violent-it-vocabulary)
+
+* [Sponsor Florian](https://yakshav.es/sponsor-florian)
 
 * [So much space](https://yakshav.es/so-much-space)
 
