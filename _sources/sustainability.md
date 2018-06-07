@@ -4,7 +4,7 @@ title: Sustainability
 
 # Sustainability
 
-tl;dr: I'm seeking personal sponsorship. See the [Sponsor Skade](/sponsor-skade) page for details.
+tl;dr: I'm seeking personal sponsorship. See the [Sponsor Florian](/sponsor-florian) page for details.
 
 If you have been following me in some form, you might have noticed that I do have a profession and a passion. My profession is programming, my passion is programming communities. I build community structures. As a hobby. That looks like this:
 
@@ -40,7 +40,7 @@ For the reasons layed out above, I'm seeking personal sponsorship. My work is va
 
 I'm seeking this sponsorship from companies (or business individuals) who benefit from my work. I don't want money from individual donors.
 
-Please see the [Sponsor Skade](sponsor-skade) page for details.
+Please see the [Sponsor Florian](sponsor-florian) page for details.
 
 ## Couldn't Mozilla pay all that?
 

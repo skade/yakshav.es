@@ -1,8 +1,8 @@
 ---
-title: Sponsor Skade
+title: Sponsor Florian
 ---
 
-# Sponsor Skade
+# Sponsor Florian
 
 I've been doing community work for almost 20 years and am seeking personal sponsorship. For detailed reasoning, see [Sustainabilty](sustainability).
 
