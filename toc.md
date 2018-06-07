@@ -1,5 +1,7 @@
 ## Current Shaves
 
+* [Sponsor Skade](https://yakshav.es/sponsor-skade)
+
 * [My personal Rust 2017 retrospective](https://yakshav.es/rust-2017-retrospective)
 
 * [laze.rs](https://yakshav.es/lazers)
@@ -21,8 +23,6 @@
 * [Decorating Results](https://yakshav.es/decorating-results)
 
 * [Positivity in Coding](https://yakshav.es/positivity-in-coding)
-
-* [Sponsor Skade](https://yakshav.es/sponsor_skade)
 
 * [2018: The year we learn Rust 1.0](https://yakshav.es/rust-2018)
 
