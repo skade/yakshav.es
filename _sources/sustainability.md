@@ -4,7 +4,7 @@ title: Sustainability
 
 # Sustainability
 
-tl;dr: I'm seeking personal sponsorship. See the [Sponsor Skade](//sponsor-skade) page for details.
+tl;dr: I'm seeking personal sponsorship. See the [Sponsor Skade](/sponsor-skade) page for details.
 
 If you have been following me in some form, you might have noticed that I do have a profession and a passion. My profession is programming, my passion is programming communities. I build community structures. As a hobby. That looks like this:
 
