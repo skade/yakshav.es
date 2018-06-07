@@ -1,12 +1,12 @@
-.sourceCode > span.kw { color: #268BD2; font-weight: bold; }
-.sourceCode > span.dt { color: #268BD2; }
-.sourceCode > span.dv { color: #D33682; }
-.sourceCode > span.bn { color: #D33682; }
-.sourceCode > span.fl { color: #D33682; }
-.sourceCode > span.ch { color: #4070a0; }
-.sourceCode > span.st { color: #2AA198; }
-.sourceCode > span.co { color: #93A1A1; font-style: italic; }
-.sourceCode > span.ot { color: #A57800; }
-.sourceCode > span.al { color: #CB4B16; font-weight: bold; }
-.sourceCode > span.fu { color: #268BD2; }
-.sourceCode > span.er { color: #D30102; font-weight: bold; }
+.sourceCode .kw { color: #268BD2; font-weight: bold; }
+.sourceCode .dt { color: #268BD2; }
+.sourceCode .dv { color: #D33682; }
+.sourceCode .bn { color: #D33682; }
+.sourceCode .fl { color: #D33682; }
+.sourceCode .ch { color: #4070a0; }
+.sourceCode .st { color: #2AA198; }
+.sourceCode .co { color: #93A1A1; font-style: italic; }
+.sourceCode .ot { color: #A57800; }
+.sourceCode .al { color: #CB4B16; font-weight: bold; }
+.sourceCode .fu { color: #268BD2; }
+.sourceCode .er { color: #D30102; font-weight: bold; }
