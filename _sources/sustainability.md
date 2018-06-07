@@ -36,7 +36,7 @@ What's currently lacking is room to breathe. Many of my projects suffer from the
 
 ## Seeking sponsorship
 
-For the reasons layed out above, I'm seeking personal sponsorship. My work is valuable to communities and builds foundations. While it may not be of _immediate_ use to many, it is of _secondary_ use. You're searching for Rust developer or a Rust job? RustFest has them. [eurucamp](https://eurucamp.org) was a large hiring pool form many companies. It was innovative and raised standards of inclusiveness and accessibility. Even less direct, growing communities open up new opportunities for new people and products to raise to the top.
+For the reasons layed out above, I'm seeking personal sponsorship. My work is valuable to communities and builds foundations. While it may not be of _immediate_ use to many, it is of _secondary_ use. You're searching for Rust developer or a Rust job? [RustFest](https://rustfest.eu) has them. [eurucamp](https://eurucamp.org) was a large hiring pool form many companies. It was innovative and raised standards of inclusiveness and accessibility. Even less direct, growing communities open up new opportunities for new people and products to raise to the top.
 
 I'm seeking this sponsorship from companies (or business individuals) who benefit from my work. I don't want money from individual donors.
 
