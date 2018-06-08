@@ -52,3 +52,8 @@ For the reasons layed out above, I'm seeking personal sponsorship. My work is va
 I'm seeking this sponsorship from companies (or business individuals) who benefit from my work. I don't want money from individual donors.
 
 Please see the [Sponsor Florian](/sponsor-florian) page for details.
+
+## What will your contribution enable and how can you see that?
+
+Securing funding would allow me to dedicate more time to community efforts, be it rust or Ruby or language-agnostic. As detailed on ther funding page, money would flow through my company, so that I can reduce my hours dedicated to client work accordingly. I'll continue providing a log that lists all my community and open source work ot provide transparency and insight into the work done. If you decide to sponsor with higher payments, I'll make time to answer questions about my work (remotely or in person, depending on where you are located) on a regular basis.
+
