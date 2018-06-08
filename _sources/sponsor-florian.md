@@ -60,4 +60,4 @@ Expenses and travel, especially speaking expenses. These are either paid by conf
 
 ## What will I provide?
 
-A regular writeup and worklog of things done, at least once a month. On larger sponsorships (>5000), we can also negotiate additional agreements. Also, I'll present all sponsors on this website and give you thanks :).
+A regular writeup and worklog of things done, at least once a month. For sponsors over 1000 Euros, we can set up a phone call where I answer all of your questions on FOSS development. On larger sponsorships (>5000), we can also negotiate additional agreements. Also, I'll present all sponsors on this website and give you thanks :).
