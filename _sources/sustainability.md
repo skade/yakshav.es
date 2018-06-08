@@ -40,7 +40,7 @@ For the reasons layed out above, I'm seeking personal sponsorship. My work is va
 
 I'm seeking this sponsorship from companies (or business individuals) who benefit from my work. I don't want money from individual donors.
 
-Please see the [Sponsor Florian](sponsor-florian) page for details.
+Please see the [Sponsor Florian](/sponsor-florian) page for details.
 
 ## Couldn't Mozilla pay all that?
 
