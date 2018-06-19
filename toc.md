@@ -18,7 +18,7 @@
 
 * [So much space](https://yakshav.es/so-much-space)
 
-* [A silly list of long words to guess when you are playing word guessing games. Because Donaudampfschifffahrtskapitänsmütze gets old quick. Rule: no made up words. This is a best effort, so things might slip through.](https://yakshav.es/words-to-guess)
+* [Words To Guess](https://yakshav.es/words-to-guess)
 
 * [yakshav.es](https://yakshav.es/yakshav.es)
 

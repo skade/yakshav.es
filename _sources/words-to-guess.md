@@ -1,10 +1,12 @@
 ---
-title: Words to guess
+title: Words To Guess
 ---
+
+# Words To Guess
 
 A silly list of long words to guess when you are playing word guessing games. Because Donaudampfschifffahrtskapitänsmütze gets old quick. Rule: no made up words. This is a best effort, so things might slip through.
 
-Thanks to [@graste](https://twitter.com/graste) for contributing a lot of these.
+Thanks to [\@graste](https://twitter.com/graste) for contributing a lot of these.
 
 * Konzertgitarrenunterricht
 * Diplominstrumentalpädagogikstudium
