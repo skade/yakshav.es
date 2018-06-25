@@ -10,7 +10,7 @@ If you have been following me in some form, you might have noticed that I do hav
 
 ![RustFest 2016 in Berlin, by https://fionacastineira.com/](/images/1-2016-berlin.png)
 
-I'm doing this - in some form or another - almost since I have internet access. In 1999, I became involved in a music community as a moderator. A couple of years later, during my studies, I got involved in the Ruby community in a similar capacity. From there, I moved on to running small events, multiple full conferences, for example the ([eurucamp](http://eurucamp.org) and [JRubyConf.EU](jrubyconf.eu)) and a non-profit, [Ruby Berlin](https://rubyberlin.org). I jumped on the chance to shape a community on an international level with Rust, joining the _global_ community team and starting the (accidentally) biggest Rust conference, [RustFest](https://rustfest.eu). I have run the on-site part of a rust-project all-hands. Contrary to popular belief, I have never moved on from the Ruby community though, I'm still around and supporting where I can. If you want a current overview of my efforts, see [this years](foss-2018-log/) and [last years](rust-2017-retrospective) logs or my [profile](http://skade.me/profile.html) for details. Yep, that's more than 17 events there, not including meetups.
+I'm doing this - in some form or another - almost since I have internet access. In 1999, I became involved in a music community as a moderator. A couple of years later, during my studies, I got involved in the Ruby community in a similar capacity. From there, I moved on to running small events, multiple full conferences, for example the ([eurucamp](http://eurucamp.org) and [JRubyConf.EU](jrubyconf.eu)) and a non-profit, [Ruby Berlin](https://rubyberlin.org). I jumped on the chance to shape a community on an international level with Rust, joining the _global_ community team and starting the (accidentally) biggest Rust conference, [RustFest](https://rustfest.eu). I have run the on-site part of Rust projects all-hands. Contrary to popular belief, I have never moved on from the Ruby community though, I'm still around and supporting where I can. If you want a current overview of my efforts, see [this years](/foss-2018-log/) and [last years](rust-2017-retrospective) logs or my [profile](http://skade.me/profile.html) for details. Yep, that's more than 17 events there, not including meetups.
 
 It's been an interesting, often enjoyable and [sometimes less enjoyable](http://skade.me/blog/2013/exhaustion.html) ride. It's definitely exhausting. But I don't intent to complain. I have chosen to be part of the [conference meat grinder](https://medium.com/@mxsash/are-we-not-all-volunteer-organisers-here-and-does-it-matter-498e300e7366) and have had the chance to develop skills to deal with that. I have also developed a huge set of skills around FOSS conferencing.
 
@@ -64,3 +64,7 @@ For transparency reasons: a regular writeup and log of things done, at least onc
 For larger sponsors, I can definitely provide a gesture in return, such as allowing you to pick my brain about community management or even giving a talk on FOSS community subjects at your company.
 
 Please see the [Sponsor Florian](/sponsor-florian) page for details.
+
+## Credits
+
+Thanks to [Dajana](https://twitter.com/dajanaguenther) and [Felix](https://twitter.com/xylakant) for proofreading and feedback.
