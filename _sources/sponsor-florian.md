@@ -4,7 +4,7 @@ title: Sponsor Florian
 
 # Sponsor Florian
 
-I've been doing free community work for almost 20 years and am seeking personal sponsorship. For detailed reasoning, see [Sustainabilty](sustainability).
+I've been doing free community work for almost 20 years and am seeking personal sponsorship. For detailed reasoning, see [Sustainability](sustainability).
 
 To help out, [get in touch](mailto:info@asquera.de).
 
@@ -47,7 +47,7 @@ Currently, most of this work happens on evenings. Your support would also allow 
 
 Beyond that, I have a lot of experience that could be of benefit to the wider FOSS community. I would like to spread/write down:
 
-* How to plan and run affortable conferences, especially around budgeting
+* How to plan and run affordable conferences, especially around budgeting
 
 * How to run fair and diverse conferences
 
