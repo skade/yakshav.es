@@ -62,3 +62,5 @@ Securing funding would allow me to dedicate more time to community efforts, be i
 For transparency reasons: a regular writeup and log of things done, at least once a month. Also, my work output is free and open source (usually under CC-BY-4.0), for you to use, reuse and remix!
 
 For larger sponsors, I can definitely provide a gesture in return, such as allowing you to pick my brain about community management or even giving a talk on FOSS community subjects at your company.
+
+Please see the [Sponsor Florian](/sponsor-florian) page for details.
