@@ -10,11 +10,11 @@ If you have been following me in some form, you might have noticed that I do hav
 
 ![RustFest 2016 in Berlin, by https://fionacastineira.com/](/images/1-2016-berlin.png)
 
-I'm doing this - in some form or another - almost since I have internet access. In 1999, I became involved in a music community as a moderator. A couple of years later, during my studies, I got involved in the Ruby community in a similar capacity. From there, I moved on to running small events, multiple full conferences, for example the ([eurucamp](http://eurucamp.org) and [JRubyConf.EU](jrubyconf.eu)) and a non-profit, [Ruby Berlin](https://rubyberlin.org). I jumped on the chance to shape a community on an international level with Rust, joining the _global_ community team and starting the (accidentally) biggest Rust conference, [RustFest](https://rustfest.eu). I have run the on-site part of Rust projects all-hands. Contrary to popular belief, I have never moved on from the Ruby community though, I'm still around and supporting where I can. If you want a current overview of my efforts, see [this years](/foss-2018-log/) and [last years](rust-2017-retrospective) logs or my [profile](http://skade.me/profile.html) for details. Yep, that's more than 17 events there, not including meetups.
+I'm doing this - in some form or another - almost since I have internet access. In 1999, I became involved in a music community as a moderator. A couple of years later, during my studies, I got involved in the Ruby community in a similar capacity. From there, I moved on to running small events, multiple full conferences, for example the ([eurucamp](http://eurucamp.org) and [JRubyConf.EU](jrubyconf.eu)) and a non-profit, [Ruby Berlin](https://rubyberlin.org). I jumped on the chance to shape a community on an international level with Rust, joining the _global_ community team and starting the (accidentally) biggest Rust conference, [RustFest](https://rustfest.eu). I have run the on-site part of Rust projects all-hands. Contrary to popular belief, I have never moved on from the Ruby community though, I'm still around and supporting where I can. If you want a current overview of my efforts, see [this year's](/foss-2018-log/) and [last year's](rust-2017-retrospective) logs or my [profile](http://skade.me/profile.html) for details. Yep, that's more than 17 events there, not including meetups.
 
 It's been an interesting, often enjoyable and [sometimes less enjoyable](http://skade.me/blog/2013/exhaustion.html) ride. It's definitely exhausting. But I don't intent to complain. I have chosen to be part of the [conference meat grinder](https://medium.com/@mxsash/are-we-not-all-volunteer-organisers-here-and-does-it-matter-498e300e7366) and have had the chance to develop skills to deal with that. I have also developed a huge set of skills around FOSS conferencing.
 
-But I'm at a fork again: my OSS project responsibilites have grown so much that they encroach on other parts of my life. This includes time I should spend with company, clients and personal live. It leaves me with two options: shed many of my projects (as [mxsash does](https://medium.com/@mxsash/are-we-not-all-volunteer-organisers-here-and-does-it-matter-498e300e7366)) or find ways of making this more sustainable. Retreating would also mean that on the surviving projects, _others_ would have to cover the resulting gap, often with less skills or experience.
+But I'm at a fork again: my OSS project responsibilities have grown so much that they encroach on other parts of my life. This includes time I should spend with company, clients and personal live. It leaves me with two options: shed many of my projects (as [mxsash does](https://medium.com/@mxsash/are-we-not-all-volunteer-organisers-here-and-does-it-matter-498e300e7366)) or find ways of making this more sustainable. Retreating would also mean that on the surviving projects, _others_ would have to cover the resulting gap, often with less skills or experience.
 
 ## On not going professional
 
@@ -32,7 +32,7 @@ I'm not opposed to that. I _like_ building structures, I just don't want it to b
 
 ## Room to breathe
 
-What's currently lacking is room to breathe. Many of my projects suffer from the fact that I need to squeeze them in between professional and private life. Most notably, the room to improve them is lacking. This leads to a sitation where success becomes your enemy: [RustFest Paris](https://paris.rustfest.eu) exceeded our projections to the point where the attached [hackfest impl days](https://paris.rustfest.eu/about_impl_days/) is a small conference in itself.
+What's currently lacking is room to breathe. Many of my projects suffer from the fact that I need to squeeze them in between professional and private life. Most notably, the room to improve them is lacking. This leads to a situation where success becomes your enemy: [RustFest Paris](https://paris.rustfest.eu) exceeded our projections to the point where the attached [hackfest impl days](https://paris.rustfest.eu/about_impl_days/) is a small conference in itself.
 
 
 ## Couldn't Mozilla pay all that?
@@ -47,7 +47,7 @@ Let's talk about the elephant in the room: given my involvement, couldn't Mozill
 
 ## Seeking sponsorship
 
-For the reasons layed out above, I'm seeking personal sponsorship. My work is valuable to communities and builds foundations. While it may not be of _immediate_ use to many, it is of _secondary_ use. You're searching for Rust developer or a Rust job? [RustFest](https://rustfest.eu) has them. [eurucamp](https://eurucamp.org) was a large hiring pool form many companies. It was innovative and raised standards of inclusiveness and accessibility. Even less direct, growing communities open up new opportunities for new people and products to raise to the top.
+For the reasons laid out above, I'm seeking personal sponsorship. My work is valuable to communities and builds foundations. While it may not be of _immediate_ use to many, it is of _secondary_ use. You're searching for Rust developer or a Rust job? [RustFest](https://rustfest.eu) has them. [eurucamp](https://eurucamp.org) was a large hiring pool for many companies. It was innovative and raised standards of inclusiveness and accessibility. Even less direct, growing communities open up new opportunities for new people and products to raise to the top.
 
 I'm seeking this sponsorship from companies (or business individuals) who benefit from my work. I don't want money from individual donors.
 
@@ -55,7 +55,7 @@ Please see the [Sponsor Florian](/sponsor-florian) page for details.
 
 ## What will your contribution enable and how can you see that?
 
-Securing funding would allow me to dedicate more time to community efforts, be it rust or Ruby or language-agnostic. As detailed on ther funding page, money would flow through my company, so that I can reduce my hours dedicated to client work accordingly. I'll continue providing a log that lists all my community and open source work ot provide transparency and insight into the work done. If you decide to sponsor with higher payments, I'll make time to answer questions about my work (remotely or in person, depending on where you are located) on a regular basis.
+Securing funding would allow me to dedicate more time to community efforts, be it rust or Ruby or language-agnostic. As detailed on the funding page, money would flow through my company, so that I can reduce my hours dedicated to client work accordingly. I'll continue providing a log that lists all my community and open source work to provide transparency and insight into the work done. If you decide to sponsor with higher payments, I'll make time to answer questions about my work (remotely or in person, depending on where you are located) on a regular basis.
 
 ## What will I provide?
 
