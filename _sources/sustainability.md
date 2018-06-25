@@ -18,7 +18,7 @@ But I'm at a fork again: my OSS project responsibilites have grown so much that 
 
 ## On not going professional
 
-I'm frequently asked why I don't go professional with my work. This is option I've evaluated ([and you can even hire me throug asquera Event](http://event.asquera.de/)), it still is a different thing. Doing community organisation for clients or employed at a company means that you are bound to them: you have to represent them, their values and their products, whether they match up with the communities and my personal values or not.
+I'm frequently asked why I don't go professional with my work. This is option I've evaluated ([and you can even hire me through asquera Event](http://event.asquera.de/)), but it still is a different thing. Doing community organisation for clients or employed at a company means that you are bound to them: you have to represent them, their values and their products, whether they match up with the communities and my personal values or not.
 
 Also, I don't want to quit my main job: building software and working on my consulting company. It's enjoyable and teasing, I like [asquera and its colleagues](http://asquera.de/). I have no intention of them. Indeed, a current problem is that my involvement in community often ends up to be at asqueras cost, with no clear return. Many people believe that community contacts monetise well, but this is often not the case, except when you practise _community sales_, which I don't. Asquera often end up as  sponsor of community spaces like [co.up](http://co-up.de/) or covering short-term costs for events, so it's more of a cost factor.
 
