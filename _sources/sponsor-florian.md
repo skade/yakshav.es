@@ -46,10 +46,15 @@ Mainly Time. I'm currently involved and/or helping the following projects:
 Currently, most of this work happens on evenings. Your support would also allow me to refocus on non-Rust things again.
 
 Beyond that, I have a lot of experience that could be of benefit to the wider FOSS community. I would like to spread/write down:
+
 * How to plan and run affortable conferences, especially around budgeting
+
 * How to run fair and diverse conferences
+
 * How to interact with conferences
+
 * Approaches to community development
+
 * Writing proposals and speaker mentoring
 
 One of those projects is the [FOSS events planner](https://github.com/rust-community/foss-events-planner/). It's under the umbrella of the Rust project, but open and intended for all.
