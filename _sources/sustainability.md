@@ -67,4 +67,4 @@ Please see the [Sponsor Florian](/sponsor-florian) page for details.
 
 ## Credits
 
-Thanks to [Dajana](https://twitter.com/dajanaguenther) and [Felix](https://twitter.com/xylakant) for proofreading and feedback.
+Thanks to [Daniela](https://twitter.com/DanielaKayB) for talking to me about "professionalised side efforts" and [Ramón](https://twitter.com/senorhuidobro) for asking a lot of tough questions at Isle of Ruby! Thanks to [Dajana](https://twitter.com/dajanaguenther) and [Felix](https://twitter.com/xylakant) for proofreading and feedback.
