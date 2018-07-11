@@ -6,21 +6,32 @@ title: From the Rider Down
 
 The Rust community currently sees a debate around chats. Having been involved in the project since roughly 5 years on the community side, I'd like to comment about a few things I see happening.
 
+Steve has recently informed [the wider community](https://internals.rust-lang.org/t/exploring-new-communication-channels/7859) that the Rust project is trying out discord as a chat host. This has been ongoing for a while _and_ has a lot of backstory.
+
 This is strictly my personal opinion.
 
-Steve has recently informed [the wider community](https://internals.rust-lang.org/t/exploring-new-communication-channels/7859) that the Rust project is trying out discord as a chat host. This has been ongoing for a while _and_ has a lot of backstory.
+## The Rider
+
+Buell famously advertised the 1125R as [Built from the Rider down](https://www.youtube.com/watch?v=FiXsPw6fL0o). I think what we are seeing here is an intersection of 2 problems:
+* Most chats are either copycats or have surprisingly poor usability, they are not built around user, but around competition needs.
+* There's a disagreement who the rider is and what their needs are.
+
+In the move we all talk about, the rider is _the Rust project_, through their working groups and people.
+
+Rust isn't traditionalist in its procedures - which means that we are willing to investigate many options. We don't use mailing lists. It's very based on GitHub. The RFC process is an evolution of previous approaches. There's no strict hierarchy.
+
+We investigate, and we check. And the project has frequently debated options when it comes to chat.
 
 ## The Slack suggestion
 
 Discussions around alternative chat venues are _not new_, the biggest discussion was 2 years ago around considering [Slack as an alternative](https://users.rust-lang.org/t/a-possible-rust-slack-channel/7433) to contact us. The move was subsequently denied, mostly because there was not enough research into the drawbacks and benefits. Also, concerns have been raise around moderation, as Slack has no moderation features so to speak of.
 
-## The WG situation
+## The Working Group Situation
 
 Rust has grown _extremely_ in the recent years, leading to multiple restructurings. Now, the project is clustered in multiple working groups. Each of these groups is allowed to organise the way they want, there's no need for asking. This includes the liberty to choose note-taking services (of which I know at least 4 in use), group chat systems (of which I know at least 5 in active use). Probably, the most common thing between all groups is that you can reach us individually by email.
 
 It's now a task in and by itself to talk to the whole project or get consolidated feedback. That was much easier a couple of years ago.
 
-Rust isn't traditionalist in its procedures - which means that we are willing to investigate many options. We don't use mailing lists. It's very based on GitHub. The RFC process is an evolution of previous approaches. There's no strict hierarchy.
 
 This, interestingly, means that moves within Rust are not necessarily planned, but tried out.
 
@@ -73,4 +84,6 @@ The biggest problem in my opinion is that the FOSS community has completely miss
 
 I'm joking a little here, but I fundamentally believe that the FOSS chat that is built ["From the Rider Down"](https://www.youtube.com/watch?v=FiXsPw6fL0o) doesn't exist, but all fail at modeling users as uniform.
 
-That being said, I do still believe that Matrix show the most potential for the next cool chat system _if_ they can solve the problem of not only _potentially_ providing many high-quality clients, but also practically. [But that's not their mission](https://matrix.org/docs/guides/faq.html#what-is-matrixs-mission). I fear we'll end up with a lot of nice crypto, but not many good clients.
+That being said, I do still believe that Matrix show the most potential for the next cool chat system _if_ they can solve the problem of not only _potentially_ providing many high-quality clients, but also practically. [But that's not their mission](https://matrix.org/docs/guides/faq.html#what-is-matrixs-mission). I fear we'll end up with a lot of nice crypto, but not many good clients. But their current overemphasis of technical subject over social interactions feels like a bike build for spec, not for riders.
+
+In the end, Rust has frequently decided to pay the cost of moving platforms in the past. _If_ you want to build the best chat platform for a diverse set of people and needs, I would definitely be interested.
