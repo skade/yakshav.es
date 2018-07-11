@@ -68,8 +68,6 @@ Especially IRC vs. Slack has become an emotionally heated debates over the last 
 
 But also, many projects have tried get wide reach and effectively becoming more inclusive in the process. Choosing a hard-to-use tool for freedom always goes at the cost of approachability. Choosing a visually heavy tool makes things hard for people that optimise for command line use. Rust has been successful in attracting people from all along the gamut, which makes this discussion even harder. Solving this debate in this environment is akin to solving the [Gordian Knot](https://en.wikipedia.org/wiki/Gordian_Knot).
 
-And IRC fundamentally is a hard tool to use: there's a client that fixes everything, but _you need to teach people that_.
-
 ## Distraction
 
 Distraction has become a huge problem for many and their reactions to this are extremely diverse. I have given up and just run 7 chat systems with notifications off. I know that this isn't a model for many. Others become die-hards for their system and refuse to move. Many are in-between.
@@ -81,6 +79,8 @@ It's very hard to balance all those needs and also make it possible that everyon
 We're not keeping anyone from using other systems and members of the team often hang out at other places. It might not be the primary place, but it also could be. `irc.mozilla.org` will always exist (as long as Mozilla doesn't shut it off) and if there's people that want to moderate it, it will stay moderated.
 
 ## A strictly personal opinion
+
+Discord definitely is build for a rider - but I appreciate that this rider is not "FOSS developer". But it's close enough. There still quite some gaps a future tool can fit in.
 
 The whole situation around chats in the FOSS space is very frustrating to me. I have been a long supporter of Jabber - which died in a fire of inconsistent, ad-hoc clients with no clients that I could recommend to friends. OTR and OMEMO were an unsupported mess. Finding supported clients for every operating system in use was a pain. Mobile support was horrible. IRC is _old and dated_ and despite changes, it remains so. The clients look extremely dated. But this is all up to date.
 
