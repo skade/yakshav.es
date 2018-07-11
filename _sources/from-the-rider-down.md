@@ -12,7 +12,7 @@ This is strictly my personal opinion and while I mention a lot of tools in passi
 
 ## The Rider
 
-Buell famously advertised the 1125R as [Built from the Rider down](https://www.youtube.com/watch?v=FiXsPw6fL0o). I think what we are seeing here is an intersection of 2 problems:
+Buell famously advertised the 1125R as [built from the rider down](https://www.youtube.com/watch?v=FiXsPw6fL0o). I think what we are seeing here is an intersection of 2 problems:
 * Most chats are either copycats or have surprisingly poor usability, they are not built around user, but around competition needs.
 * There's a disagreement who the rider is and what their needs are.
 
@@ -66,7 +66,11 @@ This brings us to the nastiest bit: the tool we need should be pleasant to users
 
 Especially IRC vs. Slack has become an emotionally heated debates over the last years and could even be a generational divide. FOSS has changed in the recent years, especially with projects becoming less and less attached to the "Free", leading to OSS. I have the impression that "the move to Slack" has also become loaded with "moving away from the F".
 
-But also, many projects have tried out many things to get wide reach and effectively becoming more inclusive in the process. Choosing a hard-to-use tool for freedom always goes at the cost of approachability. Choosing a visually heavy tool makes things hard for people that optimise for command line use. Rust has been successful in attracting people from all along the gamut, which makes this discussion even harder. Solving this debate in this environment is akin to solving the [Gordian Knot](https://en.wikipedia.org/wiki/Gordian_Knot).
+But also, many projects have tried get wide reach and effectively becoming more inclusive in the process. Choosing a hard-to-use tool for freedom always goes at the cost of approachability. Choosing a visually heavy tool makes things hard for people that optimise for command line use. Rust has been successful in attracting people from all along the gamut, which makes this discussion even harder. Solving this debate in this environment is akin to solving the [Gordian Knot](https://en.wikipedia.org/wiki/Gordian_Knot).
+
+And IRC fundamentally is a hard tool to use: there's a client that fixes everything, but _you need to teach people that_.
+
+## Distraction
 
 Distraction has become a huge problem for many and their reactions to this are extremely diverse. I have given up and just run 7 chat systems with notifications off. I know that this isn't a model for many. Others become die-hards for their system and refuse to move. Many are in-between.
 
@@ -84,6 +88,6 @@ The biggest problem in my opinion is that the FOSS community has completely miss
 
 I'm joking a little here, but I fundamentally believe that the FOSS chat that is built ["From the Rider Down"](https://www.youtube.com/watch?v=FiXsPw6fL0o) doesn't exist, but all fail at modeling users as uniform.
 
-That being said, I do still believe that Matrix show the most potential for the next cool chat system _if_ they can solve the problem of not only _potentially_ providing many high-quality clients, but also practically. [But that's not their mission](https://matrix.org/docs/guides/faq.html#what-is-matrixs-mission). I fear we'll end up with a lot of nice crypto, but not many good clients. But their current overemphasis of technical subject over social interactions feels like a bike build for spec, not for riders.
+That being said, I do still believe that Matrix show the most potential for the next cool chat system _if_ they can solve the problem of not only _potentially_ providing many high-quality clients, but also practically. [But that's not their mission](https://matrix.org/docs/guides/faq.html#what-is-matrixs-mission). I fear we'll end up with a lot of nice crypto, but not many good clients. But their current overemphasis of technical subjects over social interactions feels like a bike build for spec, not for riders.
 
 In the end, Rust has frequently decided to pay the cost of moving platforms in the past. _If_ you want to build the best chat platform for a diverse set of people and needs, I would definitely be interested.
