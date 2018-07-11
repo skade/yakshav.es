@@ -13,7 +13,9 @@ This is strictly my personal opinion and while I mention a lot of tools in passi
 ## The Rider
 
 Buell famously advertised the 1125R as [built from the rider down](https://www.youtube.com/watch?v=FiXsPw6fL0o). I think what we are seeing here is an intersection of 2 problems:
+
 * Most chats are either copycats or have surprisingly poor usability, they are not built around user, but around competition needs.
+
 * There's a disagreement who the rider is and what their needs are.
 
 In the move we all talk about, the rider is _the Rust project_, through their working groups and people.
