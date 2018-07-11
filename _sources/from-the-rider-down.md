@@ -8,7 +8,7 @@ The Rust community currently sees a debate around chats. Having been involved in
 
 Steve has recently informed [the wider community](https://internals.rust-lang.org/t/exploring-new-communication-channels/7859) that the Rust project is trying out discord as a chat host. This has been ongoing for a while _and_ has a lot of backstory.
 
-This is strictly my personal opinion.
+This is strictly my personal opinion and while I mention a lot of tools in passing, it's also not an evaluation.
 
 ## The Rider
 
@@ -74,7 +74,7 @@ It's very hard to balance all those needs and also make it possible that everyon
 
 ## Other places
 
-We're not keeping anyone from using other systems and members of the team might hang out there. It might not be the primary place, but it also could be. `irc.mozilla.org` will always exist (as long as Mozilla doesn't shut it off) and if there's people that want to moderate it, it will stay moderated.
+We're not keeping anyone from using other systems and members of the team often hang out at other places. It might not be the primary place, but it also could be. `irc.mozilla.org` will always exist (as long as Mozilla doesn't shut it off) and if there's people that want to moderate it, it will stay moderated.
 
 ## A strictly personal opinion
 
