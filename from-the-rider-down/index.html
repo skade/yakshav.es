@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>From the Rider Down</title>
+    <link rel="stylesheet" href="/css/enough.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+  </head>
+  <body class="hack">
+    <div class="container">
+<h1 id="from-the-rider-down">From the Rider Down</h1>
+<p>The Rust community currently sees a debate around chats. Having been involved in the project since roughly 5 years on the community side, I’d like to comment about a few things I see happening.</p>
+<p>This is strictly my personal opinion.</p>
+<p>Steve has recently informed <a href="https://internals.rust-lang.org/t/exploring-new-communication-channels/7859">the wider community</a> that the Rust project is trying out discord as a chat host. This has been ongoing for a while <em>and</em> has a lot of backstory.</p>
+<h2 id="the-slack-suggestion">The Slack suggestion</h2>
+<p>Discussions around alternative chat venues are <em>not new</em>, the biggest discussion was 2 years ago around considering <a href="https://users.rust-lang.org/t/a-possible-rust-slack-channel/7433">Slack as an alternative</a> to contact us. The move was subsequently denied, mostly because there was not enough research into the drawbacks and benefits. Also, concerns have been raise around moderation, as Slack has no moderation features so to speak of.</p>
+<h2 id="the-wg-situation">The WG situation</h2>
+<p>Rust has grown <em>extremely</em> in the recent years, leading to multiple restructurings. Now, the project is clustered in multiple working groups. Each of these groups is allowed to organise the way they want, there’s no need for asking. This includes the liberty to choose note-taking services (of which I know at least 4 in use), group chat systems (of which I know at least 5 in active use). Probably, the most common thing between all groups is that you can reach us individually by email.</p>
+<p>It’s now a task in and by itself to talk to the whole project or get consolidated feedback. That was much easier a couple of years ago.</p>
+<p>Rust isn’t traditionalist in its procedures - which means that we are willing to investigate many options. We don’t use mailing lists. It’s very based on GitHub. The RFC process is an evolution of previous approaches. There’s no strict hierarchy.</p>
+<p>This, interestingly, means that moves within Rust are not necessarily planned, but tried out.</p>
+<h2 id="the-observability-problem">The observability problem</h2>
+<p>This leads to a problem from the outside: The Rust project has outgrown a size where its moves can be tracked as a consolidated group. Interestingly, the conclusion has often drawn that there is inner circle (often referred to as “Rust leadership”, without clear definition) deciding things instead. This is far from the truth: many parts of the project move individually. The outside perception of cohesion comes from another interesting property: we trust each other and take care that we understand motivations. This makes it easy to promote them and stand in for them. So, while there might be circles pushing for things and changing, the circle frequently changes.</p>
+<p>That’s the ideal case, there’s frequent disagreement that is voiced internally and externally. The <a href="https://users.rust-lang.org/t/a-possible-rust-slack-channel/7433">Slack debate</a> has actually been a good example of that: a lot of the pushback came from project members and community.</p>
+<p>I think a lot of the current debate is also made harder that in parallel, <em>following Rust has become impossible</em>. For any one of us, project members included. This is independent of the tool and <em>can also not be fixed by a tool</em>.</p>
+<p>But back to tools.</p>
+<h2 id="the-rust-projects-needs">The Rust project’s needs</h2>
+<p>Rust is an unusual project in the FOSS space, as it takes a lot of care of its venues. This includes having a <a href="https://www.rust-lang.org/en-US/team.html#Moderation-team">moderation team</a>.</p>
+<p>This rules out a number of chats outright, most notably Slack, which treats all users as “employees” and moderation works through HR and your employment contract. Zulip has recently had advances in that area, but don’t yet have a fully fleshed out mod system. They have no docs on this. IRC gives many tools, but behind inaccessible commands that need to be trained. Or a (sometimes paid) client. Also, <code>irc.mozilla.org</code> suffers from huge problems with spamming.</p>
+<p>Matrix seems to have support built in, but no guides on how to use it. You can piece things together from <a href="https://matrix.org/docs/spec/client_server/r0.3.0.html#m-room-power-levels">some API docs</a>. To state it clearly: there is <em>no overarching documentation of Matrix’ idea around abuse and moderation handling</em>. <a href="https://support.discordapp.com/hc/en-us/articles/213530048-Advanced-Community-Server-Setup">Discord</a> is surprisingly good here.</p>
+<p>Federation as a product feature is a no-need for Rust. We cluster on one instance of a server for any tool.</p>
+<p>Notifications and fine-grained notification features are of importance. It might not be so for people that only want to chat with the teams when they are online, but for close collaborative teams, they are important. Slack is the king of this, Discord also isn’t bad, giving fine-grained control on getting notifications on each channel, going as far to switch it all off.</p>
+<p>History and logging is only needed for recent debates. Everything of decision value should always be written down somewhere else, usually in meeting notes or tickets coming out of the discussion.</p>
+<p>We need good implementation quality with low maintenance: we tried out multiple tools. Most famously, Gitter fell through due to having fundamental bugs. I was directly involved in this experiment on the Berlin All-Hands. I chose to chase people down and see if they got my messages. It’s just not good. We already have the problem of struggling to reach people, messages dropping on the floor doesn’t help us.</p>
+<p>This brings us to the nastiest bit: the tool we need should be pleasant to users. This cannot be fulfilled for everyone, ever. Some tools are more amendable than others, but it’s hard to find something that fits everyone. Some people <em>like and love</em> IRC. That’s great. But also, IRC is a red flag for many. <em>And that reputation is well earned</em>. Others have ethical concerns over some providers. <em>That’s important, too</em>. For others, it’s incredibly important to use their own client flavour. Some just want to chat and have the client in their browser. Some just want to get in touch and have a quick question.</p>
+<p>Especially IRC vs. Slack has become an emotionally heated debates over the last years and could even be a generational divide. FOSS has changed in the recent years, especially with projects becoming less and less attached to the “Free”, leading to OSS. I have the impression that “the move to Slack” has also become loaded with “moving away from the F”.</p>
+<p>But also, many projects have tried out many things to get wide reach and effectively becoming more inclusive in the process. Choosing a hard-to-use tool for freedom always goes at the cost of approachability. Choosing a visually heavy tool makes things hard for people that optimise for command line use. Rust has been successful in attracting people from all along the gamut, which makes this discussion even harder. Solving this debate in this environment is akin to solving the <a href="https://en.wikipedia.org/wiki/Gordian_Knot">Gordian Knot</a>.</p>
+<p>Distraction has become a huge problem for many and their reactions to this are extremely diverse. I have given up and just run 7 chat systems with notifications off. I know that this isn’t a model for many. Others become die-hards for their system and refuse to move. Many are in-between.</p>
+<p>It’s very hard to balance all those needs and also make it possible that everyone (especially the moderation team) can do their work. Also, keep in mind that most of these problems need to fit members of the project.</p>
+<h2 id="other-places">Other places</h2>
+<p>We’re not keeping anyone from using other systems and members of the team might hang out there. It might not be the primary place, but it also could be. <code>irc.mozilla.org</code> will always exist (as long as Mozilla doesn’t shut it off) and if there’s people that want to moderate it, it will stay moderated.</p>
+<h2 id="a-strictly-personal-opinion">A strictly personal opinion</h2>
+<p>The whole situation around chats in the FOSS space is very frustrating to me. I have been a long supporter of Jabber - which died in a fire of inconsistent, ad-hoc clients with no clients that I could recommend to friends. OTR and OMEMO were an unsupported mess. Finding supported clients for every operating system in use was a pain. Mobile support was horrible. IRC is <em>old and dated</em> and despite changes, it remains so. The clients look extremely dated. But this is all up to date.</p>
+<p>The biggest problem in my opinion is that the FOSS community has completely missed the bus when it came to understanding that organisations don’t need federation, but also don’t need a Slack clone like Mattermost and Rocket. Yes, I’d happily take a slim implementation of a single-server chat protocol easy to implement in clients that focuses on the above issues instead of building the federated web. Ship safe client functionality as Rust/WASM, and go…</p>
+<p>I’m joking a little here, but I fundamentally believe that the FOSS chat that is built <a href="https://www.youtube.com/watch?v=FiXsPw6fL0o">“From the Rider Down”</a> doesn’t exist, but all fail at modeling users as uniform.</p>
+<p>That being said, I do still believe that Matrix show the most potential for the next cool chat system <em>if</em> they can solve the problem of not only <em>potentially</em> providing many high-quality clients, but also practically. <a href="https://matrix.org/docs/guides/faq.html#what-is-matrixs-mission">But that’s not their mission</a>. I fear we’ll end up with a lot of nice crypto, but not many good clients.</p>
+
+      <a href="/">top<a/>
+    </div>
+  </body>
+</html>
