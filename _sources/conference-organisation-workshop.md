@@ -14,10 +14,19 @@ I'd happily give the workshop again, but due to the reasons outline [here](/sust
 ## Conditions
 
 For the workshop to run, I need:
+
 * A room with equipment (post-its, whiteboards, sharpies)
+
   - The venue must be accessible (wheelchair accessible, with accessible toilet an good space for retreat)
-* Catering or easy access to food locally
+
+* Drinks
+
+* Catering or easy access to a variety of food locally
+
+  - I'd find it acceptible if attendess cover consumption if a solution for those that can't is found
+
 * Sponsorship of 1000 EUR for my work
+
 * Sponsorship of 1000 EUR for the diversity trainers work
 
 The fees are non-negotiatable. I'm okay with pooling, as long as payment can be done in one block, saving me effort. Upfront payment is required.
