@@ -4,6 +4,8 @@
 
 * [2018: The year we learn Rust 1.0](https://yakshav.es/rust-2018)
 
+* [Offer: Conference Organisation Workshop](https://yakshav.es/conference-organisation-workshop)
+
 * [yaks(1)](https://yakshav.es/yaks-1)
 
 * [spacemacs](https://yakshav.es/spacemacs)
