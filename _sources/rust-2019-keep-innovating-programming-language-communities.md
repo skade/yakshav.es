@@ -14,7 +14,7 @@ Just some examples of those achievements:
 * Building up a flexible team structure around the idea of working groups
 * Planning through community input like the Rust 2018 and 2019 blogging campaigns
 * The BORS model of always maintaining a stable master
-* [Increasing Rust Reach](https://reach.rust-lang.org) went through two iterations and has become an amazing outreach program
+* [Increasing Rust's Reach](http://reach.rust-lang.org) went through two iterations and has become an amazing outreach program
 * Community projects like [TWIR](https://this-week-in-rust.org/) and [ReadRust](http://readrust.net/) becoming part of our project
 * Having centralised support for local community workers, like the Meetup Calendar
 
