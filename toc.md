@@ -48,6 +48,8 @@
 
 * [laze.rs](https://yakshav.es/lazers)
 
+* [Rust 2019 (4): More Intention, Less Reaction](https://yakshav.es/rust-2019-more-intention-less-reaction)
+
 * [Rust 2019 (2): Keep innovating programming language communities](https://yakshav.es/rust-2019-keep-innovating-programming-language-communities)
 
 * [Donald Knuth - The Patron Saint of Yak Shaves](https://yakshav.es/the-patron-saint-of-yakshaves)
