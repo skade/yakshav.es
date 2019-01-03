@@ -7,6 +7,7 @@ title: "Rust 2019: Keep innovating programming language communities"
 Rust is successful. And the success is well deserved. The Rust project has managed to grow tremendously over the last year. Both as a project, but also as a community.
 
 Just some examples of those achievements:
+
 * Coming up with an RFC process that is adopted by other projects
 * Using the RFC model to maintain a fast evolution of the language while allowing for stability
 * Finding processes for making change happen in a reasonable time frame, especially around review and merge speed.
