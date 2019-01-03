@@ -1,5 +1,7 @@
 ## Current Shaves
 
+* [Rust 2019 (1): Change](https://yakshav.es/rust-2019-change)
+
 * [Asserting static properties in Rust](https://yakshav.es/asserting-static-properties)
 
 * [2018: The year we learn Rust 1.0](https://yakshav.es/rust-2018)
@@ -22,6 +24,8 @@
 
 * [Words To Guess](https://yakshav.es/words-to-guess)
 
+* [Rust 2019 (3): Less Reliance On Individuals](https://yakshav.es/rust-2019-less-reliance-on-individuals)
+
 * [yakshav.es](https://yakshav.es/yakshav.es)
 
 * [My mobile working setup](https://yakshav.es/mobile-working-setup)
@@ -38,9 +42,13 @@
 
 * [Log of my 2018 private FOSS community work](https://yakshav.es/foss-2018-log)
 
+* [Rust 2019 posts](https://yakshav.es/rust-2019)
+
 * [imapfilter](https://yakshav.es/imapfilter)
 
 * [laze.rs](https://yakshav.es/lazers)
+
+* [Rust 2019 (2): Keep innovating programming language communities](https://yakshav.es/rust-2019-keep-innovating-programming-language-communities)
 
 * [Donald Knuth - The Patron Saint of Yak Shaves](https://yakshav.es/the-patron-saint-of-yakshaves)
 

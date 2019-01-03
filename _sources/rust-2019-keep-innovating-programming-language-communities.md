@@ -1,5 +1,5 @@
 ---
-title: Rust 2019: Keep innovating programming language communities
+title: "Rust 2019: Keep innovating programming language communities"
 ---
 
 # Rust 2019 (2): Keep innovating programming language communities
