@@ -6,6 +6,8 @@
 
 * [2018: The year we learn Rust 1.0](https://yakshav.es/rust-2018)
 
+* [Rust 2019 (7): Programming is the least of our concern](https://yakshav.es/rust-2019-programming-is-the-least-of-our-concerns)
+
 * [Offer: Conference Organisation Workshop](https://yakshav.es/conference-organisation-workshop)
 
 * [yaks(1)](https://yakshav.es/yaks-1)
@@ -40,6 +42,8 @@
 
 * [How I came to Rust](https://yakshav.es/how-I-came-to-rust)
 
+* [Rust 2019 (5): 1.0 is a beautiful version](https://yakshav.es/rust-2019-one-zero-is-a-beautiful-version)
+
 * [Log of my 2018 private FOSS community work](https://yakshav.es/foss-2018-log)
 
 * [Rust 2019 posts](https://yakshav.es/rust-2019)
@@ -49,6 +53,8 @@
 * [laze.rs](https://yakshav.es/lazers)
 
 * [Rust 2019 (4): More Intention, Less Reaction](https://yakshav.es/rust-2019-more-intention-less-reaction)
+
+* [Rust 2019 (6): Software practices](https://yakshav.es/rust-2019-software-practices)
 
 * [Rust 2019 (2): Keep innovating programming language communities](https://yakshav.es/rust-2019-keep-innovating-programming-language-communities)
 

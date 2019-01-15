@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rust 2019 (6): Software practices</title>
+    <link rel="stylesheet" href="/css/enough.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+  </head>
+  <body class="hack">
+    <div class="container">
+<h1 id="rust-2019-6-software-practices">Rust 2019 (6): Software practices</h1>
+<p>Another thing I highlighted in <a href="https://yakshav.es/rust-2018">Rust 2018: The year we learn Rust 1.0</a> is the need to develop software practices at scale. I have a positive view on our progress there.</p>
+<p>Crucial tooling like <code>cargo generate</code> are in a good shape, a great example for this are the project setups in the <a href="TODO:%20Link">embedded book</a>. It allows us to pre-ship reasonable application structures. I’m a huge fan of it and hope for a wider adoption. In my book, <code>cargo generate</code> should replace <code>cargo new --bin</code> in most cases in the future.</p>
+<p>But also, patterns developed, like the ownership patterns around drivers, as presented in <a href="TODO:%20Link">James Munns talk at RustConf</a>. But beyond embedded, discussions around high-level details have emerged. One great example here are <a href="TODO:%20Link">Nikos office hours</a>. Construction and composition of large systems is hard to explain in the void. They are often context sensitive. Taking a conversational approach by answering community questions out of our own experience seems like a good plan here.</p>
+<p>With the upcoming stabilisation of <code>async/await</code>, I hope that we will see a lot of patterns emerge here more clearly as well.</p>
+
+      <a href="/">top</a>
+    </div>
+  </body>
+</html>
