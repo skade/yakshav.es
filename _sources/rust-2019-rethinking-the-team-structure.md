@@ -36,4 +36,4 @@ How does one join a team? What's the base expectation? How to you propose a new 
 
 This has been an ongoing problem since Rust 1.0, when the teams were announced out of the blue. That's a ton of work we've been pushing off since then.
 
-The goal of this should not be to save each other work and give visibilty, not introduce more friction.
+All in all, we need to work on reducing friction and increasing visibility.
