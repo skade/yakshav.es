@@ -8,7 +8,7 @@ When I wrote last years post, [Rust 2018: The year we learn Rust 1.0](https://ya
 I tried to make an argument to focus on ecosystem improvements over language improvements.
 I specifically called out 2 spaces: a stable http client and documented async ecosystem.
 
-1 year in, the situation is the same: we still don't have a 1.0 HTTP client in our ecosystem. While `hyper` and `request` are still the go-to libraries and good, they are still not committed to stability. Also, no other library has emerged to fill that hole. The more our ecosystem grows, the larger the community-wide cost of following breaking changes in these libraries will get.
+1 year in, the situation is the same: we still don't have a 1.0 HTTP client in our ecosystem. While `hyper` and `reqwest` are still the go-to libraries and good, they are still not committed to stability. Also, no other library has emerged to fill that hole. The more our ecosystem grows, the larger the community-wide cost of following breaking changes in these libraries will get.
 
 Proper, high-level documentation of async/futures was pushed tied to the arrival of `async/await`, which was targeted for the edition release and later shifted back. I like `async/await`, I still think the decision to tie documentation to it was a mistake.
 
