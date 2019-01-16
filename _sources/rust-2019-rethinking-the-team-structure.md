@@ -14,7 +14,7 @@ I don't think it's going to carry us to the next level. It believe constrains us
 
 I think it's time to move beyond single leaders. It's odd that we build our teams towards independence, but the teams themselves are hierarchical. The community team is currently experimenting with floating roles and experiences look good. It has multiple advantages: it shifts away responsible from full-time Rust employees, while still being flexible enough to have hobbyists choose their own pace and effort. It also makes the team resilient against sudden changes. I'd like to specifically mention [Ashley Williams](TODO: Twitter link) for starting the change towards that model.
 
-## Defined goals, roles and responsibilities better
+## Define goals, roles and responsibilities better
 
 For most teams and W, the written down description and mission doesn't go beyond their name. This may not sound like a huge problem, but it makes it hard to evaluate progress. While we're doing public roadmapping on a project level, public roadmapping on a team level might make sense.
 
