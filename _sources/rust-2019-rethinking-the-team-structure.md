@@ -26,7 +26,7 @@ I think noting down these connections and expectations for all teams would be im
 
 ## Better input for specialists
 
-The community team has set up (but, admittedly, underused it) a system of "associates". Those take no team members and generally have no interest in joining meetings or following along. They register interest for certain subjects and will be queried when the subject arises.
+The community team has set up (but, admittedly, underused it) a system of "associates". Associates take no team member role and generally have no interest in joining meetings or following along. They register interest for certain subjects and will be queried when the subject arises.
 
 This deal is to the benefit of both sides: community members are not feeling ignored on a subject they are good at, but the team also doesn't need to carry the weight of keeping a full team member around that has no interest or no capacity to follow team business in full. This is a perfect position for hobbyists.
 
