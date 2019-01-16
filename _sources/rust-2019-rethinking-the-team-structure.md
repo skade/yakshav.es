@@ -16,7 +16,7 @@ I think it's time to move beyond single leaders. It's odd that we build our team
 
 ## Define goals, roles and responsibilities better
 
-For most teams and W, the written down description and mission doesn't go beyond their name. This may not sound like a huge problem, but it makes it hard to evaluate progress. While we're doing public roadmapping on a project level, public roadmapping on a team level might make sense.
+For most teams and WGs, the written down description and mission doesn't go beyond their name. This may not sound like a huge problem, but it makes it hard to evaluate progress. While we're doing public roadmapping on a project level, public roadmapping on a team level might make sense.
 
 Also, not all teams are the same. While many of the technical teams have a clearly defined roles, some teams like community, mods and core have more flexible roles. They play different coordination roles. From the perspective of the community team, this job has become harder as the project grows.
 
