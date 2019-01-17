@@ -8,7 +8,7 @@ Rusts current team structure is mainly ad-hoc and built towards independence. If
 
 What I believe has worked really well for the project up until now. It's a process that's easy to agree on and quick to implement. Also, there's a fundamental agreement of trust between groups. Rust core has done a good job and fostering that.
 
-I don't think it's going to carry us to the next level. It believe constrains us with regards to bandwidth _and_ participation. A couple of ideas arouund that subject:
+I don't think it's going to carry us to the next level. It constrains us with regards to bandwidth _and_ participation. A couple of ideas around that subject:
 
 ## Single leaders
 
