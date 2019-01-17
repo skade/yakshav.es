@@ -14,7 +14,9 @@ Proper, high-level documentation of async/futures was pushed tied to the arrival
 
 This has a ripple effect: everything based on these libraries and features will hold back committing to stability: web and API frameworks, other network protocol implementations or even just plain tutorials.
 
-I don't want to shift blame on anyone and not speculate on reasons. There's tons of people working hard on all these features, doing a lot of great work. But as much as I _internally_ have a lot of empathy for this situation, _externally_, this becomes a problem.
+But it's no only HTTP and networking: `rand` is still sub-zero and many other libs aling with it.
+
+I don't want to shift blame on anyone and not speculate on reasons. There's tons of people working hard on all these features, doing a lot of great work. But as much as I _internally_ have a lot of empathy for this situation, _externally_, it becomes a problem.
 
 While this was a (large) wart a year ago, three years in, it now quickly becomes unacceptable - especially for a language that boasts safe asyncronicity and network programming close to the metal. It points to an immaturity and undecisiveness of the ecosystem. It adds to a feeling of ongoing insecurity about the path of out fundamental ecosystem. Rust is going to become a tough sell through that. Last year, "Rust is young" was an argument that was acceptable. It slowly begins to wear off. We chose to use "Rust 2018" as a "Rust has grown up" marketing moment, and our ecosystem should reflect that.
 
