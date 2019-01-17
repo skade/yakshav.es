@@ -8,7 +8,11 @@
 
 * [Offer: Conference Organisation Workshop](https://yakshav.es/conference-organisation-workshop)
 
+<<<<<<< HEAD
 * [Rust 2019 (11): Tackling tone](https://yakshav.es/rust-2019-tackling-tone)
+=======
+* [Rust 2019 (11): Tackling growth and tone](https://yakshav.es/rust-2019-tackling-tone)
+>>>>>>> next
 
 * [Rust 2019 (8): Rethinking The Team Structure](https://yakshav.es/rust-2019-rethinking-the-team-structure)
 
@@ -70,7 +74,11 @@
 
 * [Inspecting Futures](https://yakshav.es/inspecting-futures)
 
+<<<<<<< HEAD
 * [Rust 2019 (12): Rust 2020 - Access all areas](https://yakshav.es/rust-2019-rust-2020)
+=======
+* [Rust 2019 (12): Rust 2020 - Access All Areas](https://yakshav.es/rust-2019-rust-2020)
+>>>>>>> next
 
 * [Rust 2019 (10): Beyond RustConf and RustFest](https://yakshav.es/rust-2019-beyond-rustconf-and-rustfest)
 
