@@ -20,7 +20,7 @@ I don't want to shift blame on anyone and not speculate on reasons. There's tons
 
 While this was a (large) wart a year ago, three years in, it now quickly becomes unacceptable - especially for a language that boasts safe asyncronicity and network programming close to the metal. It points to an immaturity and undecisiveness of the ecosystem. It adds to a feeling of ongoing insecurity about the path of out fundamental ecosystem. Rust is going to become a tough sell through that. Last year, "Rust is young" was an argument that was acceptable. It slowly begins to wear off. We chose to use "Rust 2018" as a "Rust has grown up" marketing moment, and our ecosystem should reflect that.
 
-I think projects like [tide](https://github.com/rust-net-web/tide) point into the right direction: a concerted effort by a _team_ of people to build a reliable, stable offering that is a stable workload.
+I think projects like [tide](https://github.com/rust-net-web/tide) point into the right direction: a concerted effort by a _team_ of people to build a reliable, stable offering that is a stable workhorse.
 
 We had our year of language fixup. We need a year of finishing the parts of the ecosystem that are generally considered expected for the course for any major programming language.
 
