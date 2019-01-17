@@ -8,8 +8,6 @@
 
 * [Offer: Conference Organisation Workshop](https://yakshav.es/conference-organisation-workshop)
 
-* [Rust 2019 (11): Tackling tone](https://yakshav.es/rust-2019-tackling-tone)
-
 * [Rust 2019 (8): Rethinking The Team Structure](https://yakshav.es/rust-2019-rethinking-the-team-structure)
 
 * [yaks(1)](https://yakshav.es/yaks-1)
@@ -27,6 +25,8 @@
 * [Sustainability](https://yakshav.es/sustainability)
 
 * [Rust 2019 (9): Getting serious on commercial usage](https://yakshav.es/rust-2019-getting-serious-on-commercial-usage)
+
+* [Rust 2019 (11): Tackling growth and tone](https://yakshav.es/rust-2019-tackling-growth-and-tone)
 
 * [So much space](https://yakshav.es/so-much-space)
 
