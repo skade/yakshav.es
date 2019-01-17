@@ -12,11 +12,7 @@ I don't think it's going to carry us to the next level. It believe constrains us
 
 ## Single leaders
 
-<<<<<<< HEAD
-I think it's time to move beyond single leaders. It's odd that we build our teams towards independence, but the teams themselves are hierarchical. The community team is currently experimenting with floating roles and experiences look good. It has multiple advantages: it shifts away responsible from full-time Rust employees, while still being flexible enough to have hobbyists choose their own pace and effort. It also makes the team resilient against sudden changes. I'd like to specifically mention [Ashley Williams](TODO: Twitter link) for starting the change towards that model.
-=======
 I think it's time to move beyond single leaders. It's odd that we build our teams towards independence, but the teams themselves are hierarchical. The community team is currently experimenting with floating roles and experiences look good. It has multiple advantages: it shifts away responsible from full-time Rust employees, while still being flexible enough to have hobbyists choose their own pace and effort. It also makes the team resilient against sudden changes. I'd like to specifically mention [Ashley Williams](https://twitter.com/ag_dubs) for starting the change towards that model.
->>>>>>> next
 
 ## Define goals, roles and responsibilities better
 
@@ -40,8 +36,4 @@ How does one join a team? What's the base expectation? How to you propose a new 
 
 This has been an ongoing problem since Rust 1.0, when the teams were announced out of the blue. That's a ton of work we've been pushing off since then.
 
-<<<<<<< HEAD
-The goal of this should not be to save each other work and give visibilty, not introduce more friction.
-=======
 All in all, we need to work on reducing friction and increasing visibility.
->>>>>>> next
