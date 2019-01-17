@@ -10,8 +10,4 @@ I'm beginning to wonder if we hadn't set the standard to high a little in the pr
 
 Whenever someone says "I want it to be like RustFest", it makes me shiver. RustFest is the event of the RustFest team. With a very specific style, a certain acceptance for its flaws but a lot of love for some details. It is a community event, but it is also _our_ event. I don't mean this defensively - it just means that many we prefer some solutions over the other. I personally want to empower people to run _their_ events. That also means that they should not have false respect to what's there. You think a straight-forward two-day conference is what's lacking in the European Rust space? You're probably right, go ahead, do it! You don't like RustFest's style? By all means, don't adopt it. There's tons of ways to organise an event and I would love to see people get more creative.
 
-<<<<<<< HEAD
-I hope that in 2019, a couple of independent users will decide to run their own thing. In Europe, the US, and beyond. RustRush and Rust LATAM are showing a good path!
-=======
 I hope that in 2019, a couple of independent organizers will hopefully decide to run their own thing! In Europe, the US, and beyond. [RustRush](https://rustrush.ru/) and [Rust LATAM](https://rustlatam.org/) are showing a good path!
->>>>>>> next
