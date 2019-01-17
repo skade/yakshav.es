@@ -12,7 +12,7 @@ I don't think it's going to carry us to the next level. It believe constrains us
 
 ## Single leaders
 
-I think it's time to move beyond single leaders. It's odd that we build our teams towards independence, but the teams themselves are hierarchical. The community team is currently experimenting with floating roles and experiences look good. It has multiple advantages: it shifts away responsible from full-time Rust employees, while still being flexible enough to have hobbyists choose their own pace and effort. It also makes the team resilient against sudden changes. I'd like to specifically mention [Ashley Williams](TODO: Twitter link) for starting the change towards that model.
+I think it's time to move beyond single leaders. It's odd that we build our teams towards independence, but the teams themselves are hierarchical. The community team is currently experimenting with floating roles and experiences look good. It has multiple advantages: it shifts away responsible from full-time Rust employees, while still being flexible enough to have hobbyists choose their own pace and effort. It also makes the team resilient against sudden changes. I'd like to specifically mention [Ashley Williams](https://twitter.com/ag_dubs) for starting the change towards that model.
 
 ## Define goals, roles and responsibilities better
 

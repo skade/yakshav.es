@@ -6,9 +6,11 @@
 
 * [2018: The year we learn Rust 1.0](https://yakshav.es/rust-2018)
 
-* [Rust 2019 (7): Programming is the least of our concern](https://yakshav.es/rust-2019-programming-is-the-least-of-our-concerns)
-
 * [Offer: Conference Organisation Workshop](https://yakshav.es/conference-organisation-workshop)
+
+* [Rust 2019 (11): Tackling growth and tone](https://yakshav.es/rust-2019-tackling-tone)
+
+* [Rust 2019 (8): Rethinking The Team Structure](https://yakshav.es/rust-2019-rethinking-the-team-structure)
 
 * [yaks(1)](https://yakshav.es/yaks-1)
 
@@ -18,9 +20,13 @@
 
 * [My personal Rust 2017 retrospective](https://yakshav.es/rust-2017-retrospective)
 
+* [Rust 2019 (7): More librarians](https://yakshav.es/rust-2019-more-librarians)
+
 * [Positivity in Coding](https://yakshav.es/positivity-in-coding)
 
 * [Sustainability](https://yakshav.es/sustainability)
+
+* [Rust 2019 (9): Getting serious on commercial usage](https://yakshav.es/rust-2019-getting-serious-on-commercial-usage)
 
 * [So much space](https://yakshav.es/so-much-space)
 
@@ -63,6 +69,10 @@
 * [Sponsor Florian](https://yakshav.es/sponsor-florian)
 
 * [Inspecting Futures](https://yakshav.es/inspecting-futures)
+
+* [Rust 2019 (12): Rust 2020 - Access All Areas](https://yakshav.es/rust-2019-rust-2020)
+
+* [Rust 2019 (10): Beyond RustConf and RustFest](https://yakshav.es/rust-2019-beyond-rustconf-and-rustfest)
 
 * [From the Rider Down](https://yakshav.es/from-the-rider-down)
 
