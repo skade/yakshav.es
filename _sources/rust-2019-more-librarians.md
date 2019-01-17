@@ -23,4 +23,4 @@ I have a couple of potential suggestions to this problem:
 * A stricter focus on _communicating_ what the community benefit of an action is
 * A focus on better information flow and organsiation towards the community
 
-None of this is a programming job. We need more librarians and writes.
+None of this is a programming job. We need more librarians and writers.
