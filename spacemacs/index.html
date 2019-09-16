@@ -20,52 +20,52 @@
 </figure>
 <p>First of all, make sure you have <a href="https://github.com/powerline/fonts">powerline fonts</a> installed.</p>
 <p>Navigate to the font configuration in your .spacemacs file and change it to something like this:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode lisp"><code class="sourceCode commonlisp"><a class="sourceLine" id="cb1-1" data-line-number="1">dotspacemacs-default-font &#39;(<span class="st">&quot;Fira Mono for Powerline&quot;</span></a>
-<a class="sourceLine" id="cb1-2" data-line-number="2">                            :size <span class="dv">14</span></a>
-<a class="sourceLine" id="cb1-3" data-line-number="3">                            :weight normal</a>
-<a class="sourceLine" id="cb1-4" data-line-number="4">                            :width normal</a>
-<a class="sourceLine" id="cb1-5" data-line-number="5">                            :powerline-scale <span class="fl">1.1</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode lisp"><code class="sourceCode commonlisp"><a class="sourceLine" id="cb1-1" title="1">dotspacemacs-default-font &#39;(<span class="st">&quot;Fira Mono for Powerline&quot;</span></a>
+<a class="sourceLine" id="cb1-2" title="2">                            :size <span class="dv">14</span></a>
+<a class="sourceLine" id="cb1-3" title="3">                            :weight normal</a>
+<a class="sourceLine" id="cb1-4" title="4">                            :width normal</a>
+<a class="sourceLine" id="cb1-5" title="5">                            :powerline-scale <span class="fl">1.1</span>)</a></code></pre></div>
 <p>(or choose any of the fonts you like).</p>
 <p>Also, navigate to <code>dotspacemacs/user-config</code> and add:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode lisp"><code class="sourceCode commonlisp"><a class="sourceLine" id="cb2-1" data-line-number="1">(<span class="kw">setq</span> powerline-default-separator &#39;arrow)</a>
-<a class="sourceLine" id="cb2-2" data-line-number="2">(<span class="kw">setq</span> ns-use-srgb-colorspace <span class="kw">nil</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode lisp"><code class="sourceCode commonlisp"><a class="sourceLine" id="cb2-1" title="1">(<span class="kw">setq</span> powerline-default-separator &#39;arrow)</a>
+<a class="sourceLine" id="cb2-2" title="2">(<span class="kw">setq</span> ns-use-srgb-colorspace <span class="kw">nil</span>)</a></code></pre></div>
 <h2 id="tls-not-working">TLS not working</h2>
 <p>When using restclient.el, I ran into TLS issues due to missing CA certificaties.</p>
 <p>This can be fixed by downloading <code>cacert.pem</code> from <a href="https://curl.haxx.se/docs/caextract.html">curl</a> and putting it somewhere. Then put the following in <code>dotspacemacs/user-config</code>:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode lisp"><code class="sourceCode commonlisp"><a class="sourceLine" id="cb3-1" data-line-number="1">(<span class="kw">require</span> &#39;tls)</a>
-<a class="sourceLine" id="cb3-2" data-line-number="2">(<span class="kw">require</span> &#39;gnutls)</a>
-<a class="sourceLine" id="cb3-3" data-line-number="3">(add-to-list &#39;gnutls-trustfiles (expand-file-name <span class="st">&quot;~/.emacs.d/etc/cacert.pem&quot;</span>))</a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode lisp"><code class="sourceCode commonlisp"><a class="sourceLine" id="cb3-1" title="1">(<span class="kw">require</span> &#39;tls)</a>
+<a class="sourceLine" id="cb3-2" title="2">(<span class="kw">require</span> &#39;gnutls)</a>
+<a class="sourceLine" id="cb3-3" title="3">(add-to-list &#39;gnutls-trustfiles (expand-file-name <span class="st">&quot;~/.emacs.d/etc/cacert.pem&quot;</span>))</a></code></pre></div>
 <p>Regularly update the cert file.</p>
 <h2 id="use-the-emacs-server">Use the emacs server</h2>
 <p>Emacs can start a small server, making it possible to send it commands from the command line. Mostly, I use that to open files from the command line.</p>
 <p>Start the server by putting this in your <code>dotspacemacs/user-config</code>:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode lisp"><code class="sourceCode commonlisp"><a class="sourceLine" id="cb4-1" data-line-number="1">  (server-start)</a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode lisp"><code class="sourceCode commonlisp"><a class="sourceLine" id="cb4-1" title="1">  (server-start)</a></code></pre></div>
 <p>Then use <code>emacsclient</code> from the command line:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="ex">/Applications/Emacs.app/Contents/MacOS/bin/emacsclient</span> -c -n <span class="va">$argv</span><span class="kw">;</span></a></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb5-1" title="1"><span class="ex">/Applications/Emacs.app/Contents/MacOS/bin/emacsclient</span> -c -n <span class="va">$argv</span><span class="kw">;</span></a></code></pre></div>
 <p>Obviously: create an alias for that.</p>
 <p><code>-c</code> tells emacs to create a new frame for the file, <code>-n</code> the client not to wait until the frame closes.</p>
 <h2 id="dont-close-emacs.app-on-last-window-close">Don’t close Emacs.app on last window close</h2>
 <p>I prefer the standard OS X behaviour of not closing the app when the last document closes. This also means that you don’t have to pay the hefty startup fine that spacemacs has every time. Luckily, Emacs behaviours are mostly written in elips, so you can just monkey-patch that behaviour.</p>
 <p>Just put this in your <code>dotspacemacs/user-config</code>:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode lisp"><code class="sourceCode commonlisp"><a class="sourceLine" id="cb6-1" data-line-number="1">  (<span class="kw">defun</span><span class="fu"> handle-delete-frame-without-kill-emacs </span>(event)</a>
-<a class="sourceLine" id="cb6-2" data-line-number="2">    <span class="st">&quot;Handle delete-frame events from the X server.&quot;</span></a>
-<a class="sourceLine" id="cb6-3" data-line-number="3">    (interactive <span class="st">&quot;e&quot;</span>)</a>
-<a class="sourceLine" id="cb6-4" data-line-number="4">    (<span class="kw">let</span> ((frame (posn-window (event-start event)))</a>
-<a class="sourceLine" id="cb6-5" data-line-number="5">          (i <span class="dv">0</span>)</a>
-<a class="sourceLine" id="cb6-6" data-line-number="6">          (tail (frame-list)))</a>
-<a class="sourceLine" id="cb6-7" data-line-number="7">      (while tail</a>
-<a class="sourceLine" id="cb6-8" data-line-number="8">        (<span class="kw">and</span> (frame-visible-p (<span class="kw">car</span> tail))</a>
-<a class="sourceLine" id="cb6-9" data-line-number="9">             (<span class="kw">not</span> (<span class="kw">eq</span> (<span class="kw">car</span> tail) frame))</a>
-<a class="sourceLine" id="cb6-10" data-line-number="10">             (<span class="kw">setq</span> i (<span class="op">1+</span> i)))</a>
-<a class="sourceLine" id="cb6-11" data-line-number="11">        (<span class="kw">setq</span> tail (<span class="kw">cdr</span> tail)))</a>
-<a class="sourceLine" id="cb6-12" data-line-number="12">      (<span class="kw">if</span> (<span class="op">&gt;</span> i <span class="dv">0</span>)</a>
-<a class="sourceLine" id="cb6-13" data-line-number="13">          (delete-frame frame <span class="kw">t</span>)</a>
-<a class="sourceLine" id="cb6-14" data-line-number="14">        <span class="co">;; Not (save-buffers-kill-emacs) but instead:</span></a>
-<a class="sourceLine" id="cb6-15" data-line-number="15">        (ns-do-hide-emacs))))</a>
-<a class="sourceLine" id="cb6-16" data-line-number="16"></a>
-<a class="sourceLine" id="cb6-17" data-line-number="17">  (<span class="kw">when</span> (<span class="kw">eq</span> system-type &#39;darwin)</a>
-<a class="sourceLine" id="cb6-18" data-line-number="18">    (advice-add &#39;handle-delete-frame :override</a>
-<a class="sourceLine" id="cb6-19" data-line-number="19">                #&#39;handle-delete-frame-without-kill-emacs))</a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode lisp"><code class="sourceCode commonlisp"><a class="sourceLine" id="cb6-1" title="1">  (<span class="kw">defun</span><span class="fu"> handle-delete-frame-without-kill-emacs </span>(event)</a>
+<a class="sourceLine" id="cb6-2" title="2">    <span class="st">&quot;Handle delete-frame events from the X server.&quot;</span></a>
+<a class="sourceLine" id="cb6-3" title="3">    (interactive <span class="st">&quot;e&quot;</span>)</a>
+<a class="sourceLine" id="cb6-4" title="4">    (<span class="kw">let</span> ((frame (posn-window (event-start event)))</a>
+<a class="sourceLine" id="cb6-5" title="5">          (i <span class="dv">0</span>)</a>
+<a class="sourceLine" id="cb6-6" title="6">          (tail (frame-list)))</a>
+<a class="sourceLine" id="cb6-7" title="7">      (while tail</a>
+<a class="sourceLine" id="cb6-8" title="8">        (<span class="kw">and</span> (frame-visible-p (<span class="kw">car</span> tail))</a>
+<a class="sourceLine" id="cb6-9" title="9">             (<span class="kw">not</span> (<span class="kw">eq</span> (<span class="kw">car</span> tail) frame))</a>
+<a class="sourceLine" id="cb6-10" title="10">             (<span class="kw">setq</span> i (<span class="op">1+</span> i)))</a>
+<a class="sourceLine" id="cb6-11" title="11">        (<span class="kw">setq</span> tail (<span class="kw">cdr</span> tail)))</a>
+<a class="sourceLine" id="cb6-12" title="12">      (<span class="kw">if</span> (<span class="op">&gt;</span> i <span class="dv">0</span>)</a>
+<a class="sourceLine" id="cb6-13" title="13">          (delete-frame frame <span class="kw">t</span>)</a>
+<a class="sourceLine" id="cb6-14" title="14">        <span class="co">;; Not (save-buffers-kill-emacs) but instead:</span></a>
+<a class="sourceLine" id="cb6-15" title="15">        (ns-do-hide-emacs))))</a>
+<a class="sourceLine" id="cb6-16" title="16"></a>
+<a class="sourceLine" id="cb6-17" title="17">  (<span class="kw">when</span> (<span class="kw">eq</span> system-type &#39;darwin)</a>
+<a class="sourceLine" id="cb6-18" title="18">    (advice-add &#39;handle-delete-frame :override</a>
+<a class="sourceLine" id="cb6-19" title="19">                #&#39;handle-delete-frame-without-kill-emacs))</a></code></pre></div>
 <p>This probably better belongs into a layer.</p>
 <p>Found <a href="https://lists.gnu.org/archive/html/help-gnu-emacs/2016-01/msg00236.html">here</a>.</p>
 

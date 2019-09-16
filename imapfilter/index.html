@@ -19,29 +19,29 @@
 <p>So we fetch the <code>TO</code> field of every email, parse out the project name.</p>
 <p>For some reason, I have at least one project where the project name is quoted, so we remove the quotes.</p>
 <p>For perfomance reason, we then collect all emails by project and move them to a <code>organisation/projectname</code> folder struture.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode lua"><code class="sourceCode lua"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">function</span> filter_github_email<span class="ot">(</span>box<span class="ot">,</span> target_account<span class="ot">)</span></a>
-<a class="sourceLine" id="cb1-2" data-line-number="2">  messages <span class="ot">=</span> box:contain_from<span class="ot">(</span><span class="st">&quot;notifications@github.com&quot;</span><span class="ot">)</span></a>
-<a class="sourceLine" id="cb1-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb1-4" data-line-number="4">  actions <span class="ot">=</span> <span class="ot">{}</span></a>
-<a class="sourceLine" id="cb1-5" data-line-number="5">  <span class="kw">for</span> _<span class="ot">,</span> message <span class="kw">in</span> <span class="fu">ipairs</span><span class="ot">(</span>messages<span class="ot">)</span> <span class="kw">do</span></a>
-<a class="sourceLine" id="cb1-6" data-line-number="6">    mailbox<span class="ot">,</span> uid <span class="ot">=</span> table<span class="ot">.</span>unpack<span class="ot">(</span>message<span class="ot">)</span></a>
-<a class="sourceLine" id="cb1-7" data-line-number="7">    to <span class="ot">=</span> box<span class="ot">[</span>uid<span class="ot">]</span>:fetch_field<span class="ot">(</span><span class="st">&quot;TO&quot;</span><span class="ot">)</span></a>
-<a class="sourceLine" id="cb1-8" data-line-number="8">    project <span class="ot">=</span> string<span class="ot">.</span>match<span class="ot">(</span>to<span class="ot">,</span> <span class="st">&#39;To: ([%S]+)&#39;</span><span class="ot">)</span></a>
-<a class="sourceLine" id="cb1-9" data-line-number="9">    project_scrubbed <span class="ot">=</span> project:<span class="fu">gsub</span><span class="ot">(</span><span class="st">&#39;&quot;&#39;</span><span class="ot">,</span> <span class="st">&#39;&#39;</span><span class="ot">)</span></a>
-<a class="sourceLine" id="cb1-10" data-line-number="10">    target_mailbox <span class="ot">=</span> <span class="st">&quot;GitHub/&quot;</span> <span class="ot">..</span> project_scrubbed</a>
-<a class="sourceLine" id="cb1-11" data-line-number="11"></a>
-<a class="sourceLine" id="cb1-12" data-line-number="12">    <span class="kw">if</span> <span class="kw">not</span> actions<span class="ot">[</span>target_mailbox<span class="ot">]</span> <span class="kw">then</span></a>
-<a class="sourceLine" id="cb1-13" data-line-number="13">      actions<span class="ot">[</span>target_mailbox<span class="ot">]</span> <span class="ot">=</span> Set <span class="ot">{}</span></a>
-<a class="sourceLine" id="cb1-14" data-line-number="14">    <span class="kw">end</span></a>
-<a class="sourceLine" id="cb1-15" data-line-number="15">    <span class="fu">table.insert</span><span class="ot">(</span>actions<span class="ot">[</span>target_mailbox<span class="ot">],</span> message<span class="ot">)</span></a>
-<a class="sourceLine" id="cb1-16" data-line-number="16">  <span class="kw">end</span></a>
-<a class="sourceLine" id="cb1-17" data-line-number="17"></a>
-<a class="sourceLine" id="cb1-18" data-line-number="18">  <span class="kw">for</span> mailbox<span class="ot">,</span> msgs <span class="kw">in</span> <span class="fu">pairs</span><span class="ot">(</span>actions<span class="ot">)</span> <span class="kw">do</span></a>
-<a class="sourceLine" id="cb1-19" data-line-number="19">    msgs:move_messages<span class="ot">(</span>target_account<span class="ot">[</span>mailbox<span class="ot">])</span></a>
-<a class="sourceLine" id="cb1-20" data-line-number="20">  <span class="kw">end</span></a>
-<a class="sourceLine" id="cb1-21" data-line-number="21"><span class="kw">end</span></a>
-<a class="sourceLine" id="cb1-22" data-line-number="22"></a>
-<a class="sourceLine" id="cb1-23" data-line-number="23">filter_github_email<span class="ot">(</span>account<span class="ot">.</span>INBOX<span class="ot">,</span> account<span class="ot">)</span></a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode lua"><code class="sourceCode lua"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">function</span> filter_github_email<span class="op">(</span>box<span class="op">,</span> target_account<span class="op">)</span></a>
+<a class="sourceLine" id="cb1-2" title="2">  messages <span class="op">=</span> box<span class="op">:</span>contain_from<span class="op">(</span><span class="st">&quot;notifications@github.com&quot;</span><span class="op">)</span></a>
+<a class="sourceLine" id="cb1-3" title="3"></a>
+<a class="sourceLine" id="cb1-4" title="4">  actions <span class="op">=</span> <span class="op">{}</span></a>
+<a class="sourceLine" id="cb1-5" title="5">  <span class="cf">for</span> <span class="cn">_</span><span class="op">,</span> message <span class="kw">in</span> <span class="fu">ipairs</span><span class="op">(</span>messages<span class="op">)</span> <span class="cf">do</span></a>
+<a class="sourceLine" id="cb1-6" title="6">    mailbox<span class="op">,</span> uid <span class="op">=</span> <span class="fu">table.unpack</span><span class="op">(</span>message<span class="op">)</span></a>
+<a class="sourceLine" id="cb1-7" title="7">    to <span class="op">=</span> box<span class="op">[</span>uid<span class="op">]:</span>fetch_field<span class="op">(</span><span class="st">&quot;TO&quot;</span><span class="op">)</span></a>
+<a class="sourceLine" id="cb1-8" title="8">    project <span class="op">=</span> <span class="fu">string.match</span><span class="op">(</span>to<span class="op">,</span> <span class="st">&#39;To: ([%S]+)&#39;</span><span class="op">)</span></a>
+<a class="sourceLine" id="cb1-9" title="9">    project_scrubbed <span class="op">=</span> project<span class="op">:</span><span class="fu">gsub</span><span class="op">(</span><span class="st">&#39;&quot;&#39;</span><span class="op">,</span> <span class="st">&#39;&#39;</span><span class="op">)</span></a>
+<a class="sourceLine" id="cb1-10" title="10">    target_mailbox <span class="op">=</span> <span class="st">&quot;GitHub/&quot;</span> <span class="op">..</span> project_scrubbed</a>
+<a class="sourceLine" id="cb1-11" title="11"></a>
+<a class="sourceLine" id="cb1-12" title="12">    <span class="cf">if</span> <span class="kw">not</span> actions<span class="op">[</span>target_mailbox<span class="op">]</span> <span class="cf">then</span></a>
+<a class="sourceLine" id="cb1-13" title="13">      actions<span class="op">[</span>target_mailbox<span class="op">]</span> <span class="op">=</span> Set <span class="op">{}</span></a>
+<a class="sourceLine" id="cb1-14" title="14">    <span class="cf">end</span></a>
+<a class="sourceLine" id="cb1-15" title="15">    <span class="fu">table.insert</span><span class="op">(</span>actions<span class="op">[</span>target_mailbox<span class="op">],</span> message<span class="op">)</span></a>
+<a class="sourceLine" id="cb1-16" title="16">  <span class="cf">end</span></a>
+<a class="sourceLine" id="cb1-17" title="17"></a>
+<a class="sourceLine" id="cb1-18" title="18">  <span class="cf">for</span> mailbox<span class="op">,</span> msgs <span class="kw">in</span> <span class="fu">pairs</span><span class="op">(</span>actions<span class="op">)</span> <span class="cf">do</span></a>
+<a class="sourceLine" id="cb1-19" title="19">    msgs<span class="op">:</span>move_messages<span class="op">(</span>target_account<span class="op">[</span>mailbox<span class="op">])</span></a>
+<a class="sourceLine" id="cb1-20" title="20">  <span class="cf">end</span></a>
+<a class="sourceLine" id="cb1-21" title="21"><span class="cf">end</span></a>
+<a class="sourceLine" id="cb1-22" title="22"></a>
+<a class="sourceLine" id="cb1-23" title="23">filter_github_email<span class="op">(</span>account<span class="op">.</span><span class="cn">INBOX</span><span class="op">,</span> account<span class="op">)</span></a></code></pre></div>
 
       <a href="/">top</a>
     </div>

@@ -13,38 +13,38 @@
 <h1 id="decorating-results">Decorating Results</h1>
 <p>Rust has many ways to make <code>Result</code>s ergonomic, from <code>try!</code> to <code>From</code> and friends. Here’s another one that is useful when chaining is appropriate and all errors can be passed through while you want to work on <code>Ok</code> values: just implement a special trait for your specific <code>Result</code> type to decorate it. This allows the user to do all general operations on the <code>Result</code> and just deconstruct it at the end.</p>
 <p>This can make convenient APIs, but obviously means that users need to import that trait everywhere. Also, it needs work to find a good error type you can fully pass through that chain.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode rust"><code class="sourceCode rust"><a class="sourceLine" id="cb1-1" data-line-number="1"></a>
-<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="kw">pub</span> <span class="kw">trait</span> MyResult <span class="op">{</span></a>
-<a class="sourceLine" id="cb1-3" data-line-number="3">    <span class="kw">fn</span> double(<span class="kw">self</span>) -&gt; <span class="kw">Self</span>;</a>
-<a class="sourceLine" id="cb1-4" data-line-number="4"><span class="op">}</span></a>
-<a class="sourceLine" id="cb1-5" data-line-number="5"></a>
-<a class="sourceLine" id="cb1-6" data-line-number="6"><span class="kw">impl</span> MyResult <span class="kw">for</span> <span class="dt">Result</span>&lt;<span class="dt">i32</span>, <span class="dt">String</span>&gt; <span class="op">{</span></a>
-<a class="sourceLine" id="cb1-7" data-line-number="7">    <span class="kw">fn</span> double(<span class="kw">self</span>) -&gt; <span class="dt">Result</span>&lt;<span class="dt">i32</span>, <span class="dt">String</span>&gt; <span class="op">{</span></a>
-<a class="sourceLine" id="cb1-8" data-line-number="8">        <span class="kw">self</span>.map(|i| i*<span class="dv">2</span>)</a>
-<a class="sourceLine" id="cb1-9" data-line-number="9">    <span class="op">}</span></a>
-<a class="sourceLine" id="cb1-10" data-line-number="10"><span class="op">}</span></a>
-<a class="sourceLine" id="cb1-11" data-line-number="11"></a>
-<a class="sourceLine" id="cb1-12" data-line-number="12"><span class="kw">fn</span> okay() -&gt; <span class="dt">Result</span>&lt;<span class="dt">i32</span>, <span class="dt">String</span>&gt; <span class="op">{</span></a>
-<a class="sourceLine" id="cb1-13" data-line-number="13">    <span class="cn">Ok</span>(<span class="dv">2</span>)</a>
-<a class="sourceLine" id="cb1-14" data-line-number="14"><span class="op">}</span></a>
-<a class="sourceLine" id="cb1-15" data-line-number="15"></a>
-<a class="sourceLine" id="cb1-16" data-line-number="16"><span class="kw">fn</span> failing() -&gt; <span class="dt">Result</span>&lt;<span class="dt">i32</span>, <span class="dt">String</span>&gt; <span class="op">{</span></a>
-<a class="sourceLine" id="cb1-17" data-line-number="17">    <span class="cn">Err</span>(<span class="st">&quot;everything broke&quot;</span>.into())</a>
-<a class="sourceLine" id="cb1-18" data-line-number="18"><span class="op">}</span></a>
-<a class="sourceLine" id="cb1-19" data-line-number="19"></a>
-<a class="sourceLine" id="cb1-20" data-line-number="20"><span class="at">#[</span>test<span class="at">]</span></a>
-<a class="sourceLine" id="cb1-21" data-line-number="21"><span class="kw">fn</span> test() <span class="op">{</span></a>
-<a class="sourceLine" id="cb1-22" data-line-number="22">    <span class="pp">assert_eq!</span>(okay().double().unwrap(), <span class="dv">4</span>);</a>
-<a class="sourceLine" id="cb1-23" data-line-number="23">    <span class="pp">assert_eq!</span>(failing().double(), <span class="cn">Err</span>(<span class="st">&quot;everything broke&quot;</span>.into()));</a>
-<a class="sourceLine" id="cb1-24" data-line-number="24"><span class="op">}</span></a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode rust"><code class="sourceCode rust"><a class="sourceLine" id="cb1-1" title="1"></a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="kw">pub</span> <span class="kw">trait</span> MyResult <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-3" title="3">    <span class="kw">fn</span> double(<span class="kw">self</span>) -&gt; <span class="kw">Self</span>;</a>
+<a class="sourceLine" id="cb1-4" title="4"><span class="op">}</span></a>
+<a class="sourceLine" id="cb1-5" title="5"></a>
+<a class="sourceLine" id="cb1-6" title="6"><span class="kw">impl</span> MyResult <span class="kw">for</span> <span class="dt">Result</span>&lt;<span class="dt">i32</span>, <span class="dt">String</span>&gt; <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-7" title="7">    <span class="kw">fn</span> double(<span class="kw">self</span>) -&gt; <span class="dt">Result</span>&lt;<span class="dt">i32</span>, <span class="dt">String</span>&gt; <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-8" title="8">        <span class="kw">self</span>.map(|i| i*<span class="dv">2</span>)</a>
+<a class="sourceLine" id="cb1-9" title="9">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb1-10" title="10"><span class="op">}</span></a>
+<a class="sourceLine" id="cb1-11" title="11"></a>
+<a class="sourceLine" id="cb1-12" title="12"><span class="kw">fn</span> okay() -&gt; <span class="dt">Result</span>&lt;<span class="dt">i32</span>, <span class="dt">String</span>&gt; <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-13" title="13">    <span class="cn">Ok</span>(<span class="dv">2</span>)</a>
+<a class="sourceLine" id="cb1-14" title="14"><span class="op">}</span></a>
+<a class="sourceLine" id="cb1-15" title="15"></a>
+<a class="sourceLine" id="cb1-16" title="16"><span class="kw">fn</span> failing() -&gt; <span class="dt">Result</span>&lt;<span class="dt">i32</span>, <span class="dt">String</span>&gt; <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-17" title="17">    <span class="cn">Err</span>(<span class="st">&quot;everything broke&quot;</span>.into())</a>
+<a class="sourceLine" id="cb1-18" title="18"><span class="op">}</span></a>
+<a class="sourceLine" id="cb1-19" title="19"></a>
+<a class="sourceLine" id="cb1-20" title="20"><span class="at">#[</span>test<span class="at">]</span></a>
+<a class="sourceLine" id="cb1-21" title="21"><span class="kw">fn</span> test() <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-22" title="22">    <span class="pp">assert_eq!</span>(okay().double().unwrap(), <span class="dv">4</span>);</a>
+<a class="sourceLine" id="cb1-23" title="23">    <span class="pp">assert_eq!</span>(failing().double(), <span class="cn">Err</span>(<span class="st">&quot;everything broke&quot;</span>.into()));</a>
+<a class="sourceLine" id="cb1-24" title="24"><span class="op">}</span></a></code></pre></div>
 <p>Yes, it’s basically a trick to hide <code>map</code> and friends from the user.</p>
 <p><a href="/lazers">lazers</a> currently uses this to chain database lookup and creation where both operations can fail due to network/database/concurrency issues.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode rust"><code class="sourceCode rust"><a class="sourceLine" id="cb2-1" data-line-number="1"></a>
-<a class="sourceLine" id="cb2-2" data-line-number="2"><span class="kw">let</span> client = HyperClient::default();</a>
-<a class="sourceLine" id="cb2-3" data-line-number="3"><span class="kw">let</span> res = client.find_database(<span class="st">&quot;to_be_created&quot;</span>.to_string())</a>
-<a class="sourceLine" id="cb2-4" data-line-number="4">                .or_create();</a>
-<a class="sourceLine" id="cb2-5" data-line-number="5"><span class="pp">assert!</span>(res.is_ok());</a>
-<a class="sourceLine" id="cb2-6" data-line-number="6"><span class="pp">assert!</span>(res.unwrap().existing())</a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode rust"><code class="sourceCode rust"><a class="sourceLine" id="cb2-1" title="1"></a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="kw">let</span> client = <span class="pp">HyperClient::</span><span class="kw">default</span>();</a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="kw">let</span> res = client.find_database(<span class="st">&quot;to_be_created&quot;</span>.to_string())</a>
+<a class="sourceLine" id="cb2-4" title="4">                .or_create();</a>
+<a class="sourceLine" id="cb2-5" title="5"><span class="pp">assert!</span>(res.is_ok());</a>
+<a class="sourceLine" id="cb2-6" title="6"><span class="pp">assert!</span>(res.unwrap().existing())</a></code></pre></div>
 
       <a href="/">top</a>
     </div>

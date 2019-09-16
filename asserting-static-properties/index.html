@@ -21,17 +21,17 @@
 </ul>
 <p>But we can test these statically, by using them in our test suite. If one of the conditions we have breaks, compilation will fail.</p>
 <p>For Send and Sync, we can use the following functions:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode rust"><code class="sourceCode rust"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">struct</span> MyType <span class="op">{</span></a>
-<a class="sourceLine" id="cb1-2" data-line-number="2">  inner: <span class="dt">i32</span></a>
-<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="op">}</span></a>
-<a class="sourceLine" id="cb1-4" data-line-number="4"></a>
-<a class="sourceLine" id="cb1-5" data-line-number="5"><span class="kw">fn</span> _assert_send&lt;T: <span class="bu">Send</span>&gt;() <span class="op">{}</span></a>
-<a class="sourceLine" id="cb1-6" data-line-number="6"><span class="kw">fn</span> _assert_sync&lt;T: <span class="bu">Sync</span>&gt;() <span class="op">{}</span></a>
-<a class="sourceLine" id="cb1-7" data-line-number="7"></a>
-<a class="sourceLine" id="cb1-8" data-line-number="8"><span class="kw">fn</span> _assertions() <span class="op">{</span></a>
-<a class="sourceLine" id="cb1-9" data-line-number="9">    _assert_send::&lt;MyType&gt;();</a>
-<a class="sourceLine" id="cb1-10" data-line-number="10">    _assert_sync::&lt;MyType&gt;();</a>
-<a class="sourceLine" id="cb1-11" data-line-number="11"><span class="op">}</span></a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode rust"><code class="sourceCode rust"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">struct</span> MyType <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-2" title="2">  inner: <span class="dt">i32</span></a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="op">}</span></a>
+<a class="sourceLine" id="cb1-4" title="4"></a>
+<a class="sourceLine" id="cb1-5" title="5"><span class="kw">fn</span> _assert_send&lt;T: <span class="bu">Send</span>&gt;() <span class="op">{}</span></a>
+<a class="sourceLine" id="cb1-6" title="6"><span class="kw">fn</span> _assert_sync&lt;T: <span class="bu">Sync</span>&gt;() <span class="op">{}</span></a>
+<a class="sourceLine" id="cb1-7" title="7"></a>
+<a class="sourceLine" id="cb1-8" title="8"><span class="kw">fn</span> _assertions() <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-9" title="9">    <span class="pp">_assert_send::</span>&lt;MyType&gt;();</a>
+<a class="sourceLine" id="cb1-10" title="10">    <span class="pp">_assert_sync::</span>&lt;MyType&gt;();</a>
+<a class="sourceLine" id="cb1-11" title="11"><span class="op">}</span></a></code></pre></div>
 <p>This article used to have an approach to test object safety here that didn’t work.</p>
 <p>Finally, check out the <code>compile-fail</code> crate for proper integration of this into your test suite.</p>
 <p>Notable mentions: The pattern for <code>_assert_send/sync</code> is lifted from Alex Crichtons <a href="https://github.com/alexcrichton/futures-rs/blob/master/futures-cpupool/src/lib.rs#L92-L97"><code>futures-cpupool</code></a> crate.</p>

@@ -16,18 +16,18 @@
 <h2 id="how-it-works">How it works</h2>
 <p>When using a shared PostgreSQL database, it can make sense to rely on <a href="https://www.postgresql.org/docs/9.6/static/ddl-schemas.html">PostgreSQL schemas</a>. Sharing a database can be useful if you want to keep things in database, but also hook multiple isolated applications to it.</p>
 <p>Schemas are basically a namespace within the database. The default schema present in every database is called <code>public</code> and is accessible by all users. When you just create a table called <code>users</code>, it will be placed in that schema. It is then also accessible as <code>public.users</code>.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode sql"><code class="sourceCode sql"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">SELECT</span> * <span class="kw">FROM</span> public.users;</a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sql"><code class="sourceCode sql"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">SELECT</span> <span class="op">*</span> <span class="kw">FROM</span> <span class="kw">public</span>.users;</a></code></pre></div>
 <p>The reason you can query just by <code>users</code> is because PG has the idea of a search path. By default, it is set to <code>&quot;$user&quot;, &quot;public&quot;</code>. For any unqualified table, it first searches the table in a schema named after the connecting user, and then the public schema. If these schemas don’t exist, they are silently ignored.</p>
 <p>Now, counter-intuitively, the <code>search_path</code> also applies when creating a table: the table will be created in the first existing schema in the search path.</p>
 <p>So, if we can tell Diesel to set a <code>search_path</code>, we’re pretty much done. It’s surprisingly easy, just set the right <code>DATABASE_URL</code>.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="va">DATABASE_URL=</span><span class="st">&quot;postgres://ubuntu:@127.0.0.1:5432/my_database?application_name=my_app&amp;options=-c search_path%3Dmy_app&quot;</span></a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb2-1" title="1"><span class="va">DATABASE_URL=</span><span class="st">&quot;postgres://ubuntu:@127.0.0.1:5432/my_database?application_name=my_app&amp;options=-c search_path%3Dmy_app&quot;</span></a></code></pre></div>
 <p>Now, this is a little weird: we are actually passing a command line argument to the server. As the argument includes <code>=</code>, we have to encode it.</p>
 <p>Finally, we need to create the database and the schema before we let Diesel work its magic. Make sure you connect using <code>psql</code> and are using the user your app will connect with.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode sql"><code class="sourceCode sql"><a class="sourceLine" id="cb3-1" data-line-number="1">$ <span class="kw">CREATE</span> <span class="kw">DATABASE</span> my_database;</a>
-<a class="sourceLine" id="cb3-2" data-line-number="2">$ \c my_database;</a>
-<a class="sourceLine" id="cb3-3" data-line-number="3">$ <span class="kw">CREATE</span> <span class="kw">SCHEMA</span> my_app;</a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode sql"><code class="sourceCode sql"><a class="sourceLine" id="cb3-1" title="1">$ <span class="kw">CREATE</span> <span class="kw">DATABASE</span> my_database;</a>
+<a class="sourceLine" id="cb3-2" title="2">$ \c my_database;</a>
+<a class="sourceLine" id="cb3-3" title="3">$ <span class="kw">CREATE</span> <span class="kw">SCHEMA</span> my_app;</a></code></pre></div>
 <p>Then do the Diesel dance:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb4-1" data-line-number="1">$ <span class="ex">diesel</span> migration up</a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb4-1" title="1">$ <span class="ex">diesel</span> migration up</a></code></pre></div>
 <p>And start your app as you usually do.</p>
 <p>Also, notice that I passed in <code>application_name</code> to the connection, which makes PG insert that name into all log statements concerning the requests of your app.</p>
 <h2 id="leftovers">Leftovers</h2>

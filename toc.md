@@ -8,6 +8,8 @@
 
 * [Offer: Conference Organisation Workshop](https://yakshav.es/conference-organisation-workshop)
 
+* [Positivity and the RustConf keynote](https://yakshav.es/rustconf-keynote-thoughts)
+
 * [Rust 2019 (8): Rethinking The Team Structure](https://yakshav.es/rust-2019-rethinking-the-team-structure)
 
 * [yaks(1)](https://yakshav.es/yaks-1)
