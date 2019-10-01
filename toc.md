@@ -62,6 +62,8 @@
 
 * [Rust 2019 (4): More Intention, Less Reaction](https://yakshav.es/rust-2019-more-intention-less-reaction)
 
+* [Running a project/conference YouTube channel](https://yakshav.es/running-the-rust-youtube-channel)
+
 * [Rust 2019 (6): Software practices](https://yakshav.es/rust-2019-software-practices)
 
 * [Rust 2019 (2): Keep innovating programming language communities](https://yakshav.es/rust-2019-keep-innovating-programming-language-communities)
