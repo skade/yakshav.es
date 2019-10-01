@@ -78,9 +78,10 @@ For the reasons above, at least pre-screening is in my opinion _mandatory_ for c
 
 Interestingly, YouTube has okay moderation interfaces (which, given their terrible platform policies around hate speech is surprising). Most importantly, immediately navigate for `Settings -> Community -> Defaults` and check "Hold all comments for review". This passes literally every comment through a comment queue. It also allows you to flag people as _safe_, so they can always and freely comment.
 
-This has 2 interesting advantages:
+This has 2 practical advantages:
+
 * You read all the feedback, which means you can react on it
-* You can delete bile before it reaches the speaker
+* You can delete bile before it reaches public
 
 The comment interface is reasonably fast and one-click, I can review around 50 comments in about 5 minutes. We have a comment rate of roughly 40-50 after a new conference release, in the meantime, it's lower, so this is a doable task. Given the observation that many things are clearly garbage and the space is not for debate, modeation is eased.
 
