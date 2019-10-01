@@ -54,7 +54,7 @@ Be warned that adding videos of other channels to your playlist means you import
 
 To be quite upfront: The amount of aggressive garbage in YouTube comments, especially below talks of women and marginalised people in general is substantial. If it's not that, it is still quite usual that people reach for insults or attack speakers directly (e.g. for constructing a talk in a way that they didn't like).
 
-YouTube comments are often uninspired, ranting against the subject of the presented talk or just expressing that one hates the topic of the channel. Expect ~30% of your comments to be like this. If they want to dial that up to 11, add misogyny, trans and gay hate.
+YouTube comments are often uninspired, ranting against the subject of the presented talk or just expressing that one hates the topic of the channel. Expect ~30% of your comments to be like this. If they want to dial that up to 11, add misogyny, racism, trans and gay hate.
 
 I opt here to avoid examples, but gosh, I recommend reading what gets _filtered out_ in comment moderation once in a while.
 
