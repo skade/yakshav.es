@@ -20,9 +20,9 @@ Additionally, we have started using it as a channel to publish self-recorded mat
 
 ## Why run a unified YouTube channel?
 
-The advantage of having a unified YouTube channel is the ability to unify. People only have to subscribe once, the ability to get notified of new uploads is really helpful. It also allows us to editorialise content a little and to for example highlight small conferences by publishing their stuff here.
+The advantage of having a unified YouTube channel is the ability to promote work of people in and around your project. Even if you are a new project, _someone_ is probably speaking about it somewhere. Why not curate that? People only have to subscribe once, the ability to get notified of new uploads is really helpful. It also allows us to editorialise content a little and to for example highlight small conferences by publishing their stuff here.
 
-YouTube also has mastered automatic outreach, so it does all advertising for you! Additionally, it gives you unlimited upload limits. This shouldn't be understated, e.g. uploading a whole conference up to Vimeo would have taken me 20 weeks at their limits last time I checked.
+YouTube also has automatic outreach, so it does all advertising for you! Additionally, it gives you unlimited upload limits. This shouldn't be understated, e.g. uploading a whole conference up to Vimeo would have taken me 20 weeks at their limits last time I checked.
 
 While I have a ton of problems with YouTube, they are still the _only_ one-stop solution everyone views, and the tradeoff between no one watching videos of my speakers and putting all those great people in front of an audience is still in favour of YouTube!
 
@@ -46,7 +46,7 @@ I won't go into the details of uploading videos to YouTube. There's tons of tuto
 
 What you want to use a ton is the [playlist icon](https://lh3.googleusercontent.com/zcvhfCUM2oTZeKE8cwJB51QbNjXR2vBIYQO8uUM3VLT510_o7NtdGLZroVgfHHZtk88=w18) under videos which allows you to add them to playlists (both your own videos and others).
 
-Video management will be what you will be spending most of your time with. We have the habit of rather liberally handing out video upload permissions to meetup organisers to ease the pain. They still get a briefing on what is acceptable and what not - it helps to have a [project Code of Conduct](https://www.rust-lang.org/policies/code-of-conduct) and get people used to it.
+Video curation will be what you will be spending most of your time with. We have the habit of rather liberally handing out video upload permissions to meetup organisers to ease the pain. They still get a briefing on what is acceptable and what not - it helps to have a [project Code of Conduct](https://www.rust-lang.org/policies/code-of-conduct) and get people used to it.
 
 Be warned that adding videos of other channels to your playlist means you import their comments and their subscribe button. They will also be branded in their channels colors for clarity, but make sure they got their comment section in order, because, as mentioned above...
 
@@ -98,3 +98,19 @@ My moderation policy about the YouTube channel is that a comment should add _pos
 A simple and conscious policy like this helps us to keep our workload minimal while still allowing the good and useful parts in. It curbs speed of conversation and what can be said in the comment section. That brings me back to the point above: our YouTube channel is not a discussion venue.
 
 The comment section also gets better once people figured out that they can't get insults through.
+
+## Other YouTube problems
+
+YouTube has a recommendation algorithm that is a huge part of the success story. Over 50% of our viewers come from YouTube itself.
+
+Sadly, you can't influence where your videos will be recommended and who to. I have the stong feeling that the recommender is very biased, on multiple accounts, but obviously, I have no proof here :). I'd be happy to talk with people who know more about this subject then I do.
+
+YouTube tracks. A lot. At least for RustFest stuff, we therefore also provide out videos at [media.ccc.de](https://media.ccc.de/), kindly hosted by the C3Video team (you're awesome!).
+
+## Summary
+
+Running a YouTube channel has been a huge boost to our project. It gives us a rather frictionless way to promote our project. The releationship work/reach has been great.
+
+I'd like to reiterate that with the simple techniques above, we can currently run the channel on about 20 minutes time per week. Most of that is curation. YMMV.
+
+I hope this little peek into our thinking into our practices helps you out!
