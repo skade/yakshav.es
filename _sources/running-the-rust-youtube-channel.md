@@ -113,4 +113,6 @@ Running a YouTube channel has been a huge boost to our project. It gives us a ra
 
 I'd like to reiterate that with the simple techniques above, we can currently run the channel on about 20 minutes time per week. Most of that is curation. YMMV.
 
+And remember: always think about what your spaces are there for and what you want to get out of interactions.
+
 I hope this little peek into our thinking into our practices helps you out!
