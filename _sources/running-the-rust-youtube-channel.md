@@ -14,7 +14,7 @@ If not, please read on. I'd like to present our practice around the YouTube chan
 
 ## The Rust YouTube channel
 
-I created the official Rust YouTube channel, to be found [here](https://youtube.com/c/rustvideos). The channel does not only publish all Rust videos on our conferences, but also republishes videos from other conferences.
+I created the pofficial Rust YouTube channel](https://youtube.com/c/rustvideos). The channel does not only publish all Rust videos on our conferences, but also republishes videos from other conferences.
 
 Additionally, we have started using it as a channel to publish self-recorded materials, for example the [rustc compiler lecture series](https://www.youtube.com/playlist?list=PL85XCvVPmGQhOL-J2Ng7qlPvDVOwYpGTN) or recordings of working group meetings.
 
@@ -66,7 +66,7 @@ The advantage of the YouTube comments is that they have a really strong split, w
 
 Why not burn it all down and switch comments off?
 
-Because there's also tons of positive feedback! Like [on on our most popular talk by Lisa Passing](https://www.youtube.com/watch?v=Ktwl97Ph-SI&lc=UgjPzulPSYIp5XgCoAEC). Or feedback on the [speakers slides](https://www.youtube.com/watch?v=lLzFJenzBng&lc=UgzVow6kTf9NDFnO76h4AaABAg). Sometimes people point out [big and small errors](https://www.youtube.com/watch?v=lLzFJenzBng&lc=UgxL4R6-mURR_F6Kg2x4AaABAg).
+Because there's also tons of positive feedback! Like [on our most popular talk by Lisa Passing](https://www.youtube.com/watch?v=Ktwl97Ph-SI&lc=UgjPzulPSYIp5XgCoAEC). Or feedback on the [speakers slides](https://www.youtube.com/watch?v=lLzFJenzBng&lc=UgzVow6kTf9NDFnO76h4AaABAg). Sometimes people point out [big and small errors](https://www.youtube.com/watch?v=lLzFJenzBng&lc=UgxL4R6-mURR_F6Kg2x4AaABAg).
 
 Or useful things like highlighting [the moment people talk about an important RFC](https://www.youtube.com/watch?v=EwlSlpyaZFY&lc=UgyszVgZSTa5NNyRC5V4AaABAg). Or [requests for clarification](https://www.youtube.com/watch?v=-Tj8Q12DaEQ&lc=Ugw1gefh8uIuk_4EyJt4AaABAg) - correction of mistakes is also possible. The culture of pointing out things in a video exists on YouTube and is very specific there.
 
