@@ -54,20 +54,9 @@ Be warned that adding videos of other channels to your playlist means you import
 
 To be quite upfront: The amount of aggressive garbage in YouTube comments, especially below talks of women and marginalised people in general is substantial. If it's not that, it is still quite usual that people reach for insults or attack speakers directly (e.g. for constructing a talk in a way that they didn't like).
 
-I give you a relatively harmless example:
+YouTube comments are often uninspired, ranting against the subject of the presented talk or just expressing that one hates the topic of the channel. Expect ~30% of your comments to be like this. If they want todial that up to 11, add misogyny, trans and gay hate.
 
-> [I don't trust any programmer that deliberately uses Ruby or Java.](https://www.youtube.com/watch?v=-Tj8Q12DaEQ&lc=Ugza_fmk6uElSR_NIct4AaABAg)
-
-This one isn't abusive, but serves as an illustration of a base level of discussion. Expect ~30% of your comments to be like this.
-
-Examples of mild stuff?
-
-> This years Rustconf is like g@y parade. I respect people's preference but pushing it like this is really annoying.
-> Edit: My comment did not showed up, that is why I used @ but nothing has changed.
-
-(Guess what: it didn't show up because we didn't let it to)
-
-You can dial that up to 11, but I'm not here for effect.
+I opt here to avoid examples, but gosh, I recommend reading what gets _filtered out_ in comment moderation once in a while.
 
 Speakers shouldn't go to their talk page - something they should be proud of and be able to show around - and be exposed to such garbage.
 
@@ -84,6 +73,8 @@ Or useful things like highlighting [the moment people talk about an important RF
 It isn't much, but I also like it.
 
 ## How to handle YouTube comments
+
+For the reasons above, at least pre-screening is in my opinion _mandatory_ for conferences, as the speaker is not in control of the channel. The big advantage of pre-screening is that attacks against others are not such an emotional drag on _you_ as on the target. You can act as a discrete filter.
 
 Interestingly, YouTube has okay moderation interfaces (which, given their terrible platform policies around hate speech is surprising). Most importantly, immediately navigate for `Settings -> Community -> Defaults` and check "Hold all comments for review". This passes literally every comment through a comment queue. It also allows you to flag people as _safe_, so they can always and freely comment.
 
