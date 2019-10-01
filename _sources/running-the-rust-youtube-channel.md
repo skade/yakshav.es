@@ -8,7 +8,7 @@ Recently, Patricia Aas tweeted that conferences should disable the YouTube comme
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I’m starting to think conferences should disable YouTube comments on all talks because:<br><br>1. They are often trash for underrepresented folks.<br><br>2. If you only disable comments for underrepresented folks, then their videos are rated lower than majority folks by YouTube algorithms. <a href="https://t.co/iKBn28JvF5">pic.twitter.com/iKBn28JvF5</a></p>&mdash; Patricia Aas (@pati_gallardo) <a href="https://twitter.com/pati_gallardo/status/1178923626403434497?ref_src=twsrc%5Etfw">October 1, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
-If you have no amount of time to spend on your YouTube channel, please follow that advice. YouTube comments have a bad reputation for a reason.
+If you have no amount of time to spend on your YouTube channel, please follow that advice. Switch comments off. YouTube comments have a bad reputation for a reason.
 
 If not, please read on. I'd like to present our practice around the YouTube channel.
 
