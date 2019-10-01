@@ -14,7 +14,7 @@ If not, please read on. I'd like to present our practice around the YouTube chan
 
 ## The Rust YouTube channel
 
-I created the pofficial Rust YouTube channel](https://youtube.com/c/rustvideos). The channel does not only publish all Rust videos on our conferences, but also republishes videos from other conferences.
+I created the official [Rust YouTube channel](https://youtube.com/c/rustvideos). The channel does not only publish all Rust videos on our conferences, but also republishes videos from other conferences.
 
 Additionally, we have started using it as a channel to publish self-recorded materials, for example the [rustc compiler lecture series](https://www.youtube.com/playlist?list=PL85XCvVPmGQhOL-J2Ng7qlPvDVOwYpGTN) or recordings of working group meetings.
 
