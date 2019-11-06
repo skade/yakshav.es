@@ -20,6 +20,8 @@
 
 * [My personal Rust 2017 retrospective](https://yakshav.es/rust-2017-retrospective)
 
+* [Save co.up](https://yakshav.es/save-coup)
+
 * [Rust 2019 (7): More librarians](https://yakshav.es/rust-2019-more-librarians)
 
 * [Positivity in Coding](https://yakshav.es/positivity-in-coding)
