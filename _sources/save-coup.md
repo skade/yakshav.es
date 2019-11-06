@@ -40,5 +40,7 @@ co.up has also allowed those initiatives to ramp up massively:
 * Some OTS learners events are _weekly_
 * In total, OTS has over 1000 events in 5 years, a majority in this space!
 
+co.up has been the introduction of a countless number of people into technology.
+
 All in all, co.up is a cornerstone of the free community in Berlin - it's time for another [show of force](https://co-up.de/support-us/).
 
