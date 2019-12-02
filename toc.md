@@ -2,6 +2,8 @@
 
 * [Rust 2019 (1): Change](https://yakshav.es/rust-2019-change)
 
+* [Rust 2020: Quality](https://yakshav.es/rust-2020-quality)
+
 * [Asserting static properties in Rust](https://yakshav.es/asserting-static-properties)
 
 * [2018: The year we learn Rust 1.0](https://yakshav.es/rust-2018)
