@@ -21,7 +21,6 @@ Together, they have understood that the way to scale your communities is bringin
 
 In summary, I would say that these 3 communities aggressively pushed the needle of what's practice in open source.
 Especially in my local area, in Berlin, this can be seen through the success of non-profits like OpenTechSchool, which is technology-independent, but driven by members of those 3 communities.
-Over the course of its first 5 years, OTS has had over 1000 meetups with over 10000 attendees!
 
 I am along for that ride - first RailsConf Europe attendance in 2008, first organisational work in 2010, with germany.rb, the German Ruby meetup, then eurucamp in 2012, the Rust Meetup under OTS since 2014 and RustFest since 2016.
 I started contributing to the Padrino webframework in 2011, and to Rust in 2014. Present tense, because this is a great ride.
@@ -37,7 +36,7 @@ I can only speculate on reasons from the OSI side, but I _can_ give my personal 
 
 The last decade or so has seen a huge uptake in both open source productivity and in creation of new community structures.
 Especially, it saw the formation of structures _beyond code_ and _beyond the old ones_.
-To give an example here: [OpenTechSchool (OTS)](https://opentechschool.org) was created to teach people coding - more than 10000 people have used that offer in over 1000 events since its inception.
+To give an example here: [OpenTechSchool (OTS)](https://opentechschool.org) was created to teach people coding - more than 10000 people have used that offer in over 1000 events in the first 5 years since its inception.
 And this is just the tip of the iceberg of a new meetup and conference culture in FOSS.
 The groups organising OTS events are a new generation of community and project organisers, who have a mission that goes beyond making code free: actually democratizing coding by destroying barriers and giving marginalised people a spot in an environment that _should_ be accessible, but _isn't_.
 Those structures have an interesting property: a desire for independence.
@@ -45,7 +44,7 @@ Those structures have an interesting property: a desire for independence.
 But the software side also started to struggle: a lot more software started popping up and the production of open source software has accellerated extremely.
 And facing the high additional amount of labor necessary to deal with a much bigger community and much bigger competition, the same issue popped up: independence.
 
-In both of these contexts, independence usually pops up in the form of money, usually in two variants.
+In both of these contexts, independence is often discussed as a money issue, usually in two variants.
 The raw one: how do I even get money for my work?
 And the hidden one: If I receive large amounts of money, e.g. by being employed, how does my project stay independent?
 
@@ -53,9 +52,9 @@ There's again three ways out of this:
 
 The first: Ruby on Rails has indeed answered the question by stepping off and just not taking money, finding other ways of getting their infrastructure cost paid. This still means that Rails production costs money and someone foots the bill, but it's essentially a big barter deal. This leads to a number of weird issues, like the actual cost of a project not being calculatable and funds not being shiftable. Cost-savings don't work to your benefit, but the donors.
 
-The second is blunt: just not play the game anymore. I remember a quote from [@alicetragedy](https://twitter.com/alicetragedy/) at a conference where I inquired how a project was doing: "It's successful, so I may have to shut it down". Retract your labour.
+The second is blunt: just not play the game anymore. I remember a quote from [alicetragedy](https://twitter.com/alicetragedy/) at a conference where I inquired how a project was doing: "It's successful, so I may have to shut it down". Retract your labour.
 
-The third is also rather upfront: build a funding structure, which means _additional labour overhead_, especially around distributing funds and paying people distributing the funds. Also, tons of conversations with potential sponsors.
+The third is also rather upfront: build a funding structure, which means _additional labour overhead_, especially around distributing funds and paying the people distributing the funds. Also, tons of conversations with potential sponsors.
 
 You may look for the fourth, "getting people employed", but that doesn't give you independence, as those people are clearly bound to their employer's direction.
 This is not a theoretical case, FOSS developers getting hired into companies and at some point moving up the career ladder is a cause of maintainer drain.
