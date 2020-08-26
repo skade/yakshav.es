@@ -32,7 +32,7 @@ All of these environments can easily be called "Open Source".
 For example, Ruby on Rails was a driver for the popularisation of the MIT license as the default license in the Ruby world, despite Ruby's inventor, Yukihiro Matsumoto, being a recognised [free software advocate](https://en.wikipedia.org/wiki/Yukihiro_Matsumoto#Recognition).
 Yet, their detachment from the OSI is a curious matter. 
 One would imagine that the sudden success of not one, but three ecosystems would make the _stewards of open source_ interested!
-No such thing happend.
+No such thing happened.
 I can only speculate on reasons from the OSI side, but I _can_ give my personal reasons for the other way around.
 
 The last decade or so has seen a huge uptake in both open source productivity and in creation of new community structures.
