@@ -51,10 +51,11 @@ Unless you have a very definable community (like a bulletin board) at hand, I be
 Especially in a professional context.
 
 For two reasons:
+
 1) A community manages itself. There will highly likely be someone in local group with more influence than yourself.
 2) If you were to _really_ manage a community, you would also be responsible for _all the mistakes_.
 
-I believe this is the one thing that DevRel has gotten right: you can manage relationships to communities.
+I believe this is the one thing that DevRel got right: you can manage relationships to communities.
 Which people you talk to.
 Which ones to boost.
 Which ones to maybe hire.
