@@ -27,13 +27,15 @@ There's no "Rust Community". There's also no "Metal Community" or "Ruby Communit
 
 1) You may start believing that what you see is all there is. Seeing community as a whole block may inform your strategy badly, as some people you categorise in that community don't feel addressed or don't want to be considered part of it. While you could start modelling "subcommunities", the model may become thin so quickly it cannot serve as a bracket. It also betrays a false hierarchy.
 2) Every model has bias. A global "the community" model will easily bias you towards the locations you feel most comfortable in. Naming communities you interact with directly can serve as a conscious effort to debias.
-3) Worst case, parts of the community may completely fall out of perspective. A not uncommon experience I had in the Ruby world was that the "Ruby community" was criticised for community behaviours that made total sense from an asian/Japanese perspective. This leads to subtle problems that come dangerously close or cross into racism.
-    * And example here is how substantial communities are not perceived as existing, especially if they are non-English-speaking. There's substantial communities speaking Spanish, Portuguese, Chinese and Japanese in almost any programming language.
-4) This makes a lot of projects fail: "the community" cannot be addressed - most problematically, you might address a problem a certain community does not have, currently doesn't prioritise or does not perceive (yet).
+    * This bias is often clearly visible if you know where to look: many industrial FOSS projects accidentally bias towards the US hard and even within that on Silicon Valley, favoring its timezones, styles of working and iteraction styles present there.
+3) Worst case, parts of the community may completely fall out of perspective. A not uncommon experience I had in the Ruby world was that the "Ruby community" was criticised for decisions/styles that made total sense from an asian/Japanese perspective. This leads to subtle problems that come dangerously close or cross into racism.
+    * Another example here is how substantial groups are not perceived as existing, especially if they are non-English-speaking. There's e.g. huge communities speaking Spanish, Portuguese, Chinese and Japanese in almost any programming language. Other communities may not speak English as first language, but their statements may be weighted by the standards of native speakers.
+4) This makes a lot of well-intended projects fail: "the community" cannot be addressed - most problematically, you might address a problem a certain community does not have, currently doesn't prioritise or does not perceive (yet). The most effective projects are local projects, with local members.
 5) "Community norms" are always a blend. E.g. the Berlin Rust Community and the Cologne Rust Community are different, both great. Both may have connecting bits through their active members of the Rust project bringing in culture and both being in Germany. In certain areas, even multiple _local_ meetups have different attitudes or might not even be strongly connected. Berlin organiser communities are well connected in ways you don't perceive when not part of it. (hint: a ton of them used to be Rubyists)
-    * Seeing any individual or group as "Rustaceans" or "Rubyists" is almost always a mistake.
+    * Example: Seeing any individual or group as "Rustaceans" or "Rubyists" is almost always a mistake.
       * I'm playing with this a little: I give most of my Rust talks in Ruby shirt. That isn't random.
-    * All these things can be points on why you want to address these communities.
+    * You don't need to know all this. My conclusion out of this is that you need local people to do effective work.
+    * For purely online groups, similar points apply.
 6) But! Global community norms do exist and are useful, as a guideline for people seeking connections.
 
 "The community" creates and image of uniformity that does not exist.
