@@ -1,4 +1,4 @@
-﻿## Current Shaves
+## Current Shaves
 
 * [Asserting static properties in Rust](https://yakshav.es/asserting-static-properties)
 
@@ -72,11 +72,15 @@
 
 * [Sponsor Florian](https://yakshav.es/sponsor-florian)
 
+* [Support and Empower Volunteers](https://yakshav.es/support-and-empower-volunteers)
+
 * [Sustainability](https://yakshav.es/sustainability)
 
 * [A Couple of Tests](https://yakshav.es/test-page)
 
 * [Donald Knuth - The Patron Saint of Yak Shaves](https://yakshav.es/the-patron-saint-of-yakshaves)
+
+* [Thoughts on "Community"](https://yakshav.es/thoughts-on-community)
 
 * [Using Diesel with a PostgreSQL schema (non-invasively)](https://yakshav.es/using-diesel-with-a-postgres-schema)
 
