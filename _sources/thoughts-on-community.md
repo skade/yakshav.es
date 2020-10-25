@@ -38,7 +38,7 @@ There's no "Rust Community". There's also no "Metal Community" or "Ruby Communit
     * For purely online groups, similar points apply.
 6) But! Global community norms do exist and are useful, as a guideline for people seeking connections.
 
-"The community" creates and image of uniformity that does not exist.
+"The community" creates an image of uniformity that does not exist.
 This quickly leads to individuals not feeling represented or feeling ignored.
 It is miles away from any reality and therefore impractical.
 Effective interaction with community requires effort to understand them, everything else will lead to failures of communication.
