@@ -72,8 +72,6 @@
 
 * [Sponsor Florian](https://yakshav.es/sponsor-florian)
 
-* [Support and Empower Volunteers](https://yakshav.es/support-and-empower-volunteers)
-
 * [Sustainability](https://yakshav.es/sustainability)
 
 * [A Couple of Tests](https://yakshav.es/test-page)
