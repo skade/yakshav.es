@@ -32,6 +32,7 @@ There's no "Rust Community". There's also no "Metal Community" or "Ruby Communit
 4) This makes a lot of projects fail: "the community" cannot be addressed - most problematically, you might address a problem a certain community does not have, currently doesn't prioritise or does not perceive (yet).
 5) "Community norms" are always a blend. E.g. the Berlin Rust Community and the Cologne Rust Community are different, both great. Both may have connecting bits through their active members of the Rust project bringing in culture and both being in Germany. In certain areas, even multiple _local_ meetups have different attitudes or might not even be strongly connected. Berlin organiser communities are well connected in ways you don't perceive when not part of it. (hint: a ton of them used to be Rubyists)
     * Seeing any individual or group as "Rustaceans" or "Rubyists" is almost always a mistake.
+      * I'm playing with this a little: I give most of my Rust talks in Ruby shirt. That isn't random.
     * All these things can be points on why you want to address these communities.
 6) But! Global community norms do exist and are useful, as a guideline for people seeking connections.
 
@@ -46,7 +47,7 @@ Otherwise, I prefer talking about "space" or "ecosystem".
 
 ## Community happens and "Community management" is a Red Herring at scale
 
-Unless you have a very definable community (like a bulletin board) at hand, I believe that "Community management" is also a problematic model.
+Unless you have a very definable community (like a bulletin board) at hand, I believe that "Community management" is a problematic model.
 Especially in a professional context.
 
 For two reasons:
