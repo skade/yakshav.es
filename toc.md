@@ -6,6 +6,10 @@ on their websites. _Other_ websites are allowed to post this information,
 though. [Frag Den Staat is currently providing resources on the subject in German, English
 and Turkish](https://fragdenstaat.de/aktionen/219a/).
 
+If you read this section and were wondering "why the hell, this is not what I'm here for?":
+you are entirely correct, but as this information is not allowed to be published where it belongs,
+it stays here in protest.
+
 I may expand this section in the future.
 
 ## Current Shaves
