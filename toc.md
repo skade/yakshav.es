@@ -92,7 +92,7 @@ it stays here in protest.
 
 * [Donald Knuth - The Patron Saint of Yak Shaves](https://yakshav.es/the-patron-saint-of-yakshaves)
 
-* [With FOSS becoming ubiquius in recent years, we run into more on more problems in the maintainer/user relationship.](https://yakshav.es/the-transactional-nature-of-contributions)
+* [The transactional nature of FOSS contributions](https://yakshav.es/the-transactional-nature-of-contributions)
 
 * [Thoughts on "Community"](https://yakshav.es/thoughts-on-community)
 
