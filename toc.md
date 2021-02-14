@@ -10,8 +10,6 @@ If you read this section and were wondering "why the hell, this is not what I'm 
 you are entirely correct, but as this information is not allowed to be published where it belongs,
 it stays here in protest.
 
-I may expand this section in the future.
-
 ## Current Shaves
 
 * [Asserting static properties in Rust](https://yakshav.es/asserting-static-properties)
@@ -76,6 +74,8 @@ I may expand this section in the future.
 
 * [Positivity and the RustConf keynote](https://yakshav.es/rustconf-keynote-thoughts)
 
+* [RustFest, eurucamp and the importance of letting go](https://yakshav.es/rustfest-retrospective)
+
 * [Save co.up](https://yakshav.es/save-coup)
 
 * [So much space](https://yakshav.es/so-much-space)
@@ -91,6 +91,8 @@ I may expand this section in the future.
 * [A Couple of Tests](https://yakshav.es/test-page)
 
 * [Donald Knuth - The Patron Saint of Yak Shaves](https://yakshav.es/the-patron-saint-of-yakshaves)
+
+* [With FOSS becoming ubiquius in recent years, we run into more on more problems in the maintainer/user relationship.](https://yakshav.es/the-transactional-nature-of-contributions)
 
 * [Thoughts on "Community"](https://yakshav.es/thoughts-on-community)
 
