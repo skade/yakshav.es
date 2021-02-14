@@ -7,9 +7,9 @@ title: The transactional nature of FOSS contributions
 With FOSS becoming ubiquitous in recent years, we run into more on more problems in the maintainer/user relationship.
 The more I try to read up on this, the more I figure that many people on both sides lack a proper model of this - and that leads to friction.
 
-It also leads to a lot of weird discussions around license text. But - to paraphrase Douglas Adams - it isn't the legal texts that are unhappy, but the maintainers and users. While I appreciate a lot of discussions around licensing, they are also often used to dodge _the hard discussions_.
+It also leads to a lot of weird discussions around license text. But - to paraphrase Douglas Adams - it isn't the legal texts that are unhappy, but the maintainers and users. While I appreciate and welcome a lot of discussions around licensing, they are also often used to dodge _other, also hard discussions_. They serve a different goal.
 
-And the hard discussions come down to one problem: we've set up FOSS as the biggest barter deal in humanity. That worked as long as every party is employed with a fat wage check at a software company already and things were manageable. It doesn't work in times in which FOSS projects are easily the size of _mid-size_ companies themselves or individual projects become used in software of global scale.
+And one of the current hard discussions comes down to one problem: we've set up FOSS as the biggest barter deal in humanity. That worked as long as every party is employed with a fat wage check at a software company already and influx  manageable. It doesn't work in times in which FOSS projects are easily the size of _mid-size_ companies themselves or individual projects become used in software of global scale.
 
 Which is where this whole thing boomerangs: we managed to set up a space where we don't talk about money. And that is on _us_, the software builders, who want money from people who have absolutely no problem to talk about transactions.
 
@@ -121,11 +121,11 @@ Other way put:
 
 Our core problem is that for a long time, we've accepted this kind of contribution without question. That means we got people _used_ to this being valid reasons to contribute without any kind of longer investment or caring about their cost. This leads to the absurd situation that when _asked_ for the their cost, projects can often not account for them, not even the slightest. Another problem is that we often accepted _barter deals_ to dodge money - e.g. hardware to test. The problem is that this a) keeps you inflexible and b) congratulations, you now have hardware to manage. And - to paraphrase Douglas Adams again - the hardware wasn't unhappy, it was the people. And... we conveniently dodged the uncomfortable money topic.
 
-Money has the large advantage of being _flexible_ and _under your control_. You can buy food _and_ other conveninces from it, a problem that modern processor development as not solved yet (the nutrition value of processors is pretty terrible). 
+Money has the large advantage of being _flexible_ and _under your control_. You can buy food _and_ other conveninces from it, a problem that modern processor development as not solved yet (the nutrition value of processors is pretty terrible).
 
 But this also means that we often haven't modeled what _value_ we bring when we accept these contributions. And that's our entry-point into a discussion. 
 
-Especially corporate contributors are interested in multiple things: reducing their own organisational load (which incurs cost), freeing their own resources (which otherwise incurs costs, often opportunity costs) and enabling future business. Any argument on why you can improve those axes is well rooted. Be aware that engineers, often up to and including CTOs often don't think along those lines. You want to talk to people with budget powers. Find ways to connect them to your work (e.g. by sending a monthly update on the work they funded - a small page).
+Especially corporate contributors are interested in multiple things: reducing their own organisational load (which incurs cost), freeing their own resources (which otherwise incurs costs, often opportunity costs) and enabling future business. Any argument on why you can improve those axes is well rooted. Be aware that engineers, often up to and including CTOs often don't think along those lines. You want to talk to people with budget powers - people who know what the value of a transaction is. Find ways to connect them to your work (e.g. by sending a monthly update on the work they funded - a small page).
 
 Only even discuss deals with a money component (rare exceptions exist). Again, money means _value, (your) flexibility, appreciation and commitment_. Send people away that don't want to discuss on those terms, they are not serious. Deflect anything that tries to argue over internal problems on the contributing side: that's their problem to solve.
 
