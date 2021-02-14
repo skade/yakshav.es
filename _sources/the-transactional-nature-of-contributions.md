@@ -4,8 +4,7 @@ title: The transactional nature of FOSS contributions
 
 # The transactional nature of FOSS contributions
 
-
-With FOSS becoming ubiquius in recent years, we run into more on more problems in the maintainer/user relationship.
+With FOSS becoming ubiquitous in recent years, we run into more on more problems in the maintainer/user relationship.
 The more I try to read up on this, the more I figure that many people on both sides lack a proper model of this - and that leads to friction.
 
 It also leads to a lot of weird discussions around license text. But - to paraphrase Douglas Adams - it isn't the legal texts that are unhappy, but the maintainers and users. While I appreciate a lot of discussions around licensing, they are also often used to dodge _the hard discussions_.
