@@ -84,7 +84,7 @@ it stays here in protest.
 
 * [Sponsor Florian](https://yakshav.es/sponsor-florian)
 
-* [Gestern teilte innoQ mit, dass ihr Mitgründer und CEO [Stefan Tilkov verstorben ist](https://www.innoq.com/de/news/2023/08/stefan-tilkov/). Der Mitteilung entnehme ich, dass das für alle Seiten überraschend kam. Mir fehlen die Worte, ich will es trotzdem versuchen.](https://yakshav.es/stefan)
+* [Mach's gut, Stefan!](https://yakshav.es/stefan)
 
 * [Sustainability](https://yakshav.es/sustainability)
 

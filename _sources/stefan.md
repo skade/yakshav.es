@@ -2,6 +2,8 @@
 title: "Mach's gut, Stefan!"
 ---
 
+# Mach's gut, Stefan!
+
 Gestern teilte innoQ mit, dass ihr Mitgründer und CEO [Stefan Tilkov verstorben ist](https://www.innoq.com/de/news/2023/08/stefan-tilkov/). Der Mitteilung entnehme ich, dass das für alle Seiten überraschend kam. Mir fehlen die Worte, ich will es trotzdem versuchen.
 
 Ich hatte mit Stefan mehrere Kontaktpunkte, aber direkt unterhalten haben wir uns selten. Waren wir auf derselben Konferenz oder Event - ein paar Minuten für ein Gespräch hatte er immer, und die Minuten waren gut genutzt. Das war nicht anders, als wir gemeinsam mit innoQ Projekte durchgezogen haben. Trotzdem hat er mich stark beeinflusst wie wenig andere. Denn Stefan war immer... da? Er war ansprechbar. Oder irgendwo auf einer Konferenz, um seinen Gedanken zum Besten zu geben. Oder er schrieb eine Kolumne. Es war ein bisschen so wie zusammen im selben Gebiet wandern: hin und wieder trifft man sich, läuft mal eine Strecke gemeinsam und auch gerne, aber auch nicht mehr. Und das ist auch okay so.
