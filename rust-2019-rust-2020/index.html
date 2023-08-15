@@ -10,38 +10,90 @@
   </head>
   <body class="hack">
     <div class="container">
-<h1 id="rust-2019-12-rust-2020---access-all-areas">Rust 2019 (12): Rust 2020 - Access All Areas</h1>
-<p>I’ve dished up a fair share of (hopefully insightfull), even if a bit rough criticism and ideas in the previous blog posts. I’d like to end on a high note, though.</p>
-<p>Rust has tremendous successes to show, a lot of them coming from a pretty good footing when it comes to vision and purpose. The language has managed to convice people to convince people of its usability. Just as examples:</p>
+<h1 id="rust-2019-12-rust-2020---access-all-areas">Rust 2019 (12): Rust
+2020 - Access All Areas</h1>
+<p>I’ve dished up a fair share of (hopefully insightfull), even if a bit
+rough criticism and ideas in the previous blog posts. I’d like to end on
+a high note, though.</p>
+<p>Rust has tremendous successes to show, a lot of them coming from a
+pretty good footing when it comes to vision and purpose. The language
+has managed to convice people to convince people of its usability. Just
+as examples:</p>
 <ul>
-<li>High-level, concurrent server programming: Reaping benefits like first-class concurrency support.</li>
-<li>As an optimization language in polyglot environments: rewriting speed-critical parts in Rust.</li>
-<li>Cross-platform library development: for example developing libraries that run on mobile, desktop and browser environments (through WASM).</li>
-<li>Game programming: there’s a vibrant ecosystem of engine an game development.</li>
-<li>Embedded development: there’s interested in programming Rust even on smallest devices.</li>
-<li>Security-critical spaces: projects like Amazon Firecracker for implementing safe(er) microVMs</li>
+<li>High-level, concurrent server programming: Reaping benefits like
+first-class concurrency support.</li>
+<li>As an optimization language in polyglot environments: rewriting
+speed-critical parts in Rust.</li>
+<li>Cross-platform library development: for example developing libraries
+that run on mobile, desktop and browser environments (through
+WASM).</li>
+<li>Game programming: there’s a vibrant ecosystem of engine an game
+development.</li>
+<li>Embedded development: there’s interested in programming Rust even on
+smallest devices.</li>
+<li>Security-critical spaces: projects like Amazon Firecracker for
+implementing safe(er) microVMs</li>
 </ul>
-<p>While some of these use cases are more or less advanced and one could argue that Rust still has a long way to go, we’re <em>on the way already</em>.</p>
-<p>This comes with it’s share of challenges: how do you sell a language that is actually quite good in general, but has <em>some</em> specific benefits to bring to the table for certain environments?</p>
+<p>While some of these use cases are more or less advanced and one could
+argue that Rust still has a long way to go, we’re <em>on the way
+already</em>.</p>
+<p>This comes with it’s share of challenges: how do you sell a language
+that is actually quite good in general, but has <em>some</em> specific
+benefits to bring to the table for certain environments?</p>
 <p>Some predictions:</p>
-<h3 id="diminishing-returns-of-language-changes">Diminishing returns of language changes</h3>
-<p>Rust 1.0 had <em>serious</em> usability constraints. Custom derives were missing, the lack of <code>impl Trait</code> needed to be worked around and everything above <code>main()</code> was unstable. A lot of early Rust versions <em>unlocked</em> broad applications for the language, by allowing people to finally use Rust stable to develop their software. While these times certainly aren’t over, I believe we are going to see a diminishing return from improving the language. The time of easy big wins is over. This isn’t terrible, Rust 2018 is a product to be proud about.</p>
-<h3 id="libraries-will-be-the-big-unlockers">Libraries will be the big unlockers</h3>
-<p>Stable, usable libraries will continue to be the big unlockers. Forming clusters of libraries that work well together will be the next big challenge. Due to the pervasive nature of some of these libraries, some ecosystems will form. An example of such a library is Tokio: it’s hard to abstract over its use.</p>
-<p>“Can I do this in Rust?” was a language question until recently, now it’s mostly a question of having the foundations laid out.</p>
-<h3 id="systems-construction-will-become-a-hot-topic">Systems construction will become a hot topic</h3>
-<p>Paraphrasing <a href="https://twitter.com/ag_dubs">Ashley Williams</a>:</p>
+<h3 id="diminishing-returns-of-language-changes">Diminishing returns of
+language changes</h3>
+<p>Rust 1.0 had <em>serious</em> usability constraints. Custom derives
+were missing, the lack of <code>impl Trait</code> needed to be worked
+around and everything above <code>main()</code> was unstable. A lot of
+early Rust versions <em>unlocked</em> broad applications for the
+language, by allowing people to finally use Rust stable to develop their
+software. While these times certainly aren’t over, I believe we are
+going to see a diminishing return from improving the language. The time
+of easy big wins is over. This isn’t terrible, Rust 2018 is a product to
+be proud about.</p>
+<h3 id="libraries-will-be-the-big-unlockers">Libraries will be the big
+unlockers</h3>
+<p>Stable, usable libraries will continue to be the big unlockers.
+Forming clusters of libraries that work well together will be the next
+big challenge. Due to the pervasive nature of some of these libraries,
+some ecosystems will form. An example of such a library is Tokio: it’s
+hard to abstract over its use.</p>
+<p>“Can I do this in Rust?” was a language question until recently, now
+it’s mostly a question of having the foundations laid out.</p>
+<h3 id="systems-construction-will-become-a-hot-topic">Systems
+construction will become a hot topic</h3>
+<p>Paraphrasing <a href="https://twitter.com/ag_dubs">Ashley
+Williams</a>:</p>
 <blockquote>
 <p>Almost all programming is actually systems design.</p>
 </blockquote>
-<p>I think the discourse will gradually shift from smaller details to larger questions like: * Whats a good component abstraction? * How do I inject components for testing? * How do I manage a 100000-line project? * What’s our basis for code sharing?</p>
-<p>You can see an instance of this problem in the web framework world: while there’s a lot around, a unifying standards like WSGI or Rack has not emerged yet, making every framework an island.</p>
-<h3 id="will-be-still-be-shaky-but-thats-not-bad">2020 will be still be shaky, but that’s not bad</h3>
-<p>Rust has been surprisingly good at keeping people in the project over the recent years. This won’t go on forever. I expect people to leave - hopefully all in good faith - and some shakeups happening. I don’t believe this is a bad thing, the gaps can be filled.</p>
-<p>All communities are always in flux. People leaving or changing their role is always as much a problem as an opportunity - others can take the space. I’m looking forward to a lot of transformation :).</p>
+<p>I think the discourse will gradually shift from smaller details to
+larger questions like: * Whats a good component abstraction? * How do I
+inject components for testing? * How do I manage a 100000-line project?
+* What’s our basis for code sharing?</p>
+<p>You can see an instance of this problem in the web framework world:
+while there’s a lot around, a unifying standards like WSGI or Rack has
+not emerged yet, making every framework an island.</p>
+<h3 id="will-be-still-be-shaky-but-thats-not-bad">2020 will be still be
+shaky, but that’s not bad</h3>
+<p>Rust has been surprisingly good at keeping people in the project over
+the recent years. This won’t go on forever. I expect people to leave -
+hopefully all in good faith - and some shakeups happening. I don’t
+believe this is a bad thing, the gaps can be filled.</p>
+<p>All communities are always in flux. People leaving or changing their
+role is always as much a problem as an opportunity - others can take the
+space. I’m looking forward to a lot of transformation :).</p>
 <h3 id="rust-2020-is-successful">Rust 2020 is successful</h3>
-<p>Rust will continue to grow in all areas. As mentioned above, it has found a good balance of features that is useful in broad contexts. We have picked up steam.</p>
-<p>It’s easy to believe that this is all because of a plan. Instead, success is often a combination of luck, serendipity and the ability of our project to react to that growth. Rust will be used and adopted in new areas and we have only marginal control of which those will be. I have good faith that we will continue to be able to manage the growth instead of it taking full control of us.</p>
+<p>Rust will continue to grow in all areas. As mentioned above, it has
+found a good balance of features that is useful in broad contexts. We
+have picked up steam.</p>
+<p>It’s easy to believe that this is all because of a plan. Instead,
+success is often a combination of luck, serendipity and the ability of
+our project to react to that growth. Rust will be used and adopted in
+new areas and we have only marginal control of which those will be. I
+have good faith that we will continue to be able to manage the growth
+instead of it taking full control of us.</p>
 <p>Rust 2020 will access all areas.</p>
 
       <a href="/">top</a>

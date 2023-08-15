@@ -11,40 +11,53 @@
   <body class="hack">
     <div class="container">
 <h1 id="decorating-results">Decorating Results</h1>
-<p>Rust has many ways to make <code>Result</code>s ergonomic, from <code>try!</code> to <code>From</code> and friends. Here’s another one that is useful when chaining is appropriate and all errors can be passed through while you want to work on <code>Ok</code> values: just implement a special trait for your specific <code>Result</code> type to decorate it. This allows the user to do all general operations on the <code>Result</code> and just deconstruct it at the end.</p>
-<p>This can make convenient APIs, but obviously means that users need to import that trait everywhere. Also, it needs work to find a good error type you can fully pass through that chain.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode rust"><code class="sourceCode rust"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a><span class="kw">pub</span> <span class="kw">trait</span> MyResult <span class="op">{</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a>    <span class="kw">fn</span> double(<span class="kw">self</span>) <span class="op">-&gt;</span> <span class="dt">Self</span><span class="op">;</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a><span class="op">}</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true"></a><span class="kw">impl</span> MyResult <span class="kw">for</span> <span class="dt">Result</span><span class="op">&lt;</span><span class="dt">i32</span><span class="op">,</span> <span class="dt">String</span><span class="op">&gt;</span> <span class="op">{</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true"></a>    <span class="kw">fn</span> double(<span class="kw">self</span>) <span class="op">-&gt;</span> <span class="dt">Result</span><span class="op">&lt;</span><span class="dt">i32</span><span class="op">,</span> <span class="dt">String</span><span class="op">&gt;</span> <span class="op">{</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true"></a>        <span class="kw">self</span><span class="op">.</span>map(<span class="op">|</span>i<span class="op">|</span> i<span class="op">*</span><span class="dv">2</span>)</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true"></a>    <span class="op">}</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true"></a><span class="op">}</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true"></a></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true"></a><span class="kw">fn</span> okay() <span class="op">-&gt;</span> <span class="dt">Result</span><span class="op">&lt;</span><span class="dt">i32</span><span class="op">,</span> <span class="dt">String</span><span class="op">&gt;</span> <span class="op">{</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true"></a>    <span class="cn">Ok</span>(<span class="dv">2</span>)</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true"></a><span class="op">}</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true"></a></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true"></a><span class="kw">fn</span> failing() <span class="op">-&gt;</span> <span class="dt">Result</span><span class="op">&lt;</span><span class="dt">i32</span><span class="op">,</span> <span class="dt">String</span><span class="op">&gt;</span> <span class="op">{</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true"></a>    <span class="cn">Err</span>(<span class="st">&quot;everything broke&quot;</span><span class="op">.</span>into())</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true"></a><span class="op">}</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true"></a></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true"></a><span class="at">#[</span>test<span class="at">]</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true"></a><span class="kw">fn</span> test() <span class="op">{</span></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true"></a>    <span class="pp">assert_eq!</span>(okay()<span class="op">.</span>double()<span class="op">.</span>unwrap()<span class="op">,</span> <span class="dv">4</span>)<span class="op">;</span></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true"></a>    <span class="pp">assert_eq!</span>(failing()<span class="op">.</span>double()<span class="op">,</span> <span class="cn">Err</span>(<span class="st">&quot;everything broke&quot;</span><span class="op">.</span>into()))<span class="op">;</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true"></a><span class="op">}</span></span></code></pre></div>
-<p>Yes, it’s basically a trick to hide <code>map</code> and friends from the user.</p>
-<p><a href="/lazers">lazers</a> currently uses this to chain database lookup and creation where both operations can fail due to network/database/concurrency issues.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode rust"><code class="sourceCode rust"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true"></a><span class="kw">let</span> client <span class="op">=</span> <span class="pp">HyperClient::</span><span class="kw">default</span>()<span class="op">;</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true"></a><span class="kw">let</span> res <span class="op">=</span> client<span class="op">.</span>find_database(<span class="st">&quot;to_be_created&quot;</span><span class="op">.</span>to_string())</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true"></a>                <span class="op">.</span>or_create()<span class="op">;</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true"></a><span class="pp">assert!</span>(res<span class="op">.</span>is_ok())<span class="op">;</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true"></a><span class="pp">assert!</span>(res<span class="op">.</span>unwrap()<span class="op">.</span>existing())</span></code></pre></div>
+<p>Rust has many ways to make <code>Result</code>s ergonomic, from
+<code>try!</code> to <code>From</code> and friends. Here’s another one
+that is useful when chaining is appropriate and all errors can be passed
+through while you want to work on <code>Ok</code> values: just implement
+a special trait for your specific <code>Result</code> type to decorate
+it. This allows the user to do all general operations on the
+<code>Result</code> and just deconstruct it at the end.</p>
+<p>This can make convenient APIs, but obviously means that users need to
+import that trait everywhere. Also, it needs work to find a good error
+type you can fully pass through that chain.</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode rust"><code class="sourceCode rust"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">pub</span> <span class="kw">trait</span> MyResult <span class="op">{</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">fn</span> double(<span class="kw">self</span>) <span class="op">-&gt;</span> <span class="dt">Self</span><span class="op">;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="kw">impl</span> MyResult <span class="cf">for</span> <span class="dt">Result</span><span class="op">&lt;</span><span class="dt">i32</span><span class="op">,</span> <span class="dt">String</span><span class="op">&gt;</span> <span class="op">{</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">fn</span> double(<span class="kw">self</span>) <span class="op">-&gt;</span> <span class="dt">Result</span><span class="op">&lt;</span><span class="dt">i32</span><span class="op">,</span> <span class="dt">String</span><span class="op">&gt;</span> <span class="op">{</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>        <span class="kw">self</span><span class="op">.</span>map(<span class="op">|</span>i<span class="op">|</span> i<span class="op">*</span><span class="dv">2</span>)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="kw">fn</span> okay() <span class="op">-&gt;</span> <span class="dt">Result</span><span class="op">&lt;</span><span class="dt">i32</span><span class="op">,</span> <span class="dt">String</span><span class="op">&gt;</span> <span class="op">{</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="cn">Ok</span>(<span class="dv">2</span>)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="kw">fn</span> failing() <span class="op">-&gt;</span> <span class="dt">Result</span><span class="op">&lt;</span><span class="dt">i32</span><span class="op">,</span> <span class="dt">String</span><span class="op">&gt;</span> <span class="op">{</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="cn">Err</span>(<span class="st">&quot;everything broke&quot;</span><span class="op">.</span>into())</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="at">#[</span>test<span class="at">]</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="kw">fn</span> test() <span class="op">{</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    <span class="pp">assert_eq!</span>(okay()<span class="op">.</span>double()<span class="op">.</span>unwrap()<span class="op">,</span> <span class="dv">4</span>)<span class="op">;</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    <span class="pp">assert_eq!</span>(failing()<span class="op">.</span>double()<span class="op">,</span> <span class="cn">Err</span>(<span class="st">&quot;everything broke&quot;</span><span class="op">.</span>into()))<span class="op">;</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<p>Yes, it’s basically a trick to hide <code>map</code> and friends from
+the user.</p>
+<p><a href="/lazers">lazers</a> currently uses this to chain database
+lookup and creation where both operations can fail due to
+network/database/concurrency issues.</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode rust"><code class="sourceCode rust"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> client <span class="op">=</span> <span class="pp">HyperClient::</span><span class="kw">default</span>()<span class="op">;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> res <span class="op">=</span> client<span class="op">.</span>find_database(<span class="st">&quot;to_be_created&quot;</span><span class="op">.</span>to_string())</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>                <span class="op">.</span>or_create()<span class="op">;</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="pp">assert!</span>(res<span class="op">.</span>is_ok())<span class="op">;</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="pp">assert!</span>(res<span class="op">.</span>unwrap()<span class="op">.</span>existing())</span></code></pre></div>
 
       <a href="/">top</a>
     </div>

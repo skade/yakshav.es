@@ -74,8 +74,6 @@ it stays here in protest.
 
 * [Positivity and the RustConf keynote](https://yakshav.es/rustconf-keynote-thoughts)
 
-* [RustFest, eurucamp and the importance of letting go](https://yakshav.es/rustfest-retrospective)
-
 * [Save co.up](https://yakshav.es/save-coup)
 
 * [So much space](https://yakshav.es/so-much-space)
@@ -85,6 +83,8 @@ it stays here in protest.
 * [Spoilers](https://yakshav.es/spoilers)
 
 * [Sponsor Florian](https://yakshav.es/sponsor-florian)
+
+* [Gestern teilte innoQ mit, dass ihr Mitgründer und CEO [Stefan Tilkov verstorben ist](https://www.innoq.com/de/news/2023/08/stefan-tilkov/). Der Mitteilung entnehme ich, dass das für alle Seiten überraschend kam. Mir fehlen die Worte, ich will es trotzdem versuchen.](https://yakshav.es/stefan)
 
 * [Sustainability](https://yakshav.es/sustainability)
 

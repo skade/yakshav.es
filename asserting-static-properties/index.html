@@ -10,31 +10,43 @@
   </head>
   <body class="hack">
     <div class="container">
-<h1 id="asserting-static-properties-in-rust">Asserting static properties in Rust</h1>
-<p>If you write a generic library in Rust, you will at some point run into the issue that you have to assert properties of your exported types that are implicitly derived by the compiler.</p>
-<p>Implicit derivation makes a trade-off: it removes a lot of boilerplate in exchange for the possibility to break things silently by accident.</p>
+<h1 id="asserting-static-properties-in-rust">Asserting static properties
+in Rust</h1>
+<p>If you write a generic library in Rust, you will at some point run
+into the issue that you have to assert properties of your exported types
+that are implicitly derived by the compiler.</p>
+<p>Implicit derivation makes a trade-off: it removes a lot of
+boilerplate in exchange for the possibility to break things silently by
+accident.</p>
 <p>The three most common things falling in that category are:</p>
 <ul>
 <li>Send</li>
 <li>Sync</li>
 <li>Object safety</li>
 </ul>
-<p>But we can test these statically, by using them in our test suite. If one of the conditions we have breaks, compilation will fail.</p>
+<p>But we can test these statically, by using them in our test suite. If
+one of the conditions we have breaks, compilation will fail.</p>
 <p>For Send and Sync, we can use the following functions:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode rust"><code class="sourceCode rust"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="kw">struct</span> MyType <span class="op">{</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a>  inner<span class="op">:</span> <span class="dt">i32</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a><span class="op">}</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a><span class="kw">fn</span> _assert_send<span class="op">&lt;</span>T<span class="op">:</span> <span class="bu">Send</span><span class="op">&gt;</span>() <span class="op">{}</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true"></a><span class="kw">fn</span> _assert_sync<span class="op">&lt;</span>T<span class="op">:</span> <span class="bu">Sync</span><span class="op">&gt;</span>() <span class="op">{}</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true"></a><span class="kw">fn</span> _assertions() <span class="op">{</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true"></a>    <span class="pp">_assert_send::</span><span class="op">&lt;</span>MyType<span class="op">&gt;</span>()<span class="op">;</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true"></a>    <span class="pp">_assert_sync::</span><span class="op">&lt;</span>MyType<span class="op">&gt;</span>()<span class="op">;</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true"></a><span class="op">}</span></span></code></pre></div>
-<p>This article used to have an approach to test object safety here that didn’t work.</p>
-<p>Finally, check out the <code>compile-fail</code> crate for proper integration of this into your test suite.</p>
-<p>Notable mentions: The pattern for <code>_assert_send/sync</code> is lifted from Alex Crichtons <a href="https://github.com/alexcrichton/futures-rs/blob/master/futures-cpupool/src/lib.rs#L92-L97"><code>futures-cpupool</code></a> crate.</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode rust"><code class="sourceCode rust"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">struct</span> MyType <span class="op">{</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  inner<span class="op">:</span> <span class="dt">i32</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">fn</span> _assert_send<span class="op">&lt;</span>T<span class="op">:</span> <span class="bu">Send</span><span class="op">&gt;</span>() <span class="op">{}</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="kw">fn</span> _assert_sync<span class="op">&lt;</span>T<span class="op">:</span> <span class="bu">Sync</span><span class="op">&gt;</span>() <span class="op">{}</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="kw">fn</span> _assertions() <span class="op">{</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="pp">_assert_send::</span><span class="op">&lt;</span>MyType<span class="op">&gt;</span>()<span class="op">;</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="pp">_assert_sync::</span><span class="op">&lt;</span>MyType<span class="op">&gt;</span>()<span class="op">;</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<p>This article used to have an approach to test object safety here that
+didn’t work.</p>
+<p>Finally, check out the <code>compile-fail</code> crate for proper
+integration of this into your test suite.</p>
+<p>Notable mentions: The pattern for <code>_assert_send/sync</code> is
+lifted from Alex Crichtons <a
+href="https://github.com/alexcrichton/futures-rs/blob/master/futures-cpupool/src/lib.rs#L92-L97"><code>futures-cpupool</code></a>
+crate.</p>
 
       <a href="/">top</a>
     </div>
