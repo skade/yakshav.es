@@ -14,4 +14,4 @@ Stefan und seiner Firma innoQ habe ich Agile in der Tiefe gelernt - als Wertegeb
 
 Ich werde ihn auch als von Herzen und in allem liberalen Menschen in Erinnerung behalten. Ich hätte mich gerne mal mit ihm über seine Reise vom überzeugten FDP-Mitglied und -Wähler zum Austritt unterhalten. Stefan hat sich für andere Menschen interessiert, sich ein Urteil über anderer Lebensweise oder Weltsichten war ihm denke ich zuwieder. Aber das weiss ich nicht genau - denn dieses Gespräch wird nicht mehr stattfinden - ich hätte es spannend gefunden!
 
-Mein Beileid gilt vor allem Stefans Familie, auch seinen Freund:Innen und Kolleg:Innen.
+Mein Beileid vor allem Stefans Familie, seinen Freund:Innen und Kolleg:Innen.
