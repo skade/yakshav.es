@@ -8,6 +8,8 @@ Recently, E Hashman of the OSI board [asked for feedback](https://twitter.com/eh
 
 I don't want to repeat the questionnaire or my answers here, but the central question "What’s stopping you from becoming a member of the OSI?" stuck with me and I want to write down my personal (biased, incomplete) view of the OSI and particularly why I never spend a passing thought on it, unless inquired.
 
+*Note: since writing this article in 2020, there has been leadership changes at the OSI, including hiring full time staff. Their new executive director set up a number of [programs](https://opensource.org/programs/). I appreciate the changes and they are a start towards fixing the issues laid out here. As mentioned in the end of this post, while I would still stand by some of the criticism, I think it's also important to support the current OSI staff in addressing it in their own way and give them the space to do it.*
+
 ## My view on the JS, Ruby and Rust communities (+Python)
 
 I'm biased here, but I believe that the JavaScript, Ruby and Python communities were responsible for the dominant cultural shift in programming from 2010 on.
@@ -113,6 +115,6 @@ I'm personally very conflicted around it, because I still see value in fully lib
 
 ## Thanks
 
-Thanks to [Steve Klabnik](https://twitter.com/steveklabnik), [Dan Goodman-Wilson](https://twitter.com/DEGoodmanWilson) and [Jan-Erik Rediger](https://twitter.com/badboy_) for crossreading and corrections.
+Thanks to [Steve Klabnik](https://twitter.com/steveklabnik), [Don Goodman-Wilson](https://twitter.com/DEGoodmanWilson) and [Jan-Erik Rediger](https://twitter.com/badboy_) for crossreading and corrections.
 
 [1]: There's the debate on that fundamentally attacks whether it's the OSI is right to do so, but I'm okay here.
